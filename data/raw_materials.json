@@ -1,0 +1,140 @@
+[
+  {
+    "id": 1,
+    "name": "Anthracite",
+    "icon": "icons/anthracite.png",
+    "miningCost": 50
+  },
+  {
+    "id": 2,
+    "name": "Bauxite",
+    "icon": "icons/bauxite.png",
+    "miningCost": 0
+  },
+  {
+    "id": 3,
+    "name": "Berylium",
+    "icon": "icons/beryllium.png",
+    "miningCost": 0
+  },
+  {
+    "id": 4,
+    "name": "Caoutchouc",
+    "icon": "icons/caoutchouc.png",
+    "miningCost": 0
+  },
+  {
+    "id": 5,
+    "name": "Chemical Substances",
+    "icon": "icons/chemical_substances.png",
+    "miningCost": 0
+  },
+  {
+    "id": 6,
+    "name": "Chrome",
+    "icon": "icons/chrome.png",
+    "miningCost": 0
+  },
+  {
+    "id": 7,
+    "name": "Cobalt",
+    "icon": "icons/cobalt.png",
+    "miningCost": 0
+  },
+  {
+    "id": 8,
+    "name": "Coal",
+    "icon": "icons/coal.png",
+    "miningCost": 0
+  },
+  {
+    "id": 9,
+    "name": "Copper",
+    "icon": "icons/copper.png",
+    "miningCost": 0
+  },
+  {
+    "id": 10,
+    "name": "Diamonds",
+    "icon": "icons/diamonds.png",
+    "miningCost": 0
+  },
+  {
+    "id": 11,
+    "name": "Gold",
+    "icon": "icons/gold.png",
+    "miningCost": 0
+  },
+  {
+    "id": 12,
+    "name": "Iridium",
+    "icon": "icons/iridium.png",
+    "miningCost": 0
+  },
+  {
+    "id": 13,
+    "name": "Iron",
+    "icon": "icons/iron.png",
+    "miningCost": 0
+  },
+  {
+    "id": 14,
+    "name": "Manganese",
+    "icon": "icons/manganese.png",
+    "miningCost": 0
+  },
+  {
+    "id": 15,
+    "name": "Nickel",
+    "icon": "icons/nickel.png",
+    "miningCost": 0
+  },
+  {
+    "id": 16,
+    "name": "Organic Material",
+    "icon": "icons/organic_materials.png",
+    "miningCost": 0
+  },
+  {
+    "id": 17,
+    "name": "Plasma",
+    "icon": "icons/plasma.png",
+    "miningCost": 0
+  },
+  {
+    "id": 18,
+    "name": "Platinum",
+    "icon": "icons/platinum.png",
+    "miningCost": 0
+  },
+  {
+    "id": 19,
+    "name": "Silver",
+    "icon": "icons/silver.png",
+    "miningCost": 0
+  },
+  {
+    "id": 20,
+    "name": "Silicon",
+    "icon": "icons/silicon.png",
+    "miningCost": 0
+  },
+  {
+    "id": 21,
+    "name": "Titanium",
+    "icon": "icons/titanium.png",
+    "miningCost": 0 
+  },
+  {
+    "id": 22,
+    "name": "Vanadium",
+    "icon": "icons/vanadium.png",
+    "miningCost": 0
+  },
+  {
+    "id": 23,
+    "name": "Water",
+    "icon": "icons/water.png",
+    "miningCost": 0
+  }
+]

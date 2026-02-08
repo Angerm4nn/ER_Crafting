@@ -1,0 +1,578 @@
+[
+  {
+    "id": 1,
+    "name": "Aluminium",
+    "icon": "icons/aluminium.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 2,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Titanium Alloy",
+    "icon": "icons/titanium_alloy.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 2,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 21,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Metal Alloy",
+    "icon": "icons/metal_alloy.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 3,
+        "name": "Iron + Chrome",
+        "outputQuantity": 2,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 13,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Iron + Nickel",
+        "outputQuantity": 2,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 13,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 15,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Special Steel Alloy",
+    "icon": "icons/special_steel_alloy.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 5,
+        "name": "With Vanadium",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "name": "With Cobalt",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Chemicals",
+    "icon": "icons/chemicals.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 7,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Carbon",
+    "icon": "icons/carbon.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 9,
+        "name": "From Coal",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 8,
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "From Anthracite",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 1,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Rubber",
+    "icon": "icons/rubber.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 11,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Bioplasma",
+    "icon": "icons/bioplasma.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 12,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Plastics",
+    "icon": "icons/plastics.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 13,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Electronic Components",
+    "icon": "icons/electronic_components.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 14,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 20,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "CPU",
+    "icon": "icons/cpu.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 15,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 20,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Glass",
+    "icon": "icons/glass.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 16,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 20,
+            "quantity": 3
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Carbon Fiber",
+    "icon": "icons/carbon_fiber.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 17,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Professional Electronics",
+    "icon": "icons/professional_electronics.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 18,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 11,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "High Performance Conductor",
+    "icon": "icons/high_performance_conductor.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 19,
+        "name": "From Gold",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 11,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "name": "From Platinum",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 18,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "name": "From Iridium",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 12,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "name": "From Silver",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 19,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "name": "From Copper + Beryllium",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Conductor",
+    "icon": "icons/conductor.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 24,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 9,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Plastic Syntactic Foam",
+    "icon": "icons/plastic_syntactic_foam.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 25,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          { 
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Titanium Syntactic Foam",
+    "icon": "icons/titanium_syntactic_foam.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 26,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Textiles",
+    "icon": "icons/textiles.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 27,
+        "name": "Pure Chemicals",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "id": 28,
+        "name": "Mixed Materials",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 3
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 16,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+]
