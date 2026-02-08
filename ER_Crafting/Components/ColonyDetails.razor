@@ -1,0 +1,55 @@
+﻿@inject NavigationManager NavigationManager
+
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex align-items-center">
+            @if (!string.IsNullOrEmpty(Colony.Icon))
+            {
+                <img src="@Colony.Icon" alt="@Colony.Name" style="width: 64px; height: 64px;" class="me-3" />
+            }
+            <h3 class="mb-0">@Colony.Name</h3>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="mb-4">
+            <h5>Can Produce</h5>
+            <p class="fs-4">@(Colony.CanProduce ? "Yes" : "No")</p>
+        </div>
+
+        <div class="mb-4">
+            <h5>Available Raw Materials (@_rawMaterials.Count)</h5>
+            @if (_rawMaterials.Count == 0)
+            {
+                <p class="text-muted">No raw materials available.</p>
+            }
+            else
+            {
+                <div class="row">
+                    @foreach (var material in _rawMaterials)
+                    {
+                        <div class="col-md-3 mb-2">
+                            <RawMaterialCard Material="@material" OnClick="@(() => NavigationManager.NavigateTo($"rawmaterials/{material.Id}"))" />
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Colony Colony { get; set; } = null!;
+
+    [Parameter]
+    public GameData GameData { get; set; } = null!;
+
+    private List<RawMaterial> _rawMaterials = new();
+
+    protected override void OnInitialized()
+    {
+        _rawMaterials = GameData.GetAllRawMaterials()
+            .Where(m => Colony.RawMaterialsIds.Contains(m.Id))
+            .ToList();
+    }
+}

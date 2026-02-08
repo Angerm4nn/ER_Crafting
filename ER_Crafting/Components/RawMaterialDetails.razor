@@ -1,0 +1,91 @@
+﻿@inject NavigationManager NavigationManager
+
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex align-items-center">
+            @if (!string.IsNullOrEmpty(Material.Icon))
+            {
+                <img src="@Material.Icon" alt="@Material.Name" style="width: 64px; height: 64px;" class="me-3" />
+            }
+            <h3 class="mb-0">@Material.Name</h3>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="mb-4">
+            <h5>Mining Cost</h5>
+            <p class="fs-4">@Material.MiningCost</p>
+        </div>
+        <div class="mb-4">
+            <h5>Available at Colonies (@_colonies.Count)</h5>
+            @if (_colonies.Count == 0)
+            {
+                <p class="text-muted">Not available at any colony.</p>
+            }
+            else
+            {
+                <div class="row">
+                    @foreach (var colony in _colonies)
+                    {
+                        <div class="col-md-3 mb-2">
+                            <ColonyCard Colony="@colony" OnClick="@(() => NavigationManager.NavigateTo($"colonies/{colony.Id}"))" />
+                        </div>
+                    }
+                </div>
+            }
+
+        </div>
+
+        <div class="mb-4">
+            <h5>Used in Production Components (@Material.UsedInProductionComponents.Count)</h5>
+            @if (Material.UsedInProductionComponents.Count == 0)
+            {
+                <p class="text-muted">Not used in any production components.</p>
+            }
+            else
+            {
+                <div class="row">
+                    @foreach (var component in Material.UsedInProductionComponents)
+                    {
+                        <div class="col-md-3 mb-2">
+                            <ProductionComponentCard Component="@component" OnClick="@(() => NavigationManager.NavigateTo($"productioncomponents/{component.Id}"))" />
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+        <div class="mb-4">
+            <h5>Used in Final Items (@Material.UsedInFinalItems.Count)</h5>
+            @if (Material.UsedInFinalItems.Count == 0)
+            {
+                <p class="text-muted">Not used in any final items.</p>
+            }
+            else
+            {
+                <div class="row">
+                    @foreach (var item in Material.UsedInFinalItems)
+                    {
+                        <div class="col-md-3 mb-2">
+                            <FinalItemCard Item="@item" OnClick="@(() => NavigationManager.NavigateTo($"finalitems/{item.Id}"))" />
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public RawMaterial Material { get; set; } = null!;  
+    [Parameter]
+    public GameData GameData { get; set; } = null!;
+    private List<Colony> _colonies = new();
+    
+    protected override void OnInitialized()
+    {
+        _colonies = GameData.GetAllColonies()
+            .Where(c => c.RawMaterialsIds.Contains(Material.Id))
+            .ToList();
+    }
+}

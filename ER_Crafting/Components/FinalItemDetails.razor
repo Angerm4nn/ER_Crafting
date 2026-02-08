@@ -1,0 +1,291 @@
+﻿@inject NavigationManager NavigationManager
+@inject ProductionPlanner ProductionPlanner
+
+<div class="card">
+    <div class="card-header">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="d-flex align-items-center">
+                @if (!string.IsNullOrEmpty(Item.Icon))
+                {
+                    <img src="@Item.Icon" alt="@Item.Name" style="width: 64px; height: 64px;" class="me-3" />
+                }
+                <h3 class="mb-0">@Item.Name</h3>
+            </div>
+            <button class="btn btn-success" @onclick="ShowAddModal">
+                <i class="bi bi-plus-circle me-1"></i> Add to Production
+            </button>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="mb-4">
+            <h5>Type</h5>
+            <p class="fs-4">@Item.Type</p>
+        </div>
+
+        <div class="mb-4">
+            <h5>Assembly Cost</h5>
+            <p class="fs-4">@Item.ProductionCost</p>
+        </div>
+
+        <div class="mb-4">
+            <h5>Recipes (@Item.Recipes.Count)</h5>
+            @foreach (var recipe in Item.Recipes)
+            {
+                <div class="card mb-2 @(_selectedRecipe == recipe ? "border-primary" : "")"
+                     style="cursor: pointer;"
+                     @onclick="() => SelectRecipe(recipe)">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <h6 class="mb-0">@recipe.Name</h6>
+                            @if (_selectedRecipe == recipe)
+                            {
+                                <span class="badge bg-primary">Selected</span>
+                            }
+                        </div>
+                        <p class="mb-2"><strong>Makes:</strong> @recipe.OutputQuantity</p>
+                        <h6>Ingredients:</h6>
+                        @RenderIngredientsRow(recipe.Ingredients)
+                    </div>
+                </div>
+            }
+        </div>
+
+        @if (_selectedRecipe != null)
+        {
+            <div class="mb-4">
+                <h5>Total Raw Materials Required (with current selections)</h5>
+                @if (_totalRawMaterials.Count == 0)
+                {
+                    <p class="text-muted">No raw materials required.</p>
+                }
+                else
+                {
+                    <div class="row">
+                        @foreach (var kvp in _totalRawMaterials)
+                        {
+                            <div class="col-md-3 mb-2">
+                                <span class="badge bg-primary">@kvp.Value x</span>
+                                <RawMaterialCard Material="@kvp.Key" OnClick="@(() => NavigationManager.NavigateTo($"rawmaterials/{kvp.Key.Id}"))" />
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>
+
+<QuantityModal @ref="_quantityModal" ItemName="@Item.Name" OnConfirm="HandleAddConfirm" />
+
+@code {
+    [Parameter]
+    public FinalItem Item { get; set; } = null!;
+
+    [Parameter]
+    public GameData GameData { get; set; } = null!;
+
+    private Recipe? _selectedRecipe;
+    private Dictionary<RawMaterial, int> _totalRawMaterials = new();
+    private QuantityModal _quantityModal = null!;
+    private Dictionary<ProductionComponent, Recipe> _localRecipeSelections = new();
+
+    protected override void OnInitialized()
+    {
+        LoadSelectedRecipe();
+    }
+
+    protected override void OnParametersSet()
+    {
+        LoadSelectedRecipe();
+    }
+
+    private void LoadSelectedRecipe()
+    {
+        if (Item.Recipes.Count == 1)
+        {
+            _selectedRecipe = Item.Recipes[0];
+        }
+        else
+        {
+            _selectedRecipe = null;
+        }
+
+        CalculateTotalRawMaterials();
+    }
+
+    private void SelectRecipe(Recipe recipe)
+    {
+        _selectedRecipe = recipe;
+        CalculateTotalRawMaterials();
+    }
+
+    private void SelectNestedRecipe(ProductionComponent component, int recipeId)
+    {
+        var recipe = component.Recipes.FirstOrDefault(r => r.Id == recipeId);
+        if (recipe != null)
+        {
+            _localRecipeSelections[component] = recipe;
+            CalculateTotalRawMaterials();
+        }
+    }
+
+    private Recipe? GetEffectiveRecipeLocal(ProductionComponent component)
+    {
+        if (_localRecipeSelections.ContainsKey(component))
+            return _localRecipeSelections[component];
+
+        return component.Recipes.Count > 0 ? component.Recipes[0] : null;
+    }
+
+    private void ShowAddModal()
+    {
+        if (_selectedRecipe == null && Item.Recipes.Count > 1)
+        {
+            _selectedRecipe = Item.Recipes[0];
+        }
+        _quantityModal.Show();
+    }
+
+    private void HandleAddConfirm(int quantity)
+    {
+        if (_selectedRecipe != null)
+        {
+            ProductionPlanner.SetSelectedRecipe(Item, _selectedRecipe);
+
+            foreach (var kvp in _localRecipeSelections)
+            {
+                ProductionPlanner.SetSelectedComponentRecipe(kvp.Key, kvp.Value);
+            }
+
+            ProductionPlanner.AddItem(Item, quantity);
+        }
+    }
+
+    private string GetColumnClass(int ingredientCount)
+    {
+        if (ingredientCount == 0) return "col-md-12";
+
+        int colSize = 12 / ingredientCount;
+
+        if (colSize < 3) colSize = 3;
+
+        return $"col-md-{colSize}";
+    }
+
+    private RenderFragment RenderIngredientsRow(List<RecipeIngredient> ingredients)
+    {
+        var colClass = GetColumnClass(ingredients.Count);
+
+        return @<div class="row">
+        @foreach (var ingredient in ingredients)
+        {
+                <div class="@colClass mb-3">
+                    @RenderIngredient(ingredient, 0)
+                </div>
+        }
+        </div>;
+    }
+
+    private RenderFragment RenderIngredient(RecipeIngredient ingredient, int depth)
+    {
+        return @<div class="@(depth > 0 ? "ms-3 mt-2" : "")">
+            <div class="mb-1">
+                <span class="badge bg-primary">@ingredient.Quantity x</span>
+            </div>
+
+        @if (ingredient.Type == IngredientType.RawMaterial)
+        {
+            var material = GameData.GetRawMaterial(ingredient.ItemId);
+            if (material != null)
+            {
+                    <RawMaterialCard Material="@material" OnClick="@(() => NavigationManager.NavigateTo($"rawmaterials/{material.Id}"))" />
+            }
+        }
+        else if (ingredient.Type == IngredientType.ProductionComponent)
+        {
+            var comp = GameData.GetProductionComponent(ingredient.ItemId);
+            if (comp != null)
+            {
+                    <ProductionComponentCard Component="@comp" OnClick="@(() => NavigationManager.NavigateTo($"productioncomponents/{comp.Id}"))" />
+
+                @if (comp.Recipes.Count > 1)
+                {
+                    var selectedCompRecipe = GetEffectiveRecipeLocal(comp);
+                        <div class="mt-1" @onclick:stopPropagation="true">
+                            <select class="form-select form-select-sm"
+                                    value="@selectedCompRecipe?.Id"
+                                    @onchange="@(e => SelectNestedRecipe(comp, int.Parse(e.Value?.ToString() ?? "0")))">
+                                @foreach (var compRecipe in comp.Recipes)
+                                {
+                                    <option value="@compRecipe.Id">@compRecipe.Name</option>
+                                }
+                            </select>
+                        </div>
+
+                    @if (selectedCompRecipe != null && selectedCompRecipe.Ingredients.Count > 0 && depth < 3)
+                    {
+                            <div class="mt-2 p-2 border-start border-3 border-secondary" style="background-color: #f8f9fa;">
+                                <small class="text-muted fw-bold">Requires:</small>
+                                @foreach (var nestedIngredient in selectedCompRecipe.Ingredients)
+                                {
+                                    @RenderIngredient(nestedIngredient, depth + 1)
+                                }
+                            </div>
+                    }
+                }
+                else if (comp.Recipes.Count == 1 && comp.Recipes[0].Ingredients.Count > 0 && depth < 3)
+                {
+                        <div class="mt-2 p-2 border-start border-3 border-secondary" style="background-color: #f8f9fa;">
+                            <small class="text-muted fw-bold">Requires:</small>
+                            @foreach (var nestedIngredient in comp.Recipes[0].Ingredients)
+                            {
+                                @RenderIngredient(nestedIngredient, depth + 1)
+                            }
+                        </div>
+                }
+            }
+        }
+        </div>;
+    }
+
+    private void CalculateTotalRawMaterials()
+    {
+        _totalRawMaterials.Clear();
+
+        if (_selectedRecipe == null) return;
+
+        CalculateRecipeRawMaterials(_selectedRecipe, 1, _totalRawMaterials);
+    }
+
+    private void CalculateRecipeRawMaterials(Recipe recipe, int multiplier, Dictionary<RawMaterial, int> totals)
+    {
+        foreach (var ingredient in recipe.Ingredients)
+        {
+            if (ingredient.Type == IngredientType.RawMaterial)
+            {
+                var rawMaterial = GameData.GetRawMaterial(ingredient.ItemId);
+                if (rawMaterial != null)
+                {
+                    int needed = ingredient.Quantity * multiplier;
+                    if (totals.ContainsKey(rawMaterial))
+                        totals[rawMaterial] += needed;
+                    else
+                        totals[rawMaterial] = needed;
+                }
+            }
+            else if (ingredient.Type == IngredientType.ProductionComponent)
+            {
+                var component = GameData.GetProductionComponent(ingredient.ItemId);
+                if (component != null)
+                {
+                    var componentRecipe = GetEffectiveRecipeLocal(component);
+                    if (componentRecipe != null)
+                    {
+                        int needed = ingredient.Quantity * multiplier;
+                        CalculateRecipeRawMaterials(componentRecipe, needed, totals);
+                    }
+                }
+            }
+        }
+    }
+}

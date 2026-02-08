@@ -1,0 +1,22 @@
+﻿<div class="card" style="cursor: pointer; height: 48px;" @onclick="HandleClick">
+    <div class="card-body p-2 d-flex align-items-center h-100">
+        @if (!string.IsNullOrEmpty(Item.Icon))
+        {
+            <img src="@Item.Icon" alt="@Item.Name" style="width: 48px; height: 48px;" />
+        }
+        <h5 class="mb-0 ms-2 text-truncate">@Item.Name</h5>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public FinalItem Item { get; set; } = null!;
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+
+    private async Task HandleClick()
+    {
+        await OnClick.InvokeAsync();
+    }
+}

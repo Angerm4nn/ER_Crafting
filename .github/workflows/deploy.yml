@@ -1,0 +1,38 @@
+name: Deploy Blazor WASM to GitHub Pages
+on:
+  push:
+    branches: [ master ]
+permissions:
+  contents: write
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      
+      - name: Restore
+        run: dotnet restore
+      
+      - name: Publish .NET Core Project
+        run: dotnet publish ER_Crafting/ER_Crafting.csproj -c Release -o release --nologo
+      
+      - name: Set base href for GitHub Pages
+        run: |
+          sed -i 's|<base href="/" />|<base href="/ER_Crafting/" />|' release/wwwroot/ER_Crafting/index.html
+      
+      - name: SPA routing fix
+        run: |
+          touch release/wwwroot/ER_Crafting/.nojekyll
+          cp release/wwwroot/ER_Crafting/index.html release/wwwroot/ER_Crafting/404.html
+      
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: release/wwwroot/ER_Crafting

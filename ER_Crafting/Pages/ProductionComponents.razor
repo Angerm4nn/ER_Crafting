@@ -1,0 +1,57 @@
+﻿@page "/productioncomponents"
+@page "/productioncomponents/{Id:int}"
+@inject GameData GameData
+@inject NavigationManager NavigationManager
+
+<h3>Production Components</h3>
+
+@if (Id.HasValue)
+{
+    @* Detail view *@
+    <button class="btn btn-secondary mb-3" @onclick="BackToList">Back To List</button>
+
+    var component = _allComponents.FirstOrDefault(c => c.Id == Id.Value);
+    if (component != null)
+    {
+        <ProductionComponentDetails Component="@component" GameData="@GameData" />
+    }
+    else
+    {
+        <p>Component not found.</p>
+    }
+}
+else
+{
+    @* List view *@
+    <p>Found @_allComponents.Count components</p>
+    <div class="row">
+        @foreach (var component in _allComponents)
+        {
+            <div class="col-md-3 mb-2">
+                <ProductionComponentCard Component="@component" OnClick="@(() => NavigateToDetails(component.Id))" />
+            </div>
+        }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    private List<ProductionComponent> _allComponents = new();
+
+    protected override void OnInitialized()
+    {
+        _allComponents = GameData.GetAllProductionComponents();
+    }
+
+    private void NavigateToDetails(int id)
+    {
+        NavigationManager.NavigateTo($"productioncomponents/{id}");
+    }
+
+    private void BackToList()
+    {
+        NavigationManager.NavigateTo("productioncomponents");
+    }
+}

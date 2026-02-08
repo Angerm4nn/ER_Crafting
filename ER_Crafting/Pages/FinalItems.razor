@@ -1,0 +1,87 @@
+﻿@page "/finalitems"
+@page "/finalitems/{Id:int}"
+@inject GameData GameData
+@inject NavigationManager NavigationManager
+
+<h3>Final Items</h3>
+
+@if (Id.HasValue)
+{
+    @* Detail view *@
+    <button class="btn btn-secondary mb-3" @onclick="BackToList">Back To List</button>
+
+    var item = _allItems.FirstOrDefault(i => i.Id == Id.Value);
+    if (item != null)
+    {
+        <FinalItemDetails Item="@item" GameData="@GameData" />
+    }
+    else
+    {
+        <p>Item not found.</p>
+    }
+}
+else
+{
+    @* List view *@
+    <div class="mb-3">
+        <label class="form-label">Filter by Type:</label>
+        <select class="form-select" @bind="_selectedType" @bind:after="OnTypeChanged">
+            <option value="">-- All Types --</option>
+            @foreach (var type in _availableTypes)
+            {
+                <option value="@type">@type</option>
+            }
+        </select>
+    </div>
+
+    <p>Found @_filteredItems.Count items</p>
+
+    <div class="row">
+        @foreach (var item in _filteredItems)
+        {
+            <div class="col-md-3 mb-2">
+                <FinalItemCard Item="@item"
+                               OnClick="@(() => NavigationManager.NavigateTo($"finalitems/{item.Id}"))" />
+            </div>
+        }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+
+    private List<FinalItem> _allItems = new();
+    private List<FinalItem> _filteredItems = new();
+    private List<string> _availableTypes = new();
+    private string _selectedType = "";
+
+    protected override void OnInitialized()
+    {
+        _allItems = GameData.GetAllFinalItems();
+        _filteredItems = _allItems;
+
+        _availableTypes = _allItems
+            .Select(i => i.Type.ToString())
+            .Distinct()
+            .OrderBy(t => t)
+            .ToList();
+    }
+
+    private void OnTypeChanged()
+    {
+        if (string.IsNullOrEmpty(_selectedType))
+        {
+            _filteredItems = _allItems;
+        }
+        else
+        {
+            _filteredItems = _allItems.Where(i => i.Type.ToString() == _selectedType).ToList();
+        }
+    }
+
+    private void BackToList()
+    {
+        NavigationManager.NavigateTo("finalitems");
+    }
+}

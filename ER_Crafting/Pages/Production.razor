@@ -1,0 +1,223 @@
+﻿@page "/production"
+@inject ProductionPlanner ProductionPlanner
+@inject GameData GameData
+@implements IDisposable
+
+<h3>Production Planning</h3>
+
+@if (!ProductionPlanner.GetPlannedItems().Any())
+{
+    <div class="alert alert-info">
+        <p>No items planned for production yet.</p>
+        <p>Go to <a href="/finalitems">Final Items</a> and add items to your production queue.</p>
+    </div>
+}
+else
+{
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Planned Items</h5>
+                    <button class="btn btn-danger btn-sm" @onclick="ClearAll">Clear All</button>
+                </div>
+                <div class="card-body">
+                    @foreach (var kvp in ProductionPlanner.GetPlannedItems())
+                    {
+                        var item = kvp.Key;
+                        var quantity = kvp.Value;
+
+                        <div class="mb-3 p-3 border rounded">
+                            <div class="d-flex align-items-center mb-2">
+                                @if (!string.IsNullOrEmpty(item.Icon))
+                                {
+                                    <img src="@item.Icon" alt="@item.Name" class="me-2" style="width: 32px; height: 32px;" />
+                                }
+                                <div class="flex-grow-1">
+                                    <strong>@item.Name</strong>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => UpdateQuantity(item, quantity - 1)">-</button>
+                                    <span class="mx-3">@quantity</span>
+                                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => UpdateQuantity(item, quantity + 1)">+</button>
+                                    <button class="btn btn-sm btn-danger ms-2" @onclick="() => RemoveItem(item)">Remove</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <h5 class="mb-0">Total Costs</h5>
+                </div>
+                <div class="card-body">
+                    @{
+                        var costs = CalculateTotalCosts();
+                    }
+                    <table class="table table-sm mb-0">
+                        <tbody>
+                            <tr>
+                                <td><strong>Mining Cost:</strong></td>
+                                <td class="text-end">@costs.MiningCost.ToString("N2")</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Refining Cost:</strong></td>
+                                <td class="text-end">@costs.RefiningCost.ToString("N2")</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Production Cost:</strong></td>
+                                <td class="text-end">@costs.ProductionCost.ToString("N2")</td>
+                            </tr>
+                            <tr class="table-active">
+                                <td><strong>Subtotal:</strong></td>
+                                <td class="text-end"><strong>@costs.Subtotal.ToString("N2")</strong></td>
+                            </tr>
+                            <tr>
+                                <td><small>Mining Discount (@ProductionPlanner.MiningDiscount%):</small></td>
+                                <td class="text-end text-success"><small>-@costs.MiningDiscountAmount.ToString("N2")</small></td>
+                            </tr>
+                            <tr>
+                                <td><small>Production Discount (@ProductionPlanner.ProductionDiscount%):</small></td>
+                                <td class="text-end text-success"><small>-@costs.ProductionDiscountAmount.ToString("N2")</small></td>
+                            </tr>
+                            <tr class="table-success">
+                                <td><strong>Total (After Discounts):</strong></td>
+                                <td class="text-end"><strong>@costs.TotalWithDiscounts.ToString("N2")</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">Required Raw Materials</h5>
+                </div>
+                <div class="card-body">
+                    @{
+                        var totalRawMaterials = ProductionPlanner.GetTotalRawMaterials();
+                    }
+
+                    @if (!totalRawMaterials.Any())
+                    {
+                        <p class="text-muted">No raw materials needed.</p>
+                    }
+                    else
+                    {
+                        @foreach (var kvp in totalRawMaterials.OrderBy(x => x.Key.Name))
+                        {
+                            var rawMaterial = kvp.Key;
+                            var quantity = kvp.Value;
+                            var colonies = GameData.GetAllColonies()
+                            .Where(c => c.RawMaterialsIds.Contains(rawMaterial.Id))
+                            .ToList();
+
+                            <div class="mb-3 p-2 border rounded">
+                                <div class="d-flex align-items-center mb-2">
+                                    @if (!string.IsNullOrEmpty(rawMaterial.Icon))
+                                    {
+                                        <img src="@rawMaterial.Icon" alt="@rawMaterial.Name" class="me-2" style="width: 24px; height: 24px;" />
+                                    }
+                                    <strong>@rawMaterial.Name</strong>
+                                    <span class="badge bg-primary ms-auto">@quantity needed</span>
+                                </div>
+
+                                @if (colonies.Any())
+                                {
+                                    <div class="ms-4">
+                                        <small class="text-muted">Available at:</small>
+                                        <ul class="small mb-0">
+                                            @foreach (var colony in colonies)
+                                            {
+                                                <li>@colony.Name (Mining Cost: @rawMaterial.MiningCost)</li>
+                                            }
+                                        </ul>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="ms-4">
+                                        <small class="text-danger">Not available at any colony!</small>
+                                    </div>
+                                }
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@code {
+    private class CostBreakdown
+    {
+        public decimal MiningCost { get; set; }
+        public decimal RefiningCost { get; set; }
+        public decimal ProductionCost { get; set; }
+        public decimal Subtotal => MiningCost + RefiningCost + ProductionCost;
+        public decimal MiningDiscountAmount { get; set; }
+        public decimal ProductionDiscountAmount { get; set; }
+        public decimal TotalWithDiscounts { get; set; }
+    }
+
+    protected override void OnInitialized()
+    {
+        ProductionPlanner.OnProductionChanged += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        ProductionPlanner.OnProductionChanged -= StateHasChanged;
+    }
+
+    private void UpdateQuantity(FinalItem item, int newQuantity)
+    {
+        ProductionPlanner.UpdateQuantity(item, newQuantity);
+    }
+
+    private void RemoveItem(FinalItem item)
+    {
+        ProductionPlanner.RemoveItem(item);
+    }
+
+    private void ClearAll()
+    {
+        ProductionPlanner.Clear();
+    }
+
+    private CostBreakdown CalculateTotalCosts()
+    {
+        var breakdown = new CostBreakdown();
+
+        var totalRawMaterials = ProductionPlanner.GetTotalRawMaterials();
+        breakdown.MiningCost = totalRawMaterials.Sum(kvp => kvp.Key.MiningCost * kvp.Value);
+
+        var totalProductionComponents = ProductionPlanner.GetTotalProductionComponents();
+        breakdown.RefiningCost = totalProductionComponents.Sum(kvp => kvp.Key.RefiningCost * kvp.Value);
+
+        foreach (var plannedItem in ProductionPlanner.GetPlannedItems())
+        {
+            var item = plannedItem.Key;
+            var quantity = plannedItem.Value;
+            var selectedRecipe = ProductionPlanner.GetSelectedRecipe(item);
+
+            if (selectedRecipe != null)
+            {
+                var timesToCraft = (int)Math.Ceiling((decimal)quantity / selectedRecipe.OutputQuantity);
+                breakdown.ProductionCost += item.ProductionCost * timesToCraft;
+            }
+        }
+
+        breakdown.MiningDiscountAmount = breakdown.MiningCost * (ProductionPlanner.MiningDiscount / 100m);
+        breakdown.ProductionDiscountAmount = (breakdown.RefiningCost + breakdown.ProductionCost) * (ProductionPlanner.ProductionDiscount / 100m);
+
+        breakdown.TotalWithDiscounts = breakdown.Subtotal - breakdown.MiningDiscountAmount - breakdown.ProductionDiscountAmount;
+
+        return breakdown;
+    }
+}

@@ -1,0 +1,57 @@
+﻿@page "/colonies"
+@page "/colonies/{Id:int}"
+@inject GameData GameData
+@inject NavigationManager NavigationManager
+
+<h3>Colonies</h3>
+
+@if (Id.HasValue)
+{
+    @* Detail view *@
+    <button class="btn btn-secondary mb-3" @onclick="BackToList">Back To List</button>
+    
+    var colony = _allColonies.FirstOrDefault(c => c.Id == Id.Value);
+    if (colony != null)
+    {
+        <ColonyDetails Colony="@colony" GameData="@GameData" />
+    }
+    else
+    {
+        <p>Colony not found.</p>
+    }
+}
+else
+{
+    @* List view *@
+    <p>Found @_allColonies.Count colonies</p>
+    <div class="row">
+        @foreach (var colony in _allColonies)
+        {
+            <div class="col-md-3 mb-2">
+                <ColonyCard Colony="@colony" OnClick="@(() => NavigateToDetails(colony.Id))" />
+            </div>
+        }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+    
+    private List<Colony> _allColonies = new();
+
+    protected override void OnInitialized()
+    {
+        _allColonies = GameData.GetAllColonies();
+    }
+
+    private void NavigateToDetails(int id)
+    {
+        NavigationManager.NavigateTo($"colonies/{id}");
+    }
+
+    private void BackToList()
+    {
+        NavigationManager.NavigateTo("colonies");
+    }
+}

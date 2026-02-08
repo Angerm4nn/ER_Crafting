@@ -1,0 +1,97 @@
+﻿@page "/"
+@using System.Globalization
+@inject GameData GameData
+@inject ProductionPlanner ProductionPlanner
+
+<h3>Global Discounts</h3>
+<div class="mb-3">
+    <label>Production Discount (%)</label>
+    <input type="number"
+           value="@ProductionPlanner.ProductionDiscount"
+           @onchange="@(e => UpdateProductionDiscount(e))"
+           class="form-control"
+           step="0.01" />
+</div>
+<div class="mb-3">
+    <label>Mining Discount (%)</label>
+    <input type="number"
+           value="@ProductionPlanner.MiningDiscount"
+           @onchange="@(e => UpdateMiningDiscount(e))"
+           class="form-control"
+           step="0.01" />
+</div>
+<div class="mb-3">
+    <label>Transport Discount (%)</label>
+    <input type="number"
+           value="@ProductionPlanner.TransportDiscount"
+           @onchange="@(e => UpdateTransportDiscount(e))"
+           class="form-control"
+           step="0.01" />
+</div>
+
+<h3>Colonies</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Colony Name</th>
+            <th>Tax (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var colony in Colonies)
+        {
+            <tr>
+                <td>@colony.Name</td>
+                <td>
+                    <input type="number"
+                           value="@colony.Tax"
+                           @onchange="@(e => UpdateColonyTax(colony, e))"
+                           class="form-control"
+                           step="0.01" />
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<Colony> Colonies = new List<Colony>();
+
+    protected override void OnInitialized()
+    {
+        Colonies = GameData.GetAllColonies();
+    }
+
+    private void UpdateProductionDiscount(ChangeEventArgs e)
+    {
+        if (decimal.TryParse(e.Value?.ToString(), NumberStyles.Any, CultureInfo.InvariantCulture, out decimal newValue))
+        {
+            ProductionPlanner.ProductionDiscount = newValue;
+        }
+    }
+
+    private void UpdateMiningDiscount(ChangeEventArgs e)
+    {
+        if (decimal.TryParse(e.Value?.ToString(), NumberStyles.Any, CultureInfo.InvariantCulture, out decimal newValue))
+        {
+            ProductionPlanner.MiningDiscount = newValue;
+        }
+    }
+
+    private void UpdateTransportDiscount(ChangeEventArgs e)
+    {
+        if (decimal.TryParse(e.Value?.ToString(), NumberStyles.Any, CultureInfo.InvariantCulture, out decimal newValue))
+        {
+            ProductionPlanner.TransportDiscount = newValue;
+        }
+    }
+
+    private void UpdateColonyTax(Colony colony, ChangeEventArgs e)
+    {
+        if (float.TryParse(e.Value?.ToString(), NumberStyles.Any, CultureInfo.InvariantCulture, out float newTax))
+        {
+            colony.Tax = newTax;
+            ProductionPlanner.NotifyColonyTaxChanged();
+        }
+    }
+}

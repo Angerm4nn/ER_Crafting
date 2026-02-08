@@ -1,0 +1,63 @@
+﻿@page "/rawmaterials"
+@page "/rawmaterials/{Id:int}"
+@inject GameData GameData
+@inject NavigationManager NavigationManager
+
+<h3>Raw Materials</h3>
+
+@if (!_loaded)
+{
+    <p>Loading materials...</p>
+}
+else if (Id.HasValue)
+{
+    @* Detail view *@
+    <button class="btn btn-secondary mb-3" @onclick="BackToList">Back To List</button>
+    
+    var material = _allMaterials.FirstOrDefault(m => m.Id == Id.Value);
+    if (material != null)
+    {
+        <RawMaterialDetails Material="@material" GameData="@GameData" />
+    }
+    else
+    {
+        <p>Material not found.</p>
+    }
+}
+else
+{
+    @* List view *@
+    <p>Found @_allMaterials.Count materials</p>
+    <div class="row">
+        @foreach (var material in _allMaterials)
+        {
+            <div class="col-md-3 mb-2">
+                <RawMaterialCard Material="@material" OnClick="@(() => NavigateToDetails(material.Id))" />
+            </div>
+        }
+    </div>
+}
+
+@code {
+    [Parameter]
+    public int? Id { get; set; }
+    
+    private List<RawMaterial> _allMaterials = new();
+    private bool _loaded = false;
+
+    protected override void OnInitialized()
+    {
+        _allMaterials = GameData.GetAllRawMaterials();
+        _loaded = true;
+    }
+
+    private void NavigateToDetails(int id)
+    {
+        NavigationManager.NavigateTo($"rawmaterials/{id}");
+    }
+
+    private void BackToList()
+    {
+        NavigationManager.NavigateTo("/rawmaterials");
+    }
+}
