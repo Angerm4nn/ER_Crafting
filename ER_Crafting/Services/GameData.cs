@@ -43,6 +43,7 @@ namespace ER_Crafting.Services
             _productionComponents = await httpClient.GetFromJsonAsync<List<ProductionComponent>>("data/production_components.json", options);
             _finalItems = await httpClient.GetFromJsonAsync<List<FinalItem>>("data/final_items.json", options);
 
+            BuildRelations();
             _isLoaded = true;
         }
         #endregion
