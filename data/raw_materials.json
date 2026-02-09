@@ -123,7 +123,7 @@
     "id": 21,
     "name": "Titanium",
     "icon": "icons/titanium.png",
-    "miningCost": 0 
+    "miningCost": 0
   },
   {
     "id": 22,
@@ -135,6 +135,108 @@
     "id": 23,
     "name": "Water",
     "icon": "icons/water.png",
+    "miningCost": 0
+  },
+  {
+    "id": 24,
+    "name": "Carcinus Cranium",
+    "icon": "icons/carcinus_cranium.png",
+    "miningCost": 0
+  },
+  {
+    "id": 25,
+    "name": "Behemoth Cranium",
+    "icon": "icons/behemoth_cranium.png",
+    "miningCost": 0
+  },
+  {
+    "id": 26,
+    "name": "Behemoth Tail",
+    "icon": "icons/behemoth_tail.png",
+    "miningCost": 0
+  },
+  {
+    "id": 27,
+    "name": "Piercing Oculi",
+    "icon": "icons/piercing_oculi.png",
+    "miningCost": 0
+  },
+  {
+    "id": 28,
+    "name": "Pulsating Cerebrum",
+    "icon": "icons/pulsating_cerebrum.png",
+    "miningCost": 0
+  },
+  {
+    "id": 29,
+    "name": "Mantis Cranium",
+    "icon": "icons/mantis_cranium.png",
+    "miningCost": 0
+  },
+  {
+    "id": 30,
+    "name": "Xenomorph Endocrine Glands",
+    "icon": "icons/xenomorph_endocrine_glands.png",
+    "miningCost": 0
+  },
+  {
+    "id": 31,
+    "name": "Carcinus Dorsal Carapace",
+    "icon": "icons/carcinus_dorsal_carapace.png",
+    "miningCost": 0
+  },
+  {
+    "id": 32,
+    "name": "Sturdy Carapace",
+    "icon": "icons/sturdy_carapace.png",
+    "miningCost": 0
+  },
+  {
+    "id": 33,
+    "name": "Mantis Metathorax",
+    "icon": "icons/mantis_metathorax.png",
+    "miningCost": 0
+  },
+  {
+    "id": 34,
+    "name": "Carcinus Forelimbs",
+    "icon": "icons/carcinus_forelimbs.png",
+    "miningCost": 0
+  },
+  {
+    "id": 35,
+    "name": "Behemoth Forelimbs",
+    "icon": "icons/behemoth_forelimbs.png",
+    "miningCost": 0
+  },
+  {
+    "id": 36,
+    "name": "Serrated Claws",
+    "icon": "icons/serrated_claws.png",
+    "miningCost": 0
+  },
+  {
+    "id": 37,
+    "name": "Mantis Mesothorax",
+    "icon": "icons/mantis_mesothorax.png",
+    "miningCost": 0
+  },
+  {
+    "id": 38,
+    "name": "Xenomorph Hemolymph",
+    "icon": "icons/xenomorph_hemolymph.png",
+    "miningCost": 0
+  },
+  {
+    "id": 39,
+    "name": "Bloody Xenomorph Slime",
+    "icon": "icons/bloody_xenomorph_slime.png",
+    "miningCost": 0
+  },
+  {
+    "id": 40,
+    "name": "Xenomorph Endocrine Glands",
+    "icon": "icons/xenomorph_endocrine_glands.png",
     "miningCost": 0
   }
 ]

@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ER_Crafting",
   "resources": {
-    "hash": "sha256-DGtovtFgJgoEjb5tzolotxQqWOB625C++EptNWxExUg=",
+    "hash": "sha256-p+w29DlWWxRnilk4Q2WL2FkfK8jC/K0KjxITb34+MT8=",
     "jsModuleNative": {
       "dotnet.native.js": "sha256-NljIbpK/1KCj0+knpX8U77Rbl5kTtfFIuFjK7AuczEw="
     },
@@ -50,7 +50,7 @@
       "System.Text.RegularExpressions.wasm": "sha256-nE7XCiyeCswUnRGdXOQvcHP+XMWXcToACrazpZlocBI=",
       "System.Threading.wasm": "sha256-nmepV77ZAMV4rtWKj97dQetLJPZg+Rk73df3E6cmfe8=",
       "System.Private.CoreLib.wasm": "sha256-G9eMybGe+6Cdmq5rsDGdoIbO3MBX9Wi8bXSPrti1d1k=",
-      "ER_Crafting.wasm": "sha256-2jBVkJ1QFDj35seFQXiPka8mJhUMEW0+nU4/BWtlbyo="
+      "ER_Crafting.wasm": "sha256-WJU2MOMaPwyyhy9MCFvCw4ABBwaugvCDf+53V4wD/Mo="
     }
   },
   "cacheBootResources": true,
