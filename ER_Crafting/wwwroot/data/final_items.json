@@ -18,7 +18,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 20,
+            "itemId": 19,
             "quantity": 1
           }
         ]
@@ -167,7 +167,7 @@
         "ingredients": [
           {
             "type": "ProductionComponent",
-            "itemId": 17,
+            "itemId": 19,
             "quantity": 5
           },
           {
@@ -310,7 +310,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 16,
+            "itemId": 15,
             "quantity": 1
           }
         ]
@@ -443,7 +443,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 15,
+            "itemId": 1,
             "quantity": 1
           }
         ]
@@ -507,7 +507,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 15,
+            "itemId": 14,
             "quantity": 1
           }
         ]
@@ -566,7 +566,7 @@
           {
             "type": "ProductionComponent",
             "itemId": 9,
-            "quantity": 2
+            "quantity": 1
           },
           {
             "type": "ProductionComponent",
@@ -575,7 +575,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 19,
+            "itemId": 18,
             "quantity": 2
           }
         ]
@@ -598,7 +598,7 @@
           {
             "type": "ProductionComponent",
             "itemId": 9,
-            "quantity": 2
+            "quantity": 1
           },
           {
             "type": "ProductionComponent",
@@ -672,7 +672,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 20,
+            "itemId": 19,
             "quantity": 2
           }
         ]
@@ -850,7 +850,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 18,
+            "itemId": 17,
             "quantity": 4
           },
           {
@@ -877,7 +877,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 18,
+            "itemId": 17,
             "quantity": 1
           },
           {
@@ -904,7 +904,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 18,
+            "itemId": 17,
             "quantity": 1
           },
           {
@@ -950,7 +950,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 18,
+            "itemId": 17,
             "quantity": 4
           },
           {
@@ -977,7 +977,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 18,
+            "itemId": 17,
             "quantity": 3
           },
           {
@@ -1108,7 +1108,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 18,
+            "itemId": 17,
             "quantity": 2
           },
           {
@@ -1358,7 +1358,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 19,
+            "itemId": 18,
             "quantity": 1
           }
         ]
@@ -1457,7 +1457,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 17,
+            "itemId": 16,
             "quantity": 3
           },
           {
@@ -1492,8 +1492,8 @@
             "quantity": 5
           },
           {
-            "type": "RawMaterial",
-            "itemId": 17,
+            "type": "ProductionComponent",
+            "itemId": 5,
             "quantity": 1
           }
         ]
@@ -1540,7 +1540,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 17,
+            "itemId": 16,
             "quantity": 4
           },
           {
@@ -1571,7 +1571,7 @@
           },
           {
             "type": "RawMaterial",
-            "itemId": 17,
+            "itemId": 16,
             "quantity": 2
           },
           {
@@ -1597,7 +1597,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 17,
+            "itemId": 16,
             "quantity": 3
           },
           {
@@ -1802,7 +1802,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 18,
+            "itemId": 17,
             "quantity": 1
           },
           {
@@ -1859,7 +1859,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 18,
+            "itemId": 17,
             "quantity": 3
           },
           {
@@ -1916,7 +1916,7 @@
         "ingredients": [
           {
             "type": "RawMaterial",
-            "itemId": 18,
+            "itemId": 17,
             "quantity": 1
           },
           {
@@ -2025,7 +2025,7 @@
         "ingredients": [
           {
             "type": "ProductionComponent",
-            "itemId": 3,
+            "itemId": 2,
             "quantity": 1
           },
           {
@@ -2165,7 +2165,7 @@
           },
           {
             "type": "ProductionComponent",
-            "itemId": 7,
+            "itemId": 12,
             "quantity": 1
           },
           {
@@ -2192,7 +2192,7 @@
           },
           {
             "type": "ProductionComponent",
-            "itemId": 7,
+            "itemId": 12,
             "quantity": 1
           },
           {
@@ -2323,12 +2323,12 @@
         "outputQuantity": 4,
         "ingredients": [
           {
-            "type": "RawMaterial",
-            "itemId": 4,
+            "type": "ProductionComponent",
+            "itemId": 7,
             "quantity": 2
           },
           {
-            "type": "RawMaterial",
+            "type": "ProductionComponent",
             "itemId": 5,
             "quantity": 2
           }
@@ -2349,12 +2349,12 @@
         "outputQuantity": 4,
         "ingredients": [
           {
-            "type": "RawMaterial",
-            "itemId": 4,
+            "type": "ProductionComponent",
+            "itemId": 7,
             "quantity": 2
           },
           {
-            "type": "RawMaterial",
+            "type": "ProductionComponent",
             "itemId": 5,
             "quantity": 1
           }
@@ -2382,6 +2382,280 @@
           {
             "type": "ProductionComponent",
             "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Leg Clothes",
+    "icon": "icons/leg_clothes.png",
+    "type": "Clothing",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 88,
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "T-shirts",
+    "icon": "icons/t_shirt.png",
+    "type": "Clothing",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 89,
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Jackets",
+    "icon": "icons/jacket.png",
+    "type": "Clothing",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 90,
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 6
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Coats",
+    "icon": "icons/coat.png",
+    "type": "Clothing",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 91,
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 7
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 3,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Shoes",
+    "icon": "icons/shoes.png",
+    "type": "Clothing",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 92,
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Glasses",
+    "icon": "icons/glasses.png",
+    "type": "Clothing",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 93,
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Nanomachine Autoinjector",
+    "icon": "icons/nanomachine_autoinjector.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 94,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 24,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 20,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 8,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Adrenaline Autoinjector",
+    "icon": "icons/adrenaline_autoinjector.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 95,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 20,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 8,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Electrolyte Autoinjector",
+    "icon": "icons/electrolyte_autoinjector.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 96,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 24,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 8,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
             "quantity": 1
           }
         ]

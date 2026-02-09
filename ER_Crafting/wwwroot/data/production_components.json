@@ -504,7 +504,7 @@
         "name": "Standard",
         "outputQuantity": 3,
         "ingredients": [
-          { 
+          {
             "type": "ProductionComponent",
             "itemId": 9,
             "quantity": 2
@@ -570,6 +570,346 @@
             "type": "RawMaterial",
             "itemId": 23,
             "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Sticky Xenomorphic Fluid",
+    "icon": "icons/sticky_xenomorphic_fluid.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 29,
+        "name": "From  Carcinus",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "name": "From Behemoth cranium",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 25,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 31,
+        "name": "From Behemoth tail",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 26,
+            "quantity": 6
+          }
+        ]
+      },
+      {
+        "id": 32,
+        "name": "From Piercing Oculi",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 27,
+            "quantity": 10
+          }
+        ]
+      },
+      {
+        "id": 33,
+        "name": "From Pulsating Cerebrum",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 28,
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": 34,
+        "name": "From Mantis Cranium",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 29,
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": 35,
+        "name": "From Xenomorph Endocrine Glands",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 30,
+            "quantity": 5
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Solid Carbonite Shell",
+    "icon": "icons/solid_carbonite_shell.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 36,
+        "name": "From Carcinus Dorsal Carapace",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 31,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 37,
+        "name": "From Sturdy Carapace",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 32,
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": 38,
+        "name": "From Mantis Metathorax",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 33,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Xenomorph Proteins",
+    "icon": "icons/xenomorph_proteins.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 39,
+        "name": "From Carcinus Forelimbs",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 34,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 40,
+        "name": "From Behemoth Forelimbs",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 35,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 41,
+        "name": "From Behemoth Tail",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 26,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 42,
+        "name": "From Mantis Metathorax",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 33,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "name": "From Carcinus Cranium",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 24,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 44,
+        "name": "From Behemot Cranium",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 25,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 45,
+        "name": "From Mantis Cranium",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 29,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "id": 46,
+        "name": "From Pulsating Cerebrum",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 28,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Ultra Resillient Mineral",
+    "icon": "icons/ultra_resillient_mineral.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 47,
+        "name": "From Carcinus Forelimbs",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 34,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 48,
+        "name": "From Behemoth Forelimbs",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 35,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 49,
+        "name": "From Serrated Claws",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 36,
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": 50,
+        "name": "From Mantis Mesothorax",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 37,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Deuterium Water",
+    "icon": "icons/deuterium_water.png",
+    "refiningCost": 0,
+    "recipes": [
+      {
+        "id": 51,
+        "name": "From Xenomorph Hemolyph",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 38,
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "id": 52,
+        "name": "From Bloody Xenomorph Slime",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 39,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "id": 53,
+        "name": "From Xenomorph Endocrine Glands",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 40,
+            "quantity": 3
           }
         ]
       }

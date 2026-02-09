@@ -13,16 +13,11 @@
             Armor,
             Explosive,
             Food,
-            Glasses,
             Implant,
-            LegClothes,
             Medication,
             Miscellaneous,
-            PremiumLegClothes,
-            PremiumTorsoClothes,
-            Shoes,
-            TorsoClothes,
-            Weapon
+            Weapon,
+            Clothing
         }
 
     }
