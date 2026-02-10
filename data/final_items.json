@@ -2661,5 +2661,7019 @@
         ]
       }
     ]
+  },
+  {
+    "id": 70,
+    "name": "Tactical Systems Helmet",
+    "icon": "icons/l1_helmet.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 97,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 71,
+    "name": "Advanced Civilian Helmet",
+    "icon": "icons/l2_helmet.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 98,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 72,
+    "name": "MT-27 Ballistics Helmet",
+    "icon": "icons/l3_helmet.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 99,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 73,
+    "name": "Locans Defense Helmet",
+    "icon": "icons/l4_helmet_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 100,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1001,
+    "name": "Pythica Special Operations Helmet",
+    "icon": "icons/l4_helmet_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1001,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1002,
+    "name": "NanoTech Trauma Helmet",
+    "icon": "icons/l4_helmet_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1002,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1003,
+    "name": "Hypobaric Helmet",
+    "icon": "icons/l4_helmet_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1003,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1004,
+    "name": "Delta Powered Helmet",
+    "icon": "icons/l4_helmet_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1004,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1005,
+    "name": "PreMet Buffer Helmet",
+    "icon": "icons/l4_helmet_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1005,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1006,
+    "name": "Dilatant 46b Helmet",
+    "icon": "icons/l4_helmet_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1006,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1007,
+    "name": "Infensus Minimalist Helmet",
+    "icon": "icons/l4_helmet_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1007,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 74,
+    "name": "Locans Ethereal Helmet",
+    "icon": "icons/l5_helmet_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 101,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1008,
+    "name": "Pythica Mobile Infantry Helmet",
+    "icon": "icons/l5_helmet_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1008,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1009,
+    "name": "NanoTech Scout Helmet",
+    "icon": "icons/l5_helmet_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1009,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1010,
+    "name": "Metabolic Helmet",
+    "icon": "icons/l5_helmet_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1010,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1011,
+    "name": "Havoc Powered Helmet",
+    "icon": "icons/l5_helmet_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1011,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1012,
+    "name": "PreMet Contact Helmet",
+    "icon": "icons/l5_helmet_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1012,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1013,
+    "name": "Aramid Modified Helmet",
+    "icon": "icons/l5_helmet_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1013,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1014,
+    "name": "Infensus Shock Helmet",
+    "icon": "icons/l5_helmet_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1014,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 75,
+    "name": "Locans Patrol Helmet",
+    "icon": "icons/l6_helmet_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 102,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1015,
+    "name": "Pythica S1 Helmet",
+    "icon": "icons/l6_helmet_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1015,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1016,
+    "name": "NanoTech Voltaic Helmet",
+    "icon": "icons/l6_helmet_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1016,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1017,
+    "name": "Venom Helmet",
+    "icon": "icons/l6_helmet_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1017,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1018,
+    "name": "Firstborn Powered Helmet",
+    "icon": "icons/l6_helmet_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1018,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1019,
+    "name": "PreMet Collision Helmet",
+    "icon": "icons/l6_helmet_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1019,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1020,
+    "name": "Dilatant 50b Helmet",
+    "icon": "icons/l6_helmet_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1020,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1021,
+    "name": "Infensus X1 Assault Helmet",
+    "icon": "icons/l6_helmet_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1021,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 76,
+    "name": "Locans Pressured Helmet",
+    "icon": "icons/l7_helmet_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 103,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1022,
+    "name": "Pythica Sustained Battle Helmet",
+    "icon": "icons/l7_helmet_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1022,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1023,
+    "name": "NanoTech Cognizant Helmet",
+    "icon": "icons/l7_helmet_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1023,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1024,
+    "name": "Detox Helmet",
+    "icon": "icons/l7_helmet_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1024,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1025,
+    "name": "Legionnaire Powered Helmet",
+    "icon": "icons/l7_helmet_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1025,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1026,
+    "name": "PreMet Impact Helmet",
+    "icon": "icons/l7_helmet_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1026,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1027,
+    "name": "Aramid Basic Helmet",
+    "icon": "icons/l7_helmet_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1027,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1028,
+    "name": "Infensus Heavy Helmet",
+    "icon": "icons/l7_helmet_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1028,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 78,
+    "name": "XenoTech Expeditionary Helmet",
+    "icon": "icons/l9_helmet.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 105,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 21,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 23,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 79,
+    "name": "Tactical Systems Shoulder Pads",
+    "icon": "icons/l1_shoulder_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 106,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 80,
+    "name": "Advanced Civilian Shoulder Pads",
+    "icon": "icons/l2_shoulder_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 107,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 81,
+    "name": "MT-27 Ballistics Shoulder Pads",
+    "icon": "icons/l3_shoulder_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 108,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 82,
+    "name": "Locans Defense Shoulder Pads",
+    "icon": "icons/l4_shoulder_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 109,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1029,
+    "name": "Pythica Special Operations Shoulder Pads",
+    "icon": "icons/l4_shoulder_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1029,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1030,
+    "name": "NanoTech Trauma Shoulder Pads",
+    "icon": "icons/l4_shoulder_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1030,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1031,
+    "name": "Hypobaric Shoulder Pads",
+    "icon": "icons/l4_shoulder_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1031,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1032,
+    "name": "Delta Powered Shoulder Pads",
+    "icon": "icons/l4_shoulder_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1032,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1033,
+    "name": "PreMet Buffer Shoulder Pads",
+    "icon": "icons/l4_shoulder_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1033,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1034,
+    "name": "Dilatant 46b Shoulder Pads",
+    "icon": "icons/l4_shoulder_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1034,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1035,
+    "name": "Infensus Minimalist Shoulder Pads",
+    "icon": "icons/l4_shoulder_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1035,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 83,
+    "name": "Locans Ethereal Shoulder Pads",
+    "icon": "icons/l5_shoulder_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 110,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1036,
+    "name": "Pythica Mobile Infantry Shoulder Pads",
+    "icon": "icons/l5_shoulder_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1036,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1037,
+    "name": "NanoTech Scout Shoulder Pads",
+    "icon": "icons/l5_shoulder_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1037,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1038,
+    "name": "Metabolic Shoulder Pads",
+    "icon": "icons/l5_shoulder_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1038,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1039,
+    "name": "Havoc Powered Shoulder Pads",
+    "icon": "icons/l5_shoulder_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1039,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1040,
+    "name": "PreMet Contact Shoulder Pads",
+    "icon": "icons/l5_shoulder_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1040,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1041,
+    "name": "Aramid Modified Shoulder Pads",
+    "icon": "icons/l5_shoulder_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1041,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1042,
+    "name": "Infensus Shock Shoulder Pads",
+    "icon": "icons/l5_shoulder_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1042,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 84,
+    "name": "Locans Patrol Shoulder Pads",
+    "icon": "icons/l6_shoulder_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 111,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1043,
+    "name": "Pythica S1 Shoulder Pads",
+    "icon": "icons/l6_shoulder_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1043,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1044,
+    "name": "NanoTech Voltaic Shoulder Pads",
+    "icon": "icons/l6_shoulder_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1044,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1045,
+    "name": "Venom Shoulder Pads",
+    "icon": "icons/l6_shoulder_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1045,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1046,
+    "name": "Firstborn Powered Shoulder Pads",
+    "icon": "icons/l6_shoulder_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1046,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1047,
+    "name": "PreMet Collision Shoulder Pads",
+    "icon": "icons/l6_shoulder_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1047,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1048,
+    "name": "Dilatant 50b Shoulder Pads",
+    "icon": "icons/l6_shoulder_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1048,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1049,
+    "name": "Infensus X1 Assault Shoulder Pads",
+    "icon": "icons/l6_shoulder_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1049,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 85,
+    "name": "Locans Pressured Shoulder Pads",
+    "icon": "icons/l7_shoulder_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 112,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1050,
+    "name": "Pythica Sustained Battle Shoulder Pads",
+    "icon": "icons/l7_shoulder_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1050,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1051,
+    "name": "NanoTech Cognizant Shoulder Pads",
+    "icon": "icons/l7_shoulder_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1051,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1052,
+    "name": "Detox Shoulder Pads",
+    "icon": "icons/l7_shoulder_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1052,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1053,
+    "name": "Legionnaire Powered Shoulder Pads",
+    "icon": "icons/l7_shoulder_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1053,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1054,
+    "name": "PreMet Impact Shoulder Pads",
+    "icon": "icons/l7_shoulder_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1054,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1055,
+    "name": "Aramid Basic Shoulder Pads",
+    "icon": "icons/l7_shoulder_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1055,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1056,
+    "name": "Infensus Heavy Shoulder Pads",
+    "icon": "icons/l7_shoulder_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1056,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 86,
+    "name": "XenoTech Expeditionary Shoulder Pads",
+    "icon": "icons/l9_shoulder_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 113,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 21,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 23,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 87,
+    "name": "Tactical Systems Arm Pads",
+    "icon": "icons/l1_arm_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 114,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 88,
+    "name": "Advanced Civilian Arm Pads",
+    "icon": "icons/l2_arm_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 115,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 89,
+    "name": "MT-27 Ballistics Arm Pads",
+    "icon": "icons/l3_arm_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 116,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 90,
+    "name": "Locans Defense Arm Pads",
+    "icon": "icons/l4_arm_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 117,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1057,
+    "name": "Pythica Special Operations Arm Pads",
+    "icon": "icons/l4_arm_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1057,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1058,
+    "name": "NanoTech Trauma Arm Pads",
+    "icon": "icons/l4_arm_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1058,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1059,
+    "name": "Hypobaric Arm Pads",
+    "icon": "icons/l4_arm_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1059,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1060,
+    "name": "Delta Powered Arm Pads",
+    "icon": "icons/l4_arm_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1060,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1061,
+    "name": "PreMet Buffer Arm Pads",
+    "icon": "icons/l4_arm_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1061,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1062,
+    "name": "Dilatant 46b Arm Pads",
+    "icon": "icons/l4_arm_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1062,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1063,
+    "name": "Infensus Minimalist Arm Pads",
+    "icon": "icons/l4_arm_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1063,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 91,
+    "name": "Locans Ethereal Arm Pads",
+    "icon": "icons/l5_arm_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 118,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1064,
+    "name": "Pythica Mobile Infantry Arm Pads",
+    "icon": "icons/l5_arm_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1064,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1065,
+    "name": "NanoTech Scout Arm Pads",
+    "icon": "icons/l5_arm_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1065,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1066,
+    "name": "Metabolic Arm Pads",
+    "icon": "icons/l5_arm_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1066,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1067,
+    "name": "Havoc Powered Arm Pads",
+    "icon": "icons/l5_arm_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1067,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1068,
+    "name": "PreMet Contact Arm Pads",
+    "icon": "icons/l5_arm_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1068,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1069,
+    "name": "Aramid Modified Arm Pads",
+    "icon": "icons/l5_arm_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1069,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1070,
+    "name": "Infensus Shock Arm Pads",
+    "icon": "icons/l5_arm_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1070,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 92,
+    "name": "Locans Patrol Arm Pads",
+    "icon": "icons/l6_arm_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 119,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1071,
+    "name": "Pythica S1 Arm Pads",
+    "icon": "icons/l6_arm_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1071,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1072,
+    "name": "NanoTech Voltaic Arm Pads",
+    "icon": "icons/l6_arm_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1072,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1073,
+    "name": "Venom Arm Pads",
+    "icon": "icons/l6_arm_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1073,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1074,
+    "name": "Firstborn Powered Arm Pads",
+    "icon": "icons/l6_arm_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1074,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1075,
+    "name": "PreMet Collision Arm Pads",
+    "icon": "icons/l6_arm_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1075,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1076,
+    "name": "Dilatant 50b Arm Pads",
+    "icon": "icons/l6_arm_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1076,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1077,
+    "name": "Infensus X1 Assault Arm Pads",
+    "icon": "icons/l6_arm_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1077,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 93,
+    "name": "Locans Pressured Arm Pads",
+    "icon": "icons/l7_arm_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 120,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1078,
+    "name": "Pythica Sustained Battle Arm Pads",
+    "icon": "icons/l7_arm_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1078,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1079,
+    "name": "NanoTech Cognizant Arm Pads",
+    "icon": "icons/l7_arm_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1079,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1080,
+    "name": "Detox Arm Pads",
+    "icon": "icons/l7_arm_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1080,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1081,
+    "name": "Legionnaire Powered Arm Pads",
+    "icon": "icons/l7_arm_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1081,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1082,
+    "name": "PreMet Impact Arm Pads",
+    "icon": "icons/l7_arm_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1082,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1083,
+    "name": "Aramid Basic Arm Pads",
+    "icon": "icons/l7_arm_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1083,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1084,
+    "name": "Infensus Heavy Arm Pads",
+    "icon": "icons/l7_arm_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1084,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 94,
+    "name": "XenoTech Expeditionary Arm Pads",
+    "icon": "icons/l9_arm_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 121,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 21,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 23,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 95,
+    "name": "Tactical Systems Torso Armor",
+    "icon": "icons/l1_torso_armor.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 122,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 96,
+    "name": "Advanced Civilian Torso Armor",
+    "icon": "icons/l2_torso_armor.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 123,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 98,
+    "name": "MT-27 Ballistics Torso Armor",
+    "icon": "icons/l3_torso_armor.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 124,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 99,
+    "name": "Locans Defense Torso Armor",
+    "icon": "icons/l4_torso_armor_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 125,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1085,
+    "name": "Pythica Special Operations Torso Armor",
+    "icon": "icons/l4_torso_armor_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1085,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1086,
+    "name": "NanoTech Trauma Torso Armor",
+    "icon": "icons/l4_torso_armor_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1086,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1087,
+    "name": "Hypobaric Torso Armor",
+    "icon": "icons/l4_torso_armor_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1087,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1088,
+    "name": "Delta Powered Torso Armor",
+    "icon": "icons/l4_torso_armor_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1088,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1089,
+    "name": "PreMet Buffer Torso Armor",
+    "icon": "icons/l4_torso_armor_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1089,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1090,
+    "name": "Dilatant 46b Torso Armor",
+    "icon": "icons/l4_torso_armor_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1090,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1091,
+    "name": "Infensus Minimalist Torso Armor",
+    "icon": "icons/l4_torso_armor_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1091,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 100,
+    "name": "Locans Ethereal Torso Armor",
+    "icon": "icons/l5_torso_armor_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 126,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1092,
+    "name": "Pythica Mobile Infantry Torso Armor",
+    "icon": "icons/l5_torso_armor_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1092,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1093,
+    "name": "NanoTech Scout Torso Armor",
+    "icon": "icons/l5_torso_armor_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1093,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1094,
+    "name": "Metabolic Torso Armor",
+    "icon": "icons/l5_torso_armor_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1094,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1095,
+    "name": "Havoc Powered Torso Armor",
+    "icon": "icons/l5_torso_armor_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1095,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1096,
+    "name": "PreMet Contact Torso Armor",
+    "icon": "icons/l5_torso_armor_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1096,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1097,
+    "name": "Aramid Modified Torso Armor",
+    "icon": "icons/l5_torso_armor_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1097,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1098,
+    "name": "Infensus Shock Torso Armor",
+    "icon": "icons/l5_torso_armor_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1098,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 3
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 101,
+    "name": "Locans Patrol Torso Armor",
+    "icon": "icons/l6_torso_armor_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 127,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1099,
+    "name": "Pythica S1 Torso Armor",
+    "icon": "icons/l6_torso_armor_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1099,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1100,
+    "name": "NanoTech Voltaic Torso Armor",
+    "icon": "icons/l6_torso_armor_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1100,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1101,
+    "name": "Venom Torso Armor",
+    "icon": "icons/l6_torso_armor_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1101,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1102,
+    "name": "Firstborn Powered Torso Armor",
+    "icon": "icons/l6_torso_armor_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1102,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1103,
+    "name": "PreMet Collision Torso Armor",
+    "icon": "icons/l6_torso_armor_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1103,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1104,
+    "name": "Dilatant 50b Torso Armor",
+    "icon": "icons/l6_torso_armor_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1104,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1105,
+    "name": "Infensus X1 Assault Torso Armor",
+    "icon": "icons/l6_torso_armor_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1105,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 102,
+    "name": "Locans Pressured Torso Armor",
+    "icon": "icons/l7_torso_armor_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 128,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1106,
+    "name": "Pythica Sustained Battle Torso Armor",
+    "icon": "icons/l7_torso_armor_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1106,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1107,
+    "name": "NanoTech Cognizant Torso Armor",
+    "icon": "icons/l7_torso_armor_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1107,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1108,
+    "name": "Detox Torso Armor",
+    "icon": "icons/l7_torso_armor_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1108,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1109,
+    "name": "Legionnaire Powered Torso Armor",
+    "icon": "icons/l7_torso_armor_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1109,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1110,
+    "name": "PreMet Impact Torso Armor",
+    "icon": "icons/l7_torso_armor_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1110,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1111,
+    "name": "Aramid Basic Torso Armor",
+    "icon": "icons/l7_torso_armor_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1111,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1112,
+    "name": "Infensus Heavy Torso Armor",
+    "icon": "icons/l7_torso_armor_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1112,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 103,
+    "name": "XenoTech Expeditionary Torso Armor",
+    "icon": "icons/l9_torso_armor.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 129,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 21,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 23,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 104,
+    "name": "Tactical Systems Leg Pads",
+    "icon": "icons/l1_leg_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 130,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 105,
+    "name": "Advanced Civilian Leg Pads",
+    "icon": "icons/l2_leg_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 131,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 106,
+    "name": "MT-27 Ballistics Leg Pads",
+    "icon": "icons/l3_leg_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 132,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 107,
+    "name": "Locans Defense Leg Pads",
+    "icon": "icons/l4_leg_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 134,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1113,
+    "name": "Pythica Special Operations Leg Pads",
+    "icon": "icons/l4_leg_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1113,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1114,
+    "name": "NanoTech Trauma Leg Pads",
+    "icon": "icons/l4_leg_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1114,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1115,
+    "name": "Hypobaric Leg Pads",
+    "icon": "icons/l4_leg_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1115,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1116,
+    "name": "Delta Powered Leg Pads",
+    "icon": "icons/l4_leg_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1116,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1117,
+    "name": "PreMet Buffer Leg Pads",
+    "icon": "icons/l4_leg_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1117,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1118,
+    "name": "Dilatant 46b Leg Pads",
+    "icon": "icons/l4_leg_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1118,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1119,
+    "name": "Infensus Minimalist Leg Pads",
+    "icon": "icons/l4_leg_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1119,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 108,
+    "name": "Locans Ethereal Leg Pads",
+    "icon": "icons/l5_leg_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 133,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1120,
+    "name": "Pythica Mobile Infantry Leg Pads",
+    "icon": "icons/l5_leg_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1120,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1121,
+    "name": "NanoTech Scout Leg Pads",
+    "icon": "icons/l5_leg_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1121,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1122,
+    "name": "Metabolic Leg Pads",
+    "icon": "icons/l5_leg_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1122,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1123,
+    "name": "Havoc Powered Leg Pads",
+    "icon": "icons/l5_leg_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1123,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1124,
+    "name": "PreMet Contact Leg Pads",
+    "icon": "icons/l5_leg_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1124,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1125,
+    "name": "Aramid Modified Leg Pads",
+    "icon": "icons/l5_leg_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1125,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1126,
+    "name": "Infensus Shock Leg Pads",
+    "icon": "icons/l5_leg_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1126,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 108,
+    "name": "Locans Patrol Leg Pads",
+    "icon": "icons/l6_leg_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 134,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1127,
+    "name": "Pythica S1 Leg Pads",
+    "icon": "icons/l6_leg_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1127,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1128,
+    "name": "NanoTech Voltaic Leg Pads",
+    "icon": "icons/l6_leg_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1128,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1129,
+    "name": "Venom Leg Pads",
+    "icon": "icons/l6_leg_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1129,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1130,
+    "name": "Firstborn Powered Leg Pads",
+    "icon": "icons/l6_leg_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1130,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1131,
+    "name": "PreMet Collision Leg Pads",
+    "icon": "icons/l6_leg_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1131,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1132,
+    "name": "Dilatant 50b Leg Pads",
+    "icon": "icons/l6_leg_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1132,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1133,
+    "name": "Infensus X1 Assault Leg Pads",
+    "icon": "icons/l6_leg_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1133,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 109,
+    "name": "Locans Pressured Leg Pads",
+    "icon": "icons/l7_leg_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 135,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1134,
+    "name": "Pythica Sustained Battle Leg Pads",
+    "icon": "icons/l7_leg_pads_fdc.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1134,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1135,
+    "name": "NanoTech Cognizant Leg Pads",
+    "icon": "icons/l7_leg_pads_gom.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1135,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1136,
+    "name": "Detox Leg Pads",
+    "icon": "icons/l7_leg_pads_bos.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1136,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1137,
+    "name": "Legionnaire Powered Leg Pads",
+    "icon": "icons/l7_leg_pads_motb.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1137,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1138,
+    "name": "PreMet Impact Leg Pads",
+    "icon": "icons/l7_leg_pads_cmg.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1138,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1139,
+    "name": "Aramid Basic Leg Pads",
+    "icon": "icons/l7_leg_pads_ec.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1139,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1140,
+    "name": "Infensus Heavy Leg Pads",
+    "icon": "icons/l7_leg_pads_vi.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1140,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 110,
+    "name": "XenoTech Expeditionary Leg Pads",
+    "icon": "icons/l9_leg_pads.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 136,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 21,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 23,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 111,
+    "name": "Infostyle Gloves",
+    "icon": "icons/l1_gloves.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 137,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 6
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 112,
+    "name": "Envirotech Gloves",
+    "icon": "icons/l2_gloves.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 138,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 6
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 113,
+    "name": "Infusion Gloves",
+    "icon": "icons/l3_gloves.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 139,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 6
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 114,
+    "name": "Locans Defense Gloves",
+    "icon": "icons/l4_gloves_led.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 140,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1141,
+    "name": "Pythica Special Operations Gloves",
+    "icon": "icons/l4_gloves_fdc.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1141,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1142,
+    "name": "NanoTech Trauma Gloves",
+    "icon": "icons/l4_gloves_gom.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1142,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1143,
+    "name": "Hypobaric Gloves",
+    "icon": "icons/l4_gloves_bos.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1143,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1144,
+    "name": "Delta Powered Gloves",
+    "icon": "icons/l4_gloves_motb.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1144,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1145,
+    "name": "PreMet Buffer Gloves",
+    "icon": "icons/l4_gloves_cmg.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1145,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1146,
+    "name": "Dilatant 46b Gloves",
+    "icon": "icons/l4_gloves_ec.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1146,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1147,
+    "name": "Infensus Minimalist Gloves",
+    "icon": "icons/l4_gloves_vi.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1147,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 4,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 115,
+    "name": "Locans Ethereal Gloves",
+    "icon": "icons/l5_gloves_led.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 141,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1148,
+    "name": "Pythica Mobile Infantry Gloves",
+    "icon": "icons/l5_gloves_fdc.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1148,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1149,
+    "name": "NanoTech Scout Gloves",
+    "icon": "icons/l5_gloves_gom.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1149,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1150,
+    "name": "Metabolic Gloves",
+    "icon": "icons/l5_gloves_bos.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1150,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1151,
+    "name": "Havoc Powered Gloves",
+    "icon": "icons/l5_gloves_motb.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1151,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1152,
+    "name": "PreMet Contact Gloves",
+    "icon": "icons/l5_gloves_cmg.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1152,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1153,
+    "name": "Aramid Modified Gloves",
+    "icon": "icons/l5_gloves_ec.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1153,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1154,
+    "name": "Infensus Shock Gloves",
+    "icon": "icons/l5_gloves_vi.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1154,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 116,
+    "name": "Locans Patrol Gloves",
+    "icon": "icons/l6_gloves_led.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 142,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1155,
+    "name": "Pythica S1 Gloves",
+    "icon": "icons/l6_gloves_fdc.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1155,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1156,
+    "name": "NanoTech Voltaic Gloves",
+    "icon": "icons/l6_gloves_gom.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1156,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1157,
+    "name": "Venom Gloves",
+    "icon": "icons/l6_gloves_bos.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1157,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1158,
+    "name": "Firstborn Powered Gloves",
+    "icon": "icons/l6_gloves_motb.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1158,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1159,
+    "name": "PreMet Collision Gloves",
+    "icon": "icons/l6_gloves_cmg.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1159,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1160,
+    "name": "Dilatant 50b Gloves",
+    "icon": "icons/l6_gloves_ec.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1160,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1161,
+    "name": "Infensus X1 Assault Gloves",
+    "icon": "icons/l6_gloves_vi.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1161,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 6,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 117,
+    "name": "Locans Pressured Gloves",
+    "icon": "icons/l7_gloves_led.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 143,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 1162,
+    "name": "Pythica Sustained Battle Gloves",
+    "icon": "icons/l7_gloves_fdc.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1162,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "FDC"
+  },
+  {
+    "id": 1163,
+    "name": "NanoTech Cognizant Gloves",
+    "icon": "icons/l7_gloves_gom.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1163,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "GOM"
+  },
+  {
+    "id": 1164,
+    "name": "Detox Gloves",
+    "icon": "icons/l7_gloves_bos.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1164,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "BOS"
+  },
+  {
+    "id": 1165,
+    "name": "Legionnaire Powered Gloves",
+    "icon": "icons/l7_gloves_motb.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1165,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "MOTB"
+  },
+  {
+    "id": 1166,
+    "name": "PreMet Impact Gloves",
+    "icon": "icons/l7_gloves_cmg.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1166,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CMG"
+  },
+  {
+    "id": 1167,
+    "name": "Aramid Basic Gloves",
+    "icon": "icons/l7_gloves_ec.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1167,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "EC"
+  },
+  {
+    "id": 1168,
+    "name": "Infensus Heavy Gloves",
+    "icon": "icons/l7_gloves_vi.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 1168,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "VI"
+  },
+  {
+    "id": 118,
+    "name": "XenoTech Expeditionary Gloves",
+    "icon": "icons/l9_gloves.png",
+    "type": "Armor",
+    "genderneutral": false,
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 143,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 22,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 20,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "CIVILIAN"
+  },
+  {
+    "id": 119,
+    "name": "Locans Stabilized Helmet",
+    "icon": "icons/l8_helmet_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 144,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 6
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 120,
+    "name": "Locans Stabilized Shoulder Pads",
+    "icon": "icons/l8_shoulder_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 146,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 121,
+    "name": "Locans Stabilized Arm Pads",
+    "icon": "icons/l8_arm_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 147,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 121,
+    "name": "Locans Stabilized Torso Armor",
+    "icon": "icons/l8_torso_armor_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 147,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
+  },
+  {
+    "id": 122,
+    "name": "Locans Stabilized Leg Pads",
+    "icon": "icons/l8_leg_pads_led.png",
+    "type": "Armor",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "id": 148,
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ],
+    "faction": "LED"
   }
+
 ]
