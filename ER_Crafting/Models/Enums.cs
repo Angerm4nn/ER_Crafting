@@ -19,6 +19,17 @@
             Weapon,
             Clothing
         }
-
+        public enum Faction
+        {
+            Civilian,
+            LED,
+            FDC,
+            GOM,
+            BOS,
+            MOTB,
+            CMG,
+            EC,
+            VI
+        }
     }
 }

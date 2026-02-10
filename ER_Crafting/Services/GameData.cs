@@ -48,7 +48,7 @@ namespace ER_Crafting.Services
         }
         #endregion
         #region RawMaterials
-        public void BuildRelations()
+        private void BuildRelations()
         {
             foreach (var item in _finalItems)
             {
@@ -104,12 +104,12 @@ namespace ER_Crafting.Services
                                                 }
                                             }
                                         }
-                                        if (nestedIngredient.Type == IngredientType.RawMaterial)
-                                        {
-                                            var nestedRawMaterial = GetRawMaterial(nestedIngredient.ItemId);
-                                            nestedRawMaterial.UsedInFinalItems.Add(item);
-                                            nestedRawMaterial.UsedInProductionComponents.Add(prodComponent);
-                                        }
+                                    }
+                                    if (nestedIngredient.Type == IngredientType.RawMaterial)
+                                    {
+                                        var nestedRawMaterial = GetRawMaterial(nestedIngredient.ItemId);
+                                        nestedRawMaterial.UsedInFinalItems.Add(item);
+                                        nestedRawMaterial.UsedInProductionComponents.Add(prodComponent);
                                     }
                                 }
                             }

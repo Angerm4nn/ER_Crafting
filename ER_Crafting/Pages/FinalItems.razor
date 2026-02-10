@@ -9,7 +9,6 @@
 {
     @* Detail view *@
     <button class="btn btn-secondary mb-3" @onclick="BackToList">Back To List</button>
-
     var item = _allItems.FirstOrDefault(i => i.Id == Id.Value);
     if (item != null)
     {
@@ -23,15 +22,75 @@
 else
 {
     @* List view *@
-    <div class="mb-3">
-        <label class="form-label">Filter by Type:</label>
-        <select class="form-select" @bind="_selectedType" @bind:after="OnTypeChanged">
-            <option value="">-- All Types --</option>
-            @foreach (var type in _availableTypes)
-            {
-                <option value="@type">@type</option>
-            }
-        </select>
+    <div class="mb-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Filters</h5>
+
+                @* Gender Toggle *@
+                <div class="mb-3">
+                    <label class="form-label">Gender:</label>
+                    <div class="btn-group" role="group">
+                        <button type="button"
+                                class="btn @(_filterSettings.IsFemale ? "btn-outline-primary" : "btn-primary")"
+                                @onclick="() => SetGender(false)">
+                            Male
+                        </button>
+                        <button type="button"
+                                class="btn @(_filterSettings.IsFemale ? "btn-primary" : "btn-outline-primary")"
+                                @onclick="() => SetGender(true)">
+                            Female
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <label class="form-label">Filter by Name:</label>
+                        <input type="text"
+                               class="form-control"
+                               placeholder="Search by name..."
+                               @bind="_filterSettings.SearchName"
+                               @bind:event="oninput"
+                               @bind:after="OnNameChanged" />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label class="form-label">Filter by Type:</label>
+                        <select class="form-select" @bind="_filterSettings.SelectedType" @bind:after="OnTypeChanged">
+                            <option value="">-- All Types --</option>
+                            @foreach (var type in _availableTypes)
+                            {
+                                <option value="@type">@type</option>
+                            }
+                        </select>
+                    </div>
+
+                    @if (_filterSettings.SelectedType == "Armor")
+                    {
+                        <div class="col-md-4">
+                            <label class="form-label">Filter by Faction:</label>
+                            <select class="form-select" @bind="_filterSettings.SelectedFaction" @bind:after="OnFactionChanged">
+                                <option value="">-- All Factions --</option>
+                                @foreach (var faction in _availableFactions)
+                                {
+                                    <option value="@((int)faction)">@faction</option>
+                                }
+                            </select>
+                        </div>
+                    }
+                </div>
+
+                @if (!string.IsNullOrEmpty(_filterSettings.SearchName) ||
+                            !string.IsNullOrEmpty(_filterSettings.SelectedType) ||
+                            !string.IsNullOrEmpty(_filterSettings.SelectedFaction))
+                {
+                    <button class="btn btn-outline-secondary btn-sm mt-2" @onclick="ClearFilters">
+                        Clear Filters
+                    </button>
+                }
+            </div>
+        </div>
     </div>
 
     <p>Found @_filteredItems.Count items</p>
@@ -39,10 +98,24 @@ else
     <div class="row">
         @foreach (var item in _filteredItems)
         {
-            <div class="col-md-3 mb-2">
-                <FinalItemCard Item="@item"
-                               OnClick="@(() => NavigationManager.NavigateTo($"finalitems/{item.Id}"))" />
-            </div>
+            @if (_filterSettings.SelectedType == "Armor" && !string.IsNullOrEmpty(_filterSettings.SelectedFaction))
+            {
+                var selectedFaction = (Faction)int.Parse(_filterSettings.SelectedFaction);
+                var columnClass = selectedFaction == Faction.Civilian ? "col-md-3" : "";
+                var customStyle = selectedFaction != Faction.Civilian ? "width: 20%; flex: 0 0 20%;" : "";
+
+                <div class="@columnClass mb-2" style="@customStyle">
+                    <FinalItemCard Item="@item"
+                                   OnClick="@(() => NavigationManager.NavigateTo($"finalitems/{item.Id}"))" />
+                </div>
+            }
+            else
+            {
+                <div class="col-md-3 mb-2">
+                    <FinalItemCard Item="@item"
+                                   OnClick="@(() => NavigationManager.NavigateTo($"finalitems/{item.Id}"))" />
+                </div>
+            }
         }
     </div>
 }
@@ -54,7 +127,8 @@ else
     private List<FinalItem> _allItems = new();
     private List<FinalItem> _filteredItems = new();
     private List<string> _availableTypes = new();
-    private string _selectedType = "";
+    private List<Faction> _availableFactions = new();
+    private FilterSettings _filterSettings = new();
 
     protected override void OnInitialized()
     {
@@ -66,22 +140,98 @@ else
             .Distinct()
             .OrderBy(t => t)
             .ToList();
+
+        _availableFactions = Enum.GetValues<Faction>()
+            .OrderBy(f => f.ToString())
+            .ToList();
+    }
+
+    private void SetGender(bool isFemale)
+    {
+        _filterSettings.IsFemale = isFemale;
+
+        foreach (var item in _allItems.Where(i => !i.GenderNeutral))
+        {
+            if (isFemale)
+            {
+                if (!item.Icon.Contains("_female"))
+                {
+                    item.Icon = item.Icon.Replace(".png", "_female.png");
+                }
+            }
+            else
+            {
+                item.Icon = item.Icon.Replace("_female.png", ".png");
+            }
+        }
+
+        StateHasChanged();
+    }
+    private void OnNameChanged()
+    {
+        ApplyFilters();
     }
 
     private void OnTypeChanged()
     {
-        if (string.IsNullOrEmpty(_selectedType))
+        if (_filterSettings.SelectedType != "Armor")
         {
-            _filteredItems = _allItems;
+            _filterSettings.SelectedFaction = "";
         }
-        else
+
+        ApplyFilters();
+    }
+
+    private void OnFactionChanged()
+    {
+        ApplyFilters();
+    }
+
+    private void ApplyFilters()
+    {
+        _filteredItems = _allItems;
+
+        if (!string.IsNullOrEmpty(_filterSettings.SearchName))
         {
-            _filteredItems = _allItems.Where(i => i.Type.ToString() == _selectedType).ToList();
+            _filteredItems = _filteredItems
+                .Where(i => i.Name.Contains(_filterSettings.SearchName, StringComparison.OrdinalIgnoreCase))
+                .ToList();
         }
+
+        if (!string.IsNullOrEmpty(_filterSettings.SelectedType))
+        {
+            _filteredItems = _filteredItems
+                .Where(i => i.Type.ToString() == _filterSettings.SelectedType)
+                .ToList();
+        }
+
+        if (_filterSettings.SelectedType == "Armor" && !string.IsNullOrEmpty(_filterSettings.SelectedFaction))
+        {
+            var selectedFaction = (Faction)int.Parse(_filterSettings.SelectedFaction);
+            _filteredItems = _filteredItems
+                .Where(i => i.Faction == selectedFaction)
+                .ToList();
+        }
+    }
+
+    private void ClearFilters()
+    {
+        _filterSettings.SearchName = "";
+        _filterSettings.SelectedType = "";
+        _filterSettings.SelectedFaction = "";
+        ApplyFilters();
     }
 
     private void BackToList()
     {
         NavigationManager.NavigateTo("finalitems");
+    }
+
+    public class FilterSettings
+    {
+        public string SearchName { get; set; } = "";
+        public string SelectedType { get; set; } = "";
+        public string SelectedFaction { get; set; } = "";
+        public bool IsFemale { get; set; } = false;
     }
 }
