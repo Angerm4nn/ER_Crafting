@@ -25,6 +25,9 @@ jobs:
       - name: Set base href for GitHub Pages
         run: |
           sed -i 's|<base href="/" />|<base href="/ER_Crafting/" />|' release/wwwroot/ER_Crafting/index.html
+
+      - name: Change base-tag in index.html from / to /ER_Crafting/
+        run: sed -i 's/<base href="\/" \/>/<base href="\/ER_Crafting\/" \/>/g' release/wwwroot/index.html
       
       - name: SPA routing fix
         run: |
