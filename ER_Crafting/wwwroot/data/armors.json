@@ -1,7 +1,7 @@
 ﻿[
   {
     "name": "Tactical Systems Helmet",
-    "icon": "/icons/armors/l1_helmet.png",
+    "icon": "icons/armors/l1_helmet.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -48,7 +48,7 @@
   },
   {
     "name": "Advanced Civilian Helmet",
-    "icon": "/icons/armors/l2_helmet.png",
+    "icon": "icons/armors/l2_helmet.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -95,7 +95,7 @@
   },
   {
     "name": "MT-27 Ballistics Helmet",
-    "icon": "/icons/armors/l3_helmet.png",
+    "icon": "icons/armors/l3_helmet.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -142,7 +142,7 @@
   },
   {
     "name": "Locans Defense Helmet",
-    "icon": "/icons/armors/l4_helmet_led.png",
+    "icon": "icons/armors/l4_helmet_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -189,7 +189,7 @@
   },
   {
     "name": "Pythica Special Operations Helmet",
-    "icon": "/icons/armors/l4_helmet_fdc.png",
+    "icon": "icons/armors/l4_helmet_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -236,7 +236,7 @@
   },
   {
     "name": "NanoTech Trauma Helmet",
-    "icon": "/icons/armors/l4_helmet_gom.png",
+    "icon": "icons/armors/l4_helmet_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -283,7 +283,7 @@
   },
   {
     "name": "Hypobaric Helmet",
-    "icon": "/icons/armors/l4_helmet_bos.png",
+    "icon": "icons/armors/l4_helmet_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -330,7 +330,7 @@
   },
   {
     "name": "Delta Powered Helmet",
-    "icon": "/icons/armors/l4_helmet_motb.png",
+    "icon": "icons/armors/l4_helmet_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -377,7 +377,7 @@
   },
   {
     "name": "PreMet Buffer Helmet",
-    "icon": "/icons/armors/l4_helmet_cmg.png",
+    "icon": "icons/armors/l4_helmet_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -424,7 +424,7 @@
   },
   {
     "name": "Dilatant 46b Helmet",
-    "icon": "/icons/armors/l4_helmet_ec.png",
+    "icon": "icons/armors/l4_helmet_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -471,7 +471,7 @@
   },
   {
     "name": "Infensus Minimalist Helmet",
-    "icon": "/icons/armors/l4_helmet_vi.png",
+    "icon": "icons/armors/l4_helmet_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -518,7 +518,7 @@
   },
   {
     "name": "Locans Ethereal Helmet",
-    "icon": "/icons/armors/l5_helmet_led.png",
+    "icon": "icons/armors/l5_helmet_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -565,7 +565,7 @@
   },
   {
     "name": "Pythica Mobile Infantry Helmet",
-    "icon": "/icons/armors/l5_helmet_fdc.png",
+    "icon": "icons/armors/l5_helmet_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -612,7 +612,7 @@
   },
   {
     "name": "NanoTech Scout Helmet",
-    "icon": "/icons/armors/l5_helmet_gom.png",
+    "icon": "icons/armors/l5_helmet_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -659,7 +659,7 @@
   },
   {
     "name": "Metabolic Helmet",
-    "icon": "/icons/armors/l5_helmet_bos.png",
+    "icon": "icons/armors/l5_helmet_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -706,7 +706,7 @@
   },
   {
     "name": "Havoc Powered Helmet",
-    "icon": "/icons/armors/l5_helmet_motb.png",
+    "icon": "icons/armors/l5_helmet_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -753,7 +753,7 @@
   },
   {
     "name": "PreMet Contact Helmet",
-    "icon": "/icons/armors/l5_helmet_cmg.png",
+    "icon": "icons/armors/l5_helmet_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -800,7 +800,7 @@
   },
   {
     "name": "Aramid Modified Helmet",
-    "icon": "/icons/armors/l5_helmet_ec.png",
+    "icon": "icons/armors/l5_helmet_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -847,7 +847,7 @@
   },
   {
     "name": "Infensus Shock Helmet",
-    "icon": "/icons/armors/l5_helmet_vi.png",
+    "icon": "icons/armors/l5_helmet_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -894,7 +894,7 @@
   },
   {
     "name": "Locans Patrol Helmet",
-    "icon": "/icons/armors/l6_helmet_led.png",
+    "icon": "icons/armors/l6_helmet_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -946,7 +946,7 @@
   },
   {
     "name": "Pythica S1 Helmet",
-    "icon": "/icons/armors/l6_helmet_fdc.png",
+    "icon": "icons/armors/l6_helmet_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -998,7 +998,7 @@
   },
   {
     "name": "NanoTech Voltaic Helmet",
-    "icon": "/icons/armors/l6_helmet_gom.png",
+    "icon": "icons/armors/l6_helmet_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1050,7 +1050,7 @@
   },
   {
     "name": "Venom Helmet",
-    "icon": "/icons/armors/l6_helmet_bos.png",
+    "icon": "icons/armors/l6_helmet_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1102,7 +1102,7 @@
   },
   {
     "name": "Firstborn Powered Helmet",
-    "icon": "/icons/armors/l6_helmet_motb.png",
+    "icon": "icons/armors/l6_helmet_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1154,7 +1154,7 @@
   },
   {
     "name": "PreMet Collision Helmet",
-    "icon": "/icons/armors/l6_helmet_cmg.png",
+    "icon": "icons/armors/l6_helmet_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1206,7 +1206,7 @@
   },
   {
     "name": "Dilatant 50b Helmet",
-    "icon": "/icons/armors/l6_helmet_ec.png",
+    "icon": "icons/armors/l6_helmet_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1258,7 +1258,7 @@
   },
   {
     "name": "Infensus X1 Assault Helmet",
-    "icon": "/icons/armors/l6_helmet_vi.png",
+    "icon": "icons/armors/l6_helmet_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1310,7 +1310,7 @@
   },
   {
     "name": "Locans Pressured Helmet",
-    "icon": "/icons/armors/l7_helmet_led.png",
+    "icon": "icons/armors/l7_helmet_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1357,7 +1357,7 @@
   },
   {
     "name": "Pythica Sustained Battle Helmet",
-    "icon": "/icons/armors/l7_helmet_fdc.png",
+    "icon": "icons/armors/l7_helmet_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1404,7 +1404,7 @@
   },
   {
     "name": "NanoTech Cognizant Helmet",
-    "icon": "/icons/armors/l7_helmet_gom.png",
+    "icon": "icons/armors/l7_helmet_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1451,7 +1451,7 @@
   },
   {
     "name": "Detox Helmet",
-    "icon": "/icons/armors/l7_helmet_bos.png",
+    "icon": "icons/armors/l7_helmet_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1498,7 +1498,7 @@
   },
   {
     "name": "Legionnaire Powered Helmet",
-    "icon": "/icons/armors/l7_helmet_motb.png",
+    "icon": "icons/armors/l7_helmet_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1545,7 +1545,7 @@
   },
   {
     "name": "PreMet Impact Helmet",
-    "icon": "/icons/armors/l7_helmet_cmg.png",
+    "icon": "icons/armors/l7_helmet_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1592,7 +1592,7 @@
   },
   {
     "name": "Aramid Basic Helmet",
-    "icon": "/icons/armors/l7_helmet_ec.png",
+    "icon": "icons/armors/l7_helmet_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1639,7 +1639,7 @@
   },
   {
     "name": "Infensus Heavy Helmet",
-    "icon": "/icons/armors/l7_helmet_vi.png",
+    "icon": "icons/armors/l7_helmet_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1686,7 +1686,7 @@
   },
   {
     "name": "XenoTech Expeditionary Helmet",
-    "icon": "/icons/armors/l9_helmet.png",
+    "icon": "icons/armors/l9_helmet.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1733,7 +1733,7 @@
   },
   {
     "name": "Tactical Systems Shoulder Pads",
-    "icon": "/icons/armors/l1_shoulder_pads.png",
+    "icon": "icons/armors/l1_shoulder_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1780,7 +1780,7 @@
   },
   {
     "name": "Advanced Civilian Shoulder Pads",
-    "icon": "/icons/armors/l2_shoulder_pads.png",
+    "icon": "icons/armors/l2_shoulder_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1827,7 +1827,7 @@
   },
   {
     "name": "MT-27 Ballistics Shoulder Pads",
-    "icon": "/icons/armors/l3_shoulder_pads.png",
+    "icon": "icons/armors/l3_shoulder_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1874,7 +1874,7 @@
   },
   {
     "name": "Locans Defense Shoulder Pads",
-    "icon": "/icons/armors/l4_shoulder_pads_led.png",
+    "icon": "icons/armors/l4_shoulder_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1921,7 +1921,7 @@
   },
   {
     "name": "Pythica Special Operations Shoulder Pads",
-    "icon": "/icons/armors/l4_shoulder_pads_fdc.png",
+    "icon": "icons/armors/l4_shoulder_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -1968,7 +1968,7 @@
   },
   {
     "name": "NanoTech Trauma Shoulder Pads",
-    "icon": "/icons/armors/l4_shoulder_pads_gom.png",
+    "icon": "icons/armors/l4_shoulder_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2015,7 +2015,7 @@
   },
   {
     "name": "Hypobaric Shoulder Pads",
-    "icon": "/icons/armors/l4_shoulder_pads_bos.png",
+    "icon": "icons/armors/l4_shoulder_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2062,7 +2062,7 @@
   },
   {
     "name": "Delta Powered Shoulder Pads",
-    "icon": "/icons/armors/l4_shoulder_pads_motb.png",
+    "icon": "icons/armors/l4_shoulder_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2109,7 +2109,7 @@
   },
   {
     "name": "PreMet Buffer Shoulder Pads",
-    "icon": "/icons/armors/l4_shoulder_pads_cmg.png",
+    "icon": "icons/armors/l4_shoulder_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2156,7 +2156,7 @@
   },
   {
     "name": "Dilatant 46b Shoulder Pads",
-    "icon": "/icons/armors/l4_shoulder_pads_ec.png",
+    "icon": "icons/armors/l4_shoulder_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2203,7 +2203,7 @@
   },
   {
     "name": "Infensus Minimalist Shoulder Pads",
-    "icon": "/icons/armors/l4_shoulder_pads_vi.png",
+    "icon": "icons/armors/l4_shoulder_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2250,7 +2250,7 @@
   },
   {
     "name": "Locans Ethereal Shoulder Pads",
-    "icon": "/icons/armors/l5_shoulder_pads_led.png",
+    "icon": "icons/armors/l5_shoulder_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2297,7 +2297,7 @@
   },
   {
     "name": "Pythica Mobile Infantry Shoulder Pads",
-    "icon": "/icons/armors/l5_shoulder_pads_fdc.png",
+    "icon": "icons/armors/l5_shoulder_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2344,7 +2344,7 @@
   },
   {
     "name": "NanoTech Scout Shoulder Pads",
-    "icon": "/icons/armors/l5_shoulder_pads_gom.png",
+    "icon": "icons/armors/l5_shoulder_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2391,7 +2391,7 @@
   },
   {
     "name": "Metabolic Shoulder Pads",
-    "icon": "/icons/armors/l5_shoulder_pads_bos.png",
+    "icon": "icons/armors/l5_shoulder_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2438,7 +2438,7 @@
   },
   {
     "name": "Havoc Powered Shoulder Pads",
-    "icon": "/icons/armors/l5_shoulder_pads_motb.png",
+    "icon": "icons/armors/l5_shoulder_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2485,7 +2485,7 @@
   },
   {
     "name": "PreMet Contact Shoulder Pads",
-    "icon": "/icons/armors/l5_shoulder_pads_cmg.png",
+    "icon": "icons/armors/l5_shoulder_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2532,7 +2532,7 @@
   },
   {
     "name": "Aramid Modified Shoulder Pads",
-    "icon": "/icons/armors/l5_shoulder_pads_ec.png",
+    "icon": "icons/armors/l5_shoulder_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2579,7 +2579,7 @@
   },
   {
     "name": "Infensus Shock Shoulder Pads",
-    "icon": "/icons/armors/l5_shoulder_pads_vi.png",
+    "icon": "icons/armors/l5_shoulder_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2626,7 +2626,7 @@
   },
   {
     "name": "Locans Patrol Shoulder Pads",
-    "icon": "/icons/armors/l6_shoulder_pads_led.png",
+    "icon": "icons/armors/l6_shoulder_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2673,7 +2673,7 @@
   },
   {
     "name": "Pythica S1 Shoulder Pads",
-    "icon": "/icons/armors/l6_shoulder_pads_fdc.png",
+    "icon": "icons/armors/l6_shoulder_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2720,7 +2720,7 @@
   },
   {
     "name": "NanoTech Voltaic Shoulder Pads",
-    "icon": "/icons/armors/l6_shoulder_pads_gom.png",
+    "icon": "icons/armors/l6_shoulder_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2767,7 +2767,7 @@
   },
   {
     "name": "Venom Shoulder Pads",
-    "icon": "/icons/armors/l6_shoulder_pads_bos.png",
+    "icon": "icons/armors/l6_shoulder_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2814,7 +2814,7 @@
   },
   {
     "name": "Firstborn Powered Shoulder Pads",
-    "icon": "/icons/armors/l6_shoulder_pads_motb.png",
+    "icon": "icons/armors/l6_shoulder_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2861,7 +2861,7 @@
   },
   {
     "name": "PreMet Collision Shoulder Pads",
-    "icon": "/icons/armors/l6_shoulder_pads_cmg.png",
+    "icon": "icons/armors/l6_shoulder_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2908,7 +2908,7 @@
   },
   {
     "name": "Dilatant 50b Shoulder Pads",
-    "icon": "/icons/armors/l6_shoulder_pads_ec.png",
+    "icon": "icons/armors/l6_shoulder_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -2955,7 +2955,7 @@
   },
   {
     "name": "Infensus X1 Assault Shoulder Pads",
-    "icon": "/icons/armors/l6_shoulder_pads_vi.png",
+    "icon": "icons/armors/l6_shoulder_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3002,7 +3002,7 @@
   },
   {
     "name": "Locans Pressured Shoulder Pads",
-    "icon": "/icons/armors/l7_shoulder_pads_led.png",
+    "icon": "icons/armors/l7_shoulder_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3049,7 +3049,7 @@
   },
   {
     "name": "Pythica Sustained Battle Shoulder Pads",
-    "icon": "/icons/armors/l7_shoulder_pads_fdc.png",
+    "icon": "icons/armors/l7_shoulder_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3096,7 +3096,7 @@
   },
   {
     "name": "NanoTech Cognizant Shoulder Pads",
-    "icon": "/icons/armors/l7_shoulder_pads_gom.png",
+    "icon": "icons/armors/l7_shoulder_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3143,7 +3143,7 @@
   },
   {
     "name": "Detox Shoulder Pads",
-    "icon": "/icons/armors/l7_shoulder_pads_bos.png",
+    "icon": "icons/armors/l7_shoulder_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3190,7 +3190,7 @@
   },
   {
     "name": "Legionnaire Powered Shoulder Pads",
-    "icon": "/icons/armors/l7_shoulder_pads_motb.png",
+    "icon": "icons/armors/l7_shoulder_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3237,7 +3237,7 @@
   },
   {
     "name": "PreMet Impact Shoulder Pads",
-    "icon": "/icons/armors/l7_shoulder_pads_cmg.png",
+    "icon": "icons/armors/l7_shoulder_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3284,7 +3284,7 @@
   },
   {
     "name": "Aramid Basic Shoulder Pads",
-    "icon": "/icons/armors/l7_shoulder_pads_ec.png",
+    "icon": "icons/armors/l7_shoulder_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3331,7 +3331,7 @@
   },
   {
     "name": "Infensus Heavy Shoulder Pads",
-    "icon": "/icons/armors/l7_shoulder_pads_vi.png",
+    "icon": "icons/armors/l7_shoulder_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3378,7 +3378,7 @@
   },
   {
     "name": "XenoTech Expeditionary Shoulder Pads",
-    "icon": "/icons/armors/l9_shoulder_pads.png",
+    "icon": "icons/armors/l9_shoulder_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3425,7 +3425,7 @@
   },
   {
     "name": "Tactical Systems Arm Pads",
-    "icon": "/icons/armors/l1_arm_pads.png",
+    "icon": "icons/armors/l1_arm_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3472,7 +3472,7 @@
   },
   {
     "name": "Advanced Civilian Arm Pads",
-    "icon": "/icons/armors/l2_arm_pads.png",
+    "icon": "icons/armors/l2_arm_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3519,7 +3519,7 @@
   },
   {
     "name": "MT-27 Ballistics Arm Pads",
-    "icon": "/icons/armors/l3_arm_pads.png",
+    "icon": "icons/armors/l3_arm_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3566,7 +3566,7 @@
   },
   {
     "name": "Locans Defense Arm Pads",
-    "icon": "/icons/armors/l4_arm_pads_led.png",
+    "icon": "icons/armors/l4_arm_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3613,7 +3613,7 @@
   },
   {
     "name": "Pythica Special Operations Arm Pads",
-    "icon": "/icons/armors/l4_arm_pads_fdc.png",
+    "icon": "icons/armors/l4_arm_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3660,7 +3660,7 @@
   },
   {
     "name": "NanoTech Trauma Arm Pads",
-    "icon": "/icons/armors/l4_arm_pads_gom.png",
+    "icon": "icons/armors/l4_arm_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3707,7 +3707,7 @@
   },
   {
     "name": "Hypobaric Arm Pads",
-    "icon": "/icons/armors/l4_arm_pads_bos.png",
+    "icon": "icons/armors/l4_arm_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3754,7 +3754,7 @@
   },
   {
     "name": "Delta Powered Arm Pads",
-    "icon": "/icons/armors/l4_arm_pads_motb.png",
+    "icon": "icons/armors/l4_arm_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3801,7 +3801,7 @@
   },
   {
     "name": "PreMet Buffer Arm Pads",
-    "icon": "/icons/armors/l4_arm_pads_cmg.png",
+    "icon": "icons/armors/l4_arm_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3848,7 +3848,7 @@
   },
   {
     "name": "Dilatant 46b Arm Pads",
-    "icon": "/icons/armors/l4_arm_pads_ec.png",
+    "icon": "icons/armors/l4_arm_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3895,7 +3895,7 @@
   },
   {
     "name": "Infensus Minimalist Arm Pads",
-    "icon": "/icons/armors/l4_arm_pads_vi.png",
+    "icon": "icons/armors/l4_arm_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3942,7 +3942,7 @@
   },
   {
     "name": "Locans Ethereal Arm Pads",
-    "icon": "/icons/armors/l5_arm_pads_led.png",
+    "icon": "icons/armors/l5_arm_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -3989,7 +3989,7 @@
   },
   {
     "name": "Pythica Mobile Infantry Arm Pads",
-    "icon": "/icons/armors/l5_arm_pads_fdc.png",
+    "icon": "icons/armors/l5_arm_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4036,7 +4036,7 @@
   },
   {
     "name": "NanoTech Scout Arm Pads",
-    "icon": "/icons/armors/l5_arm_pads_gom.png",
+    "icon": "icons/armors/l5_arm_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4083,7 +4083,7 @@
   },
   {
     "name": "Metabolic Arm Pads",
-    "icon": "/icons/armors/l5_arm_pads_bos.png",
+    "icon": "icons/armors/l5_arm_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4130,7 +4130,7 @@
   },
   {
     "name": "Havoc Powered Arm Pads",
-    "icon": "/icons/armors/l5_arm_pads_motb.png",
+    "icon": "icons/armors/l5_arm_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4177,7 +4177,7 @@
   },
   {
     "name": "PreMet Contact Arm Pads",
-    "icon": "/icons/armors/l5_arm_pads_cmg.png",
+    "icon": "icons/armors/l5_arm_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4224,7 +4224,7 @@
   },
   {
     "name": "Aramid Modified Arm Pads",
-    "icon": "/icons/armors/l5_arm_pads_ec.png",
+    "icon": "icons/armors/l5_arm_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4271,7 +4271,7 @@
   },
   {
     "name": "Infensus Shock Arm Pads",
-    "icon": "/icons/armors/l5_arm_pads_vi.png",
+    "icon": "icons/armors/l5_arm_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4318,7 +4318,7 @@
   },
   {
     "name": "Locans Patrol Arm Pads",
-    "icon": "/icons/armors/l6_arm_pads_led.png",
+    "icon": "icons/armors/l6_arm_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4365,7 +4365,7 @@
   },
   {
     "name": "Pythica S1 Arm Pads",
-    "icon": "/icons/armors/l6_arm_pads_fdc.png",
+    "icon": "icons/armors/l6_arm_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4412,7 +4412,7 @@
   },
   {
     "name": "NanoTech Voltaic Arm Pads",
-    "icon": "/icons/armors/l6_arm_pads_gom.png",
+    "icon": "icons/armors/l6_arm_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4459,7 +4459,7 @@
   },
   {
     "name": "Venom Arm Pads",
-    "icon": "/icons/armors/l6_arm_pads_bos.png",
+    "icon": "icons/armors/l6_arm_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4506,7 +4506,7 @@
   },
   {
     "name": "Firstborn Powered Arm Pads",
-    "icon": "/icons/armors/l6_arm_pads_motb.png",
+    "icon": "icons/armors/l6_arm_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4553,7 +4553,7 @@
   },
   {
     "name": "PreMet Collision Arm Pads",
-    "icon": "/icons/armors/l6_arm_pads_cmg.png",
+    "icon": "icons/armors/l6_arm_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4600,7 +4600,7 @@
   },
   {
     "name": "Dilatant 50b Arm Pads",
-    "icon": "/icons/armors/l6_arm_pads_ec.png",
+    "icon": "icons/armors/l6_arm_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4647,7 +4647,7 @@
   },
   {
     "name": "Infensus X1 Assault Arm Pads",
-    "icon": "/icons/armors/l6_arm_pads_vi.png",
+    "icon": "icons/armors/l6_arm_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4694,7 +4694,7 @@
   },
   {
     "name": "Locans Pressured Arm Pads",
-    "icon": "/icons/armors/l7_arm_pads_led.png",
+    "icon": "icons/armors/l7_arm_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4741,7 +4741,7 @@
   },
   {
     "name": "Pythica Sustained Battle Arm Pads",
-    "icon": "/icons/armors/l7_arm_pads_fdc.png",
+    "icon": "icons/armors/l7_arm_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4788,7 +4788,7 @@
   },
   {
     "name": "NanoTech Cognizant Arm Pads",
-    "icon": "/icons/armors/l7_arm_pads_gom.png",
+    "icon": "icons/armors/l7_arm_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4835,7 +4835,7 @@
   },
   {
     "name": "Detox Arm Pads",
-    "icon": "/icons/armors/l7_arm_pads_bos.png",
+    "icon": "icons/armors/l7_arm_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4882,7 +4882,7 @@
   },
   {
     "name": "Legionnaire Powered Arm Pads",
-    "icon": "/icons/armors/l7_arm_pads_motb.png",
+    "icon": "icons/armors/l7_arm_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4929,7 +4929,7 @@
   },
   {
     "name": "PreMet Impact Arm Pads",
-    "icon": "/icons/armors/l7_arm_pads_cmg.png",
+    "icon": "icons/armors/l7_arm_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -4976,7 +4976,7 @@
   },
   {
     "name": "Aramid Basic Arm Pads",
-    "icon": "/icons/armors/l7_arm_pads_ec.png",
+    "icon": "icons/armors/l7_arm_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5023,7 +5023,7 @@
   },
   {
     "name": "Infensus Heavy Arm Pads",
-    "icon": "/icons/armors/l7_arm_pads_vi.png",
+    "icon": "icons/armors/l7_arm_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5070,7 +5070,7 @@
   },
   {
     "name": "XenoTech Expeditionary Arm Pads",
-    "icon": "/icons/armors/l9_arm_pads.png",
+    "icon": "icons/armors/l9_arm_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5117,7 +5117,7 @@
   },
   {
     "name": "Tactical Systems Torso",
-    "icon": "/icons/armors/l1_torso.png",
+    "icon": "icons/armors/l1_torso.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5164,7 +5164,7 @@
   },
   {
     "name": "Advanced Civilian Torso",
-    "icon": "/icons/armors/l2_torso.png",
+    "icon": "icons/armors/l2_torso.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5211,7 +5211,7 @@
   },
   {
     "name": "MT-27 Ballistics Torso",
-    "icon": "/icons/armors/l3_torso.png",
+    "icon": "icons/armors/l3_torso.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5258,7 +5258,7 @@
   },
   {
     "name": "Locans Defense Torso",
-    "icon": "/icons/armors/l4_torso_led.png",
+    "icon": "icons/armors/l4_torso_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5305,7 +5305,7 @@
   },
   {
     "name": "Pythica Special Operations Torso",
-    "icon": "/icons/armors/l4_torso_fdc.png",
+    "icon": "icons/armors/l4_torso_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5352,7 +5352,7 @@
   },
   {
     "name": "NanoTech Trauma Torso",
-    "icon": "/icons/armors/l4_torso_gom.png",
+    "icon": "icons/armors/l4_torso_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5399,7 +5399,7 @@
   },
   {
     "name": "Hypobaric Torso",
-    "icon": "/icons/armors/l4_torso_bos.png",
+    "icon": "icons/armors/l4_torso_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5446,7 +5446,7 @@
   },
   {
     "name": "Delta Powered Torso",
-    "icon": "/icons/armors/l4_torso_motb.png",
+    "icon": "icons/armors/l4_torso_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5493,7 +5493,7 @@
   },
   {
     "name": "PreMet Buffer Torso",
-    "icon": "/icons/armors/l4_torso_cmg.png",
+    "icon": "icons/armors/l4_torso_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5540,7 +5540,7 @@
   },
   {
     "name": "Dilatant 46b Torso",
-    "icon": "/icons/armors/l4_torso_ec.png",
+    "icon": "icons/armors/l4_torso_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5587,7 +5587,7 @@
   },
   {
     "name": "Infensus Minimalist Torso",
-    "icon": "/icons/armors/l4_torso_vi.png",
+    "icon": "icons/armors/l4_torso_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5634,7 +5634,7 @@
   },
   {
     "name": "Locans Ethereal Torso",
-    "icon": "/icons/armors/l5_torso_led.png",
+    "icon": "icons/armors/l5_torso_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5681,7 +5681,7 @@
   },
   {
     "name": "Pythica Mobile Infantry Torso",
-    "icon": "/icons/armors/l5_torso_fdc.png",
+    "icon": "icons/armors/l5_torso_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5728,7 +5728,7 @@
   },
   {
     "name": "NanoTech Scout Torso",
-    "icon": "/icons/armors/l5_torso_gom.png",
+    "icon": "icons/armors/l5_torso_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5775,7 +5775,7 @@
   },
   {
     "name": "Metabolic Torso",
-    "icon": "/icons/armors/l5_torso_bos.png",
+    "icon": "icons/armors/l5_torso_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5822,7 +5822,7 @@
   },
   {
     "name": "Havoc Powered Torso",
-    "icon": "/icons/armors/l5_torso_motb.png",
+    "icon": "icons/armors/l5_torso_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5869,7 +5869,7 @@
   },
   {
     "name": "PreMet Contact Torso",
-    "icon": "/icons/armors/l5_torso_cmg.png",
+    "icon": "icons/armors/l5_torso_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5916,7 +5916,7 @@
   },
   {
     "name": "Aramid Modified Torso",
-    "icon": "/icons/armors/l5_torso_ec.png",
+    "icon": "icons/armors/l5_torso_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -5963,7 +5963,7 @@
   },
   {
     "name": "Infensus Shock Torso",
-    "icon": "/icons/armors/l5_torso_vi.png",
+    "icon": "icons/armors/l5_torso_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6010,7 +6010,7 @@
   },
   {
     "name": "Locans Patrol Torso",
-    "icon": "/icons/armors/l6_torso_led.png",
+    "icon": "icons/armors/l6_torso_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6062,7 +6062,7 @@
   },
   {
     "name": "Pythica S1 Torso",
-    "icon": "/icons/armors/l6_torso_fdc.png",
+    "icon": "icons/armors/l6_torso_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6114,7 +6114,7 @@
   },
   {
     "name": "NanoTech Voltaic Torso",
-    "icon": "/icons/armors/l6_torso_gom.png",
+    "icon": "icons/armors/l6_torso_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6166,7 +6166,7 @@
   },
   {
     "name": "Venom Torso",
-    "icon": "/icons/armors/l6_torso_bos.png",
+    "icon": "icons/armors/l6_torso_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6218,7 +6218,7 @@
   },
   {
     "name": "Firstborn Powered Torso",
-    "icon": "/icons/armors/l6_torso_motb.png",
+    "icon": "icons/armors/l6_torso_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6270,7 +6270,7 @@
   },
   {
     "name": "PreMet Collision Torso",
-    "icon": "/icons/armors/l6_torso_cmg.png",
+    "icon": "icons/armors/l6_torso_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6322,7 +6322,7 @@
   },
   {
     "name": "Dilatant 50b Torso",
-    "icon": "/icons/armors/l6_torso_ec.png",
+    "icon": "icons/armors/l6_torso_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6374,7 +6374,7 @@
   },
   {
     "name": "Infensus X1 Assault Torso",
-    "icon": "/icons/armors/l6_torso_vi.png",
+    "icon": "icons/armors/l6_torso_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6426,7 +6426,7 @@
   },
   {
     "name": "Locans Pressured Torso",
-    "icon": "/icons/armors/l7_torso_led.png",
+    "icon": "icons/armors/l7_torso_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6473,7 +6473,7 @@
   },
   {
     "name": "Pythica Sustained Battle Torso",
-    "icon": "/icons/armors/l7_torso_fdc.png",
+    "icon": "icons/armors/l7_torso_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6520,7 +6520,7 @@
   },
   {
     "name": "NanoTech Cognizant Torso",
-    "icon": "/icons/armors/l7_torso_gom.png",
+    "icon": "icons/armors/l7_torso_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6567,7 +6567,7 @@
   },
   {
     "name": "Detox Torso",
-    "icon": "/icons/armors/l7_torso_bos.png",
+    "icon": "icons/armors/l7_torso_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6614,7 +6614,7 @@
   },
   {
     "name": "Legionnaire Powered Torso",
-    "icon": "/icons/armors/l7_torso_motb.png",
+    "icon": "icons/armors/l7_torso_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6661,7 +6661,7 @@
   },
   {
     "name": "PreMet Impact Torso",
-    "icon": "/icons/armors/l7_torso_cmg.png",
+    "icon": "icons/armors/l7_torso_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6708,7 +6708,7 @@
   },
   {
     "name": "Aramid Basic Torso",
-    "icon": "/icons/armors/l7_torso_ec.png",
+    "icon": "icons/armors/l7_torso_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6755,7 +6755,7 @@
   },
   {
     "name": "Infensus Heavy Torso",
-    "icon": "/icons/armors/l7_torso_vi.png",
+    "icon": "icons/armors/l7_torso_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6802,7 +6802,7 @@
   },
   {
     "name": "XenoTech Expeditionary Torso",
-    "icon": "/icons/armors/l9_torso.png",
+    "icon": "icons/armors/l9_torso.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6849,7 +6849,7 @@
   },
   {
     "name": "Tactical Systems Leg Pads",
-    "icon": "/icons/armors/l1_leg_pads.png",
+    "icon": "icons/armors/l1_leg_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6896,7 +6896,7 @@
   },
   {
     "name": "Advanced Civilian Leg Pads",
-    "icon": "/icons/armors/l2_leg_pads.png",
+    "icon": "icons/armors/l2_leg_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6943,7 +6943,7 @@
   },
   {
     "name": "MT-27 Ballistics Leg Pads",
-    "icon": "/icons/armors/l3_leg_pads.png",
+    "icon": "icons/armors/l3_leg_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -6990,7 +6990,7 @@
   },
   {
     "name": "Locans Defense Leg Pads",
-    "icon": "/icons/armors/l4_leg_pads_led.png",
+    "icon": "icons/armors/l4_leg_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7037,7 +7037,7 @@
   },
   {
     "name": "Pythica Special Operations Leg Pads",
-    "icon": "/icons/armors/l4_leg_pads_fdc.png",
+    "icon": "icons/armors/l4_leg_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7084,7 +7084,7 @@
   },
   {
     "name": "NanoTech Trauma Leg Pads",
-    "icon": "/icons/armors/l4_leg_pads_gom.png",
+    "icon": "icons/armors/l4_leg_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7131,7 +7131,7 @@
   },
   {
     "name": "Hypobaric Leg Pads",
-    "icon": "/icons/armors/l4_leg_pads_bos.png",
+    "icon": "icons/armors/l4_leg_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7178,7 +7178,7 @@
   },
   {
     "name": "Delta Powered Leg Pads",
-    "icon": "/icons/armors/l4_leg_pads_motb.png",
+    "icon": "icons/armors/l4_leg_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7225,7 +7225,7 @@
   },
   {
     "name": "PreMet Buffer Leg Pads",
-    "icon": "/icons/armors/l4_leg_pads_cmg.png",
+    "icon": "icons/armors/l4_leg_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7272,7 +7272,7 @@
   },
   {
     "name": "Dilatant 46b Leg Pads",
-    "icon": "/icons/armors/l4_leg_pads_ec.png",
+    "icon": "icons/armors/l4_leg_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7319,7 +7319,7 @@
   },
   {
     "name": "Infensus Minimalist Leg Pads",
-    "icon": "/icons/armors/l4_leg_pads_vi.png",
+    "icon": "icons/armors/l4_leg_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7366,7 +7366,7 @@
   },
   {
     "name": "Locans Ethereal Leg Pads",
-    "icon": "/icons/armors/l5_leg_pads_led.png",
+    "icon": "icons/armors/l5_leg_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7413,7 +7413,7 @@
   },
   {
     "name": "Pythica Mobile Infantry Leg Pads",
-    "icon": "/icons/armors/l5_leg_pads_fdc.png",
+    "icon": "icons/armors/l5_leg_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7460,7 +7460,7 @@
   },
   {
     "name": "NanoTech Scout Leg Pads",
-    "icon": "/icons/armors/l5_leg_pads_gom.png",
+    "icon": "icons/armors/l5_leg_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7507,7 +7507,7 @@
   },
   {
     "name": "Metabolic Leg Pads",
-    "icon": "/icons/armors/l5_leg_pads_bos.png",
+    "icon": "icons/armors/l5_leg_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7554,7 +7554,7 @@
   },
   {
     "name": "Havoc Powered Leg Pads",
-    "icon": "/icons/armors/l5_leg_pads_motb.png",
+    "icon": "icons/armors/l5_leg_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7601,7 +7601,7 @@
   },
   {
     "name": "PreMet Contact Leg Pads",
-    "icon": "/icons/armors/l5_leg_pads_cmg.png",
+    "icon": "icons/armors/l5_leg_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7648,7 +7648,7 @@
   },
   {
     "name": "Aramid Modified Leg Pads",
-    "icon": "/icons/armors/l5_leg_pads_ec.png",
+    "icon": "icons/armors/l5_leg_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7695,7 +7695,7 @@
   },
   {
     "name": "Infensus Shock Leg Pads",
-    "icon": "/icons/armors/l5_leg_pads_vi.png",
+    "icon": "icons/armors/l5_leg_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7742,7 +7742,7 @@
   },
   {
     "name": "Locans Patrol Leg Pads",
-    "icon": "/icons/armors/l6_leg_pads_led.png",
+    "icon": "icons/armors/l6_leg_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7794,7 +7794,7 @@
   },
   {
     "name": "Pythica S1 Leg Pads",
-    "icon": "/icons/armors/l6_leg_pads_fdc.png",
+    "icon": "icons/armors/l6_leg_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7846,7 +7846,7 @@
   },
   {
     "name": "NanoTech Voltaic Leg Pads",
-    "icon": "/icons/armors/l6_leg_pads_gom.png",
+    "icon": "icons/armors/l6_leg_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7898,7 +7898,7 @@
   },
   {
     "name": "Venom Leg Pads",
-    "icon": "/icons/armors/l6_leg_pads_bos.png",
+    "icon": "icons/armors/l6_leg_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -7950,7 +7950,7 @@
   },
   {
     "name": "Firstborn Powered Leg Pads",
-    "icon": "/icons/armors/l6_leg_pads_motb.png",
+    "icon": "icons/armors/l6_leg_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8002,7 +8002,7 @@
   },
   {
     "name": "PreMet Collision Leg Pads",
-    "icon": "/icons/armors/l6_leg_pads_cmg.png",
+    "icon": "icons/armors/l6_leg_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8054,7 +8054,7 @@
   },
   {
     "name": "Dilatant 50b Leg Pads",
-    "icon": "/icons/armors/l6_leg_pads_ec.png",
+    "icon": "icons/armors/l6_leg_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8106,7 +8106,7 @@
   },
   {
     "name": "Infensus X1 Assault Leg Pads",
-    "icon": "/icons/armors/l6_leg_pads_vi.png",
+    "icon": "icons/armors/l6_leg_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8158,7 +8158,7 @@
   },
   {
     "name": "Locans Pressured Leg Pads",
-    "icon": "/icons/armors/l7_leg_pads_led.png",
+    "icon": "icons/armors/l7_leg_pads_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8205,7 +8205,7 @@
   },
   {
     "name": "Pythica Sustained Battle Leg Pads",
-    "icon": "/icons/armors/l7_leg_pads_fdc.png",
+    "icon": "icons/armors/l7_leg_pads_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8252,7 +8252,7 @@
   },
   {
     "name": "NanoTech Cognizant Leg Pads",
-    "icon": "/icons/armors/l7_leg_pads_gom.png",
+    "icon": "icons/armors/l7_leg_pads_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8299,7 +8299,7 @@
   },
   {
     "name": "Detox Leg Pads",
-    "icon": "/icons/armors/l7_leg_pads_bos.png",
+    "icon": "icons/armors/l7_leg_pads_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8346,7 +8346,7 @@
   },
   {
     "name": "Legionnaire Powered Leg Pads",
-    "icon": "/icons/armors/l7_leg_pads_motb.png",
+    "icon": "icons/armors/l7_leg_pads_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8393,7 +8393,7 @@
   },
   {
     "name": "PreMet Impact Leg Pads",
-    "icon": "/icons/armors/l7_leg_pads_cmg.png",
+    "icon": "icons/armors/l7_leg_pads_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8440,7 +8440,7 @@
   },
   {
     "name": "Aramid Basic Leg Pads",
-    "icon": "/icons/armors/l7_leg_pads_ec.png",
+    "icon": "icons/armors/l7_leg_pads_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8487,7 +8487,7 @@
   },
   {
     "name": "Infensus Heavy Leg Pads",
-    "icon": "/icons/armors/l7_leg_pads_vi.png",
+    "icon": "icons/armors/l7_leg_pads_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8534,7 +8534,7 @@
   },
   {
     "name": "XenoTech Expeditionary Leg Pads",
-    "icon": "/icons/armors/l9_leg_pads.png",
+    "icon": "icons/armors/l9_leg_pads.png",
     "type": "Armor",
     "productionPrice": 0,
     "recipes": [
@@ -8581,7 +8581,7 @@
   },
   {
     "name": "Tactical Systems Gloves",
-    "icon": "/icons/armors/l1_gloves.png",
+    "icon": "icons/armors/l1_gloves.png",
     "type": "Armor",
     "genderNeutral": false,
     "productionPrice": 90,
@@ -8629,7 +8629,7 @@
   },
   {
     "name": "Advanced Civilian Gloves",
-    "icon": "/icons/armors/l2_gloves.png",
+    "icon": "icons/armors/l2_gloves.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -8677,7 +8677,7 @@
   },
   {
     "name": "MT-27 Ballistics Gloves",
-    "icon": "/icons/armors/l3_gloves.png",
+    "icon": "icons/armors/l3_gloves.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -8725,7 +8725,7 @@
   },
   {
     "name": "Locans Defense Gloves",
-    "icon": "/icons/armors/l4_gloves_led.png",
+    "icon": "icons/armors/l4_gloves_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -8773,7 +8773,7 @@
   },
   {
     "name": "Pythica Special Operations Gloves",
-    "icon": "/icons/armors/l4_gloves_fdc.png",
+    "icon": "icons/armors/l4_gloves_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -8821,7 +8821,7 @@
   },
   {
     "name": "NanoTech Trauma Gloves",
-    "icon": "/icons/armors/l4_gloves_gom.png",
+    "icon": "icons/armors/l4_gloves_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -8869,7 +8869,7 @@
   },
   {
     "name": "Hypobaric Gloves",
-    "icon": "/icons/armors/l4_gloves_bos.png",
+    "icon": "icons/armors/l4_gloves_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -8917,7 +8917,7 @@
   },
   {
     "name": "Delta Powered Gloves",
-    "icon": "/icons/armors/l4_gloves_motb.png",
+    "icon": "icons/armors/l4_gloves_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -8965,7 +8965,7 @@
   },
   {
     "name": "PreMet Buffer Gloves",
-    "icon": "/icons/armors/l4_gloves_cmg.png",
+    "icon": "icons/armors/l4_gloves_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9013,7 +9013,7 @@
   },
   {
     "name": "Dilatant 46b Gloves",
-    "icon": "/icons/armors/l4_gloves_ec.png",
+    "icon": "icons/armors/l4_gloves_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9061,7 +9061,7 @@
   },
   {
     "name": "Infensus Minimalist Gloves",
-    "icon": "/icons/armors/l4_gloves_vi.png",
+    "icon": "icons/armors/l4_gloves_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9109,7 +9109,7 @@
   },
   {
     "name": "Locans Ethereal Gloves",
-    "icon": "/icons/armors/l5_gloves_led.png",
+    "icon": "icons/armors/l5_gloves_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9157,7 +9157,7 @@
   },
   {
     "name": "Pythica Mobile Infantry Gloves",
-    "icon": "/icons/armors/l5_gloves_fdc.png",
+    "icon": "icons/armors/l5_gloves_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9205,7 +9205,7 @@
   },
   {
     "name": "NanoTech Scout Gloves",
-    "icon": "/icons/armors/l5_gloves_gom.png",
+    "icon": "icons/armors/l5_gloves_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9253,7 +9253,7 @@
   },
   {
     "name": "Metabolic Gloves",
-    "icon": "/icons/armors/l5_gloves_bos.png",
+    "icon": "icons/armors/l5_gloves_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9301,7 +9301,7 @@
   },
   {
     "name": "Havoc Powered Gloves",
-    "icon": "/icons/armors/l5_gloves_motb.png",
+    "icon": "icons/armors/l5_gloves_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9349,7 +9349,7 @@
   },
   {
     "name": "PreMet Contact Gloves",
-    "icon": "/icons/armors/l5_gloves_cmg.png",
+    "icon": "icons/armors/l5_gloves_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9397,7 +9397,7 @@
   },
   {
     "name": "Aramid Modified Gloves",
-    "icon": "/icons/armors/l5_gloves_ec.png",
+    "icon": "icons/armors/l5_gloves_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9445,7 +9445,7 @@
   },
   {
     "name": "Infensus Shock Gloves",
-    "icon": "/icons/armors/l5_gloves_vi.png",
+    "icon": "icons/armors/l5_gloves_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9493,7 +9493,7 @@
   },
   {
     "name": "Locans Patrol Gloves",
-    "icon": "/icons/armors/l6_gloves_led.png",
+    "icon": "icons/armors/l6_gloves_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9541,7 +9541,7 @@
   },
   {
     "name": "Pythica S1 Gloves",
-    "icon": "/icons/armors/l6_gloves_fdc.png",
+    "icon": "icons/armors/l6_gloves_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9589,7 +9589,7 @@
   },
   {
     "name": "NanoTech Voltaic Gloves",
-    "icon": "/icons/armors/l6_gloves_gom.png",
+    "icon": "icons/armors/l6_gloves_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9637,7 +9637,7 @@
   },
   {
     "name": "Venom Gloves",
-    "icon": "/icons/armors/l6_gloves_bos.png",
+    "icon": "icons/armors/l6_gloves_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9685,7 +9685,7 @@
   },
   {
     "name": "Firstborn Powered Gloves",
-    "icon": "/icons/armors/l6_gloves_motb.png",
+    "icon": "icons/armors/l6_gloves_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9733,7 +9733,7 @@
   },
   {
     "name": "PreMet Collision Gloves",
-    "icon": "/icons/armors/l6_gloves_cmg.png",
+    "icon": "icons/armors/l6_gloves_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9781,7 +9781,7 @@
   },
   {
     "name": "Dilatant 50b Gloves",
-    "icon": "/icons/armors/l6_gloves_ec.png",
+    "icon": "icons/armors/l6_gloves_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9829,7 +9829,7 @@
   },
   {
     "name": "Infensus X1 Assault Gloves",
-    "icon": "/icons/armors/l6_gloves_vi.png",
+    "icon": "icons/armors/l6_gloves_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9877,7 +9877,7 @@
   },
   {
     "name": "Locans Pressured Gloves",
-    "icon": "/icons/armors/l7_gloves_led.png",
+    "icon": "icons/armors/l7_gloves_led.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9925,7 +9925,7 @@
   },
   {
     "name": "Pythica Sustained Battle Gloves",
-    "icon": "/icons/armors/l7_gloves_fdc.png",
+    "icon": "icons/armors/l7_gloves_fdc.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -9973,7 +9973,7 @@
   },
   {
     "name": "NanoTech Cognizant Gloves",
-    "icon": "/icons/armors/l7_gloves_gom.png",
+    "icon": "icons/armors/l7_gloves_gom.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -10021,7 +10021,7 @@
   },
   {
     "name": "Detox Gloves",
-    "icon": "/icons/armors/l7_gloves_bos.png",
+    "icon": "icons/armors/l7_gloves_bos.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -10069,7 +10069,7 @@
   },
   {
     "name": "Legionnaire Powered Gloves",
-    "icon": "/icons/armors/l7_gloves_motb.png",
+    "icon": "icons/armors/l7_gloves_motb.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -10117,7 +10117,7 @@
   },
   {
     "name": "PreMet Impact Gloves",
-    "icon": "/icons/armors/l7_gloves_cmg.png",
+    "icon": "icons/armors/l7_gloves_cmg.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -10165,7 +10165,7 @@
   },
   {
     "name": "Aramid Basic Gloves",
-    "icon": "/icons/armors/l7_gloves_ec.png",
+    "icon": "icons/armors/l7_gloves_ec.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -10213,7 +10213,7 @@
   },
   {
     "name": "Infensus Heavy Gloves",
-    "icon": "/icons/armors/l7_gloves_vi.png",
+    "icon": "icons/armors/l7_gloves_vi.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,
@@ -10261,7 +10261,7 @@
   },
   {
     "name": "XenoTech Expeditionary Gloves",
-    "icon": "/icons/armors/l9_gloves.png",
+    "icon": "icons/armors/l9_gloves.png",
     "type": "Armor",
     "productionPrice": 0,
     "genderNeutral": false,

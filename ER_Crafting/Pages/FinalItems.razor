@@ -320,8 +320,6 @@
 
     private void UpdateUrl()
     {
-        var baseUrl = NavigationManager.BaseUri + "finalitems";
-
         // Build filter parameter
         var filterParts = new List<string>();
 
@@ -366,7 +364,8 @@
         if (_filterSettings.IsFemale)
             queryParams["female"] = "true";
 
-        var newUrl = QueryHelpers.AddQueryString(baseUrl, queryParams);
+        // Use relative navigation without leading slash - works reliably with GitHub Pages
+        var newUrl = QueryHelpers.AddQueryString("finalitems", queryParams);
         NavigationManager.NavigateTo(newUrl, replace: true);
     }
 
