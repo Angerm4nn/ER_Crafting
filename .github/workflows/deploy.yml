@@ -1,4 +1,4 @@
-name: Deploy Blazor WASM to GitHub Pages
+name: Deploy Blazor WASM to GitHub Pages (Auto-detect)
 on:
   push:
     branches: [ master ]
@@ -22,17 +22,37 @@ jobs:
       - name: Publish .NET Core Project
         run: dotnet publish ER_Crafting/ER_Crafting.csproj -c Release -o release --nologo
       
-      - name: Set base href for GitHub Pages
+      - name: Find and fix base href
         run: |
-          sed -i 's|<base href="/" />|<base href="/ER_Crafting/" />|' release/wwwroot/index.html
+          echo "Looking for index.html..."
+          INDEX_PATH=$(find release -name "index.html" -type f | head -1)
+          
+          if [ -z "$INDEX_PATH" ]; then
+            echo "Error: index.html not found anywhere in release directory"
+            echo "Directory contents:"
+            find release -type f | head -20
+            exit 1
+          fi
+          
+          echo "Found index.html at: $INDEX_PATH"
+          
+          # Fix the base href
+          sed -i 's|<base href="/" />|<base href="/ER_Crafting/" />|' "$INDEX_PATH"
+          echo "Updated base href in $INDEX_PATH"
+          
+          # Find the wwwroot directory (where the web files are)
+          WWWROOT_PATH=$(dirname "$INDEX_PATH")
+          echo "WWWROOT_PATH=$WWWROOT_PATH" >> $GITHUB_ENV
+          echo "Web files are in: $WWWROOT_PATH"
       
       - name: SPA routing fix
         run: |
-          touch release/wwwroot/.nojekyll
-          cp release/wwwroot/index.html release/wwwroot/404.html
+          touch $WWWROOT_PATH/.nojekyll
+          cp $WWWROOT_PATH/index.html $WWWROOT_PATH/404.html
+          echo "Created .nojekyll and 404.html in $WWWROOT_PATH"
       
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: release/wwwroot
+          folder: ${{ env.WWWROOT_PATH }}
