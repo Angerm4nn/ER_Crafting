@@ -2,241 +2,241 @@
   {
     "id": 1,
     "name": "Anthracite",
-    "icon": "icons/anthracite.png",
+    "icon": "icons/raw_materials/anthracite.png",
     "miningCost": 50
   },
   {
     "id": 2,
     "name": "Bauxite",
-    "icon": "icons/bauxite.png",
+    "icon": "icons/raw_materials/bauxite.png",
     "miningCost": 0
   },
   {
     "id": 3,
     "name": "Berylium",
-    "icon": "icons/beryllium.png",
+    "icon": "icons/raw_materials/beryllium.png",
     "miningCost": 0
   },
   {
     "id": 4,
     "name": "Caoutchouc",
-    "icon": "icons/caoutchouc.png",
+    "icon": "icons/raw_materials/caoutchouc.png",
     "miningCost": 0
   },
   {
     "id": 5,
     "name": "Chemical Substances",
-    "icon": "icons/chemical_substances.png",
+    "icon": "icons/raw_materials/chemical_substances.png",
     "miningCost": 0
   },
   {
     "id": 6,
     "name": "Chrome",
-    "icon": "icons/chrome.png",
+    "icon": "icons/raw_materials/chrome.png",
     "miningCost": 0
   },
   {
     "id": 7,
     "name": "Cobalt",
-    "icon": "icons/cobalt.png",
+    "icon": "icons/raw_materials/cobalt.png",
     "miningCost": 0
   },
   {
     "id": 8,
     "name": "Coal",
-    "icon": "icons/coal.png",
+    "icon": "icons/raw_materials/coal.png",
     "miningCost": 0
   },
   {
     "id": 9,
     "name": "Copper",
-    "icon": "icons/copper.png",
+    "icon": "icons/raw_materials/copper.png",
     "miningCost": 0
   },
   {
     "id": 10,
     "name": "Diamonds",
-    "icon": "icons/diamonds.png",
+    "icon": "icons/raw_materials/diamonds.png",
     "miningCost": 0
   },
   {
     "id": 11,
     "name": "Gold",
-    "icon": "icons/gold.png",
+    "icon": "icons/raw_materials/gold.png",
     "miningCost": 0
   },
   {
     "id": 12,
     "name": "Iridium",
-    "icon": "icons/iridium.png",
+    "icon": "icons/raw_materials/iridium.png",
     "miningCost": 0
   },
   {
     "id": 13,
     "name": "Iron",
-    "icon": "icons/iron.png",
+    "icon": "icons/raw_materials/iron.png",
     "miningCost": 0
   },
   {
     "id": 14,
     "name": "Manganese",
-    "icon": "icons/manganese.png",
+    "icon": "icons/raw_materials/manganese.png",
     "miningCost": 0
   },
   {
     "id": 15,
     "name": "Nickel",
-    "icon": "icons/nickel.png",
+    "icon": "icons/raw_materials/nickel.png",
     "miningCost": 0
   },
   {
     "id": 16,
     "name": "Organic Material",
-    "icon": "icons/organic_materials.png",
+    "icon": "icons/raw_materials/organic_materials.png",
     "miningCost": 0
   },
   {
     "id": 17,
     "name": "Plasma",
-    "icon": "icons/plasma.png",
+    "icon": "icons/raw_materials/plasma.png",
     "miningCost": 0
   },
   {
     "id": 18,
     "name": "Platinum",
-    "icon": "icons/platinum.png",
+    "icon": "icons/raw_materials/platinum.png",
     "miningCost": 0
   },
   {
     "id": 19,
     "name": "Silver",
-    "icon": "icons/silver.png",
+    "icon": "icons/raw_materials/silver.png",
     "miningCost": 0
   },
   {
     "id": 20,
     "name": "Silicon",
-    "icon": "icons/silicon.png",
+    "icon": "icons/raw_materials/silicon.png",
     "miningCost": 0
   },
   {
     "id": 21,
     "name": "Titanium",
-    "icon": "icons/titanium.png",
+    "icon": "icons/raw_materials/titanium.png",
     "miningCost": 0
   },
   {
     "id": 22,
     "name": "Vanadium",
-    "icon": "icons/vanadium.png",
+    "icon": "icons/raw_materials/vanadium.png",
     "miningCost": 0
   },
   {
     "id": 23,
     "name": "Water",
-    "icon": "icons/water.png",
+    "icon": "icons/raw_materials/water.png",
     "miningCost": 0
   },
   {
     "id": 24,
     "name": "Carcinus Cranium",
-    "icon": "icons/carcinus_cranium.png",
+    "icon": "icons/raw_materials/carcinus_cranium.png",
     "miningCost": 0
   },
   {
     "id": 25,
     "name": "Behemoth Cranium",
-    "icon": "icons/behemoth_cranium.png",
+    "icon": "icons/raw_materials/behemoth_cranium.png",
     "miningCost": 0
   },
   {
     "id": 26,
     "name": "Behemoth Tail",
-    "icon": "icons/behemoth_tail.png",
+    "icon": "icons/raw_materials/behemoth_tail.png",
     "miningCost": 0
   },
   {
     "id": 27,
     "name": "Piercing Oculi",
-    "icon": "icons/piercing_oculi.png",
+    "icon": "icons/raw_materials/piercing_oculi.png",
     "miningCost": 0
   },
   {
     "id": 28,
     "name": "Pulsating Cerebrum",
-    "icon": "icons/pulsating_cerebrum.png",
+    "icon": "icons/raw_materials/pulsating_cerebrum.png",
     "miningCost": 0
   },
   {
     "id": 29,
     "name": "Mantis Cranium",
-    "icon": "icons/mantis_cranium.png",
+    "icon": "icons/raw_materials/mantis_cranium.png",
     "miningCost": 0
   },
   {
     "id": 30,
     "name": "Xenomorph Endocrine Glands",
-    "icon": "icons/xenomorph_endocrine_glands.png",
+    "icon": "icons/raw_materials/xenomorph_endocrine_glands.png",
     "miningCost": 0
   },
   {
     "id": 31,
     "name": "Carcinus Dorsal Carapace",
-    "icon": "icons/carcinus_dorsal_carapace.png",
+    "icon": "icons/raw_materials/carcinus_dorsal_carapace.png",
     "miningCost": 0
   },
   {
     "id": 32,
     "name": "Sturdy Carapace",
-    "icon": "icons/sturdy_carapace.png",
+    "icon": "icons/raw_materials/sturdy_carapace.png",
     "miningCost": 0
   },
   {
     "id": 33,
     "name": "Mantis Metathorax",
-    "icon": "icons/mantis_metathorax.png",
+    "icon": "icons/raw_materials/mantis_metathorax.png",
     "miningCost": 0
   },
   {
     "id": 34,
     "name": "Carcinus Forelimbs",
-    "icon": "icons/carcinus_forelimbs.png",
+    "icon": "icons/raw_materials/carcinus_forelimbs.png",
     "miningCost": 0
   },
   {
     "id": 35,
     "name": "Behemoth Forelimbs",
-    "icon": "icons/behemoth_forelimbs.png",
+    "icon": "icons/raw_materials/behemoth_forelimbs.png",
     "miningCost": 0
   },
   {
     "id": 36,
     "name": "Serrated Claws",
-    "icon": "icons/serrated_claws.png",
+    "icon": "icons/raw_materials/serrated_claws.png",
     "miningCost": 0
   },
   {
     "id": 37,
     "name": "Mantis Mesothorax",
-    "icon": "icons/mantis_mesothorax.png",
+    "icon": "icons/raw_materials/mantis_mesothorax.png",
     "miningCost": 0
   },
   {
     "id": 38,
     "name": "Xenomorph Hemolymph",
-    "icon": "icons/xenomorph_hemolymph.png",
+    "icon": "icons/raw_materials/xenomorph_hemolymph.png",
     "miningCost": 0
   },
   {
     "id": 39,
     "name": "Bloody Xenomorph Slime",
-    "icon": "icons/bloody_xenomorph_slime.png",
+    "icon": "icons/raw_materials/bloody_xenomorph_slime.png",
     "miningCost": 0
   },
   {
     "id": 40,
     "name": "Xenomorph Endocrine Glands",
-    "icon": "icons/xenomorph_endocrine_glands.png",
+    "icon": "icons/raw_materials/xenomorph_endocrine_glands.png",
     "miningCost": 0
   }
 ]

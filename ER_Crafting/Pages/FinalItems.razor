@@ -1,155 +1,385 @@
 ﻿@page "/finalitems"
-@page "/finalitems/{Id:int}"
 @inject GameData GameData
 @inject NavigationManager NavigationManager
+@using static ER_Crafting.Models.Enums
+@using Microsoft.AspNetCore.WebUtilities
+@implements IDisposable
 
-<h3>Final Items</h3>
+<div class="container-fluid">
 
-@if (Id.HasValue)
-{
-    @* Detail view *@
-    <button class="btn btn-secondary mb-3" @onclick="BackToList">Back To List</button>
-    var item = _allItems.FirstOrDefault(i => i.Id == Id.Value);
-    if (item != null)
-    {
-        <FinalItemDetails Item="@item" GameData="@GameData" />
-    }
-    else
-    {
-        <p>Item not found.</p>
-    }
-}
-else
-{
-    @* List view *@
-    <div class="mb-4">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">Filters</h5>
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Final Items</h2>
+        <button class="btn btn-secondary" @onclick="ClearFilters">
+            Clear Filters
+        </button>
+    </div>
 
-                @* Gender Toggle *@
-                <div class="mb-3">
-                    <label class="form-label">Gender:</label>
-                    <div class="btn-group" role="group">
-                        <button type="button"
-                                class="btn @(_filterSettings.IsFemale ? "btn-outline-primary" : "btn-primary")"
-                                @onclick="() => SetGender(false)">
-                            Male
-                        </button>
-                        <button type="button"
-                                class="btn @(_filterSettings.IsFemale ? "btn-primary" : "btn-outline-primary")"
-                                @onclick="() => SetGender(true)">
-                            Female
-                        </button>
-                    </div>
+    <!-- MALE/FEMALE TOGGLE - AT THE TOP -->
+    <div class="card mb-3">
+        <div class="card-body py-2">
+            <div class="d-flex align-items-center justify-content-center">
+                <label class="form-label me-3 mb-0 fw-bold">Gender:</label>
+                <div class="btn-group" role="group">
+                    <input type="radio" class="btn-check" name="genderToggle" id="male" checked="@(!_filterSettings.IsFemale)" @onchange="() => SetGender(false)">
+                    <label class="btn btn-outline-primary" for="male">MALE</label>
+
+                    <input type="radio" class="btn-check" name="genderToggle" id="female" checked="@_filterSettings.IsFemale" @onchange="() => SetGender(true)">
+                    <label class="btn btn-outline-primary" for="female">FEMALE</label>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <label class="form-label">Filter by Name:</label>
-                        <input type="text"
-                               class="form-control"
-                               placeholder="Search by name..."
-                               @bind="_filterSettings.SearchName"
-                               @bind:event="oninput"
-                               @bind:after="OnNameChanged" />
-                    </div>
-
-                    <div class="col-md-4">
-                        <label class="form-label">Filter by Type:</label>
-                        <select class="form-select" @bind="_filterSettings.SelectedType" @bind:after="OnTypeChanged">
-                            <option value="">-- All Types --</option>
-                            @foreach (var type in _availableTypes)
-                            {
-                                <option value="@type">@type</option>
-                            }
-                        </select>
-                    </div>
-
-                    @if (_filterSettings.SelectedType == "Armor")
-                    {
-                        <div class="col-md-4">
-                            <label class="form-label">Filter by Faction:</label>
-                            <select class="form-select" @bind="_filterSettings.SelectedFaction" @bind:after="OnFactionChanged">
-                                <option value="">-- All Factions --</option>
-                                @foreach (var faction in _availableFactions)
-                                {
-                                    <option value="@((int)faction)">@faction</option>
-                                }
-                            </select>
-                        </div>
-                    }
-                </div>
-
-                @if (!string.IsNullOrEmpty(_filterSettings.SearchName) ||
-                            !string.IsNullOrEmpty(_filterSettings.SelectedType) ||
-                            !string.IsNullOrEmpty(_filterSettings.SelectedFaction))
-                {
-                    <button class="btn btn-outline-secondary btn-sm mt-2" @onclick="ClearFilters">
-                        Clear Filters
-                    </button>
-                }
             </div>
         </div>
     </div>
 
-    <p>Found @_filteredItems.Count items</p>
+    <!-- FILTERS -->
+    <div class="card mb-4">
+        <div class="card-body">
+            <div class="row g-3">
 
-    <div class="row">
-        @foreach (var item in _filteredItems)
-        {
-            @if (_filterSettings.SelectedType == "Armor" && !string.IsNullOrEmpty(_filterSettings.SelectedFaction))
+                <!-- Name filter -->
+                <div class="col-md-4">
+                    <label class="form-label">Search by name</label>
+                    <input class="form-control"
+                           placeholder="Type a name..."
+                           @bind="_nameFilter"
+                           @bind:event="oninput"
+                           @bind:after="UpdateFilterAndUrl" />
+                </div>
+
+                <!-- 1. ItemType filter -->
+                <div class="col-md-4">
+                    <label class="form-label">Item Type</label>
+                    <select class="form-select"
+                            @bind="_itemTypeFilter"
+                            @bind:after="OnItemTypeChanged">
+                        <option value="">All</option>
+                        @foreach (var t in _allItemTypes)
+                        {
+                            <option value="@t.ToString()">@t</option>
+                        }
+                    </select>
+                </div>
+
+                <!-- 2. Sub-type filters (when ItemType is selected) -->
+                @if (_itemTypeFilter == nameof(ItemType.Booster))
+                {
+                    <div class="col-md-4">
+                        <label class="form-label">Booster Type</label>
+                        <select class="form-select"
+                                @bind="_boosterTypeFilter"
+                                @bind:after="UpdateFilterAndUrl">
+                            <option value="">All</option>
+                            @foreach (var t in _allBoosterTypes)
+                            {
+                                <option value="@t.ToString()">@t</option>
+                            }
+                        </select>
+                    </div>
+                }
+
+                @if (_itemTypeFilter == nameof(ItemType.Armor))
+                {
+                    <div class="col-md-4">
+                        <label class="form-label">Armor Type</label>
+                        <select class="form-select"
+                                @bind="_armorTypeFilter"
+                                @bind:after="UpdateFilterAndUrl">
+                            <option value="">All</option>
+                            @foreach (var t in _allArmorTypes)
+                            {
+                                <option value="@t.ToString()">@t</option>
+                            }
+                        </select>
+                    </div>
+
+                    <!-- Faction filter (appears as soon as Armor ItemType is selected) -->
+                    <div class="col-md-4">
+                        <label class="form-label">Faction</label>
+                        <select class="form-select"
+                                @bind="_factionFilter"
+                                @bind:after="UpdateFilterAndUrl">
+                            <option value="">All</option>
+                            @foreach (var f in _allFactions)
+                            {
+                                <option value="@f.ToString()">@f</option>
+                            }
+                        </select>
+                    </div>
+                }
+
+                @if (_itemTypeFilter == nameof(ItemType.Implant))
+                {
+                    <div class="col-md-4">
+                        <label class="form-label">Implant Type</label>
+                        <select class="form-select"
+                                @bind="_implantTypeFilter"
+                                @bind:after="UpdateFilterAndUrl">
+                            <option value="">All</option>
+                            @foreach (var t in _allImplantTypes)
+                            {
+                                <option value="@t.ToString()">@t</option>
+                            }
+                        </select>
+                    </div>
+                }
+
+                @if (_itemTypeFilter == nameof(ItemType.Weapon))
+                {
+                    <div class="col-md-4">
+                        <label class="form-label">Weapon Type</label>
+                        <select class="form-select"
+                                @bind="_weaponTypeFilter"
+                                @bind:after="UpdateFilterAndUrl">
+                            <option value="">All</option>
+                            @foreach (var t in _allWeaponTypes)
+                            {
+                                <option value="@t.ToString()">@t</option>
+                            }
+                        </select>
+                    </div>
+                }
+
+                @if (_itemTypeFilter == nameof(ItemType.Explosive))
+                {
+                    <div class="col-md-4">
+                        <label class="form-label">Explosive Type</label>
+                        <select class="form-select"
+                                @bind="_explosiveTypeFilter"
+                                @bind:after="UpdateFilterAndUrl">
+                            <option value="">All</option>
+                            @foreach (var t in _allExplosiveTypes)
+                            {
+                                <option value="@t.ToString()">@t</option>
+                            }
+                        </select>
+                    </div>
+                }
+
+                @if (_itemTypeFilter == nameof(ItemType.Clothing))
+                {
+                    <div class="col-md-4">
+                        <label class="form-label">Clothing Type</label>
+                        <select class="form-select"
+                                @bind="_clothingTypeFilter"
+                                @bind:after="UpdateFilterAndUrl">
+                            <option value="">All</option>
+                            @foreach (var t in _allClothingTypes)
+                            {
+                                <option value="@t.ToString()">@t</option>
+                            }
+                        </select>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Results count -->
+    <div class="mb-3">
+        <small class="text-muted">Showing @_filteredItems.Count of @_allItems.Count items</small>
+    </div>
+
+    <!-- LIST -->
+    @if (_filteredItems.Count == 0)
+    {
+        <div class="alert alert-info">
+            No items found.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var item in _filteredItems)
             {
-                var selectedFaction = (Faction)int.Parse(_filterSettings.SelectedFaction);
-                var columnClass = selectedFaction == Faction.Civilian ? "col-md-3" : "";
-                var customStyle = selectedFaction != Faction.Civilian ? "width: 20%; flex: 0 0 20%;" : "";
-
-                <div class="@columnClass mb-2" style="@customStyle">
-                    <FinalItemCard Item="@item"
-                                   OnClick="@(() => NavigationManager.NavigateTo($"finalitems/{item.Id}"))" />
+                <div class="col-md-3 mb-3">
+                    <FinalItemCard Item="@item" OnClick="@(() => ShowDetails(item))" />
                 </div>
             }
-            else
-            {
-                <div class="col-md-3 mb-2">
-                    <FinalItemCard Item="@item"
-                                   OnClick="@(() => NavigationManager.NavigateTo($"finalitems/{item.Id}"))" />
+        </div>
+    }
+
+</div>
+
+@if (_selectedItem != null)
+{
+    <div class="modal fade show d-block" tabindex="-1" style="background-color: rgba(0,0,0,0.5);">
+        <div class="modal-dialog modal-xl modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">@_selectedItem.Name</h5>
+                    <button type="button" class="btn-close" @onclick="CloseDetails"></button>
                 </div>
-            }
-        }
+                <div class="modal-body">
+                    <FinalItemDetails Item="@_selectedItem" GameData="@GameData" />
+                </div>
+            </div>
+        </div>
     </div>
 }
 
 @code {
-    [Parameter]
-    public int? Id { get; set; }
+    public class FilterSettings
+    {
+        public bool IsFemale { get; set; } = false;
+    }
 
+    private FilterSettings _filterSettings = new();
     private List<FinalItem> _allItems = new();
     private List<FinalItem> _filteredItems = new();
-    private List<string> _availableTypes = new();
-    private List<Faction> _availableFactions = new();
-    private FilterSettings _filterSettings = new();
+    private FinalItem? _selectedItem;
+
+    private string _nameFilter = "";
+    private string _itemTypeFilter = "";
+    private string _boosterTypeFilter = "";
+    private string _armorTypeFilter = "";
+    private string _factionFilter = "";
+    private string _implantTypeFilter = "";
+    private string _weaponTypeFilter = "";
+    private string _explosiveTypeFilter = "";
+    private string _clothingTypeFilter = "";
+
+    private List<ItemType> _allItemTypes = new();
+    private List<BoosterType> _allBoosterTypes = new();
+    private List<ArmorType> _allArmorTypes = new();
+    private List<Faction> _allFactions = new();
+    private List<ImplantType> _allImplantTypes = new();
+    private List<WeaponType> _allWeaponTypes = new();
+    private List<ExplosiveType> _allExplosiveTypes = new();
+    private List<ClothingType> _allClothingTypes = new();
 
     protected override void OnInitialized()
     {
+        NavigationManager.LocationChanged += HandleLocationChanged;
+
         _allItems = GameData.GetAllFinalItems();
-        _filteredItems = _allItems;
+        _filteredItems = _allItems.ToList();
 
-        _availableTypes = _allItems
-            .Select(i => i.Type.ToString())
-            .Distinct()
-            .OrderBy(t => t)
-            .ToList();
+        _allItemTypes = Enum.GetValues<ItemType>().ToList();
+        _allBoosterTypes = Enum.GetValues<BoosterType>().ToList();
+        _allArmorTypes = Enum.GetValues<ArmorType>().ToList();
+        _allFactions = Enum.GetValues<Faction>().ToList();
+        _allImplantTypes = Enum.GetValues<ImplantType>().ToList();
+        _allWeaponTypes = Enum.GetValues<WeaponType>().ToList();
+        _allExplosiveTypes = Enum.GetValues<ExplosiveType>().ToList();
+        _allClothingTypes = Enum.GetValues<ClothingType>().ToList();
 
-        _availableFactions = Enum.GetValues<Faction>()
-            .OrderBy(f => f.ToString())
-            .ToList();
+        // Parse URL parameters
+        ParseUrlParameters();
+
+        // Apply filters without updating URL (since we just parsed from URL)
+        ApplyFilters();
     }
 
-    private void SetGender(bool isFemale)
+    private void ParseUrlParameters()
+    {
+        var uri = new Uri(NavigationManager.Uri);
+        var queryParams = QueryHelpers.ParseQuery(uri.Query);
+
+        // Check for filter parameter like "Armor/ShoulderPads" or "Armor/ShoulderPads/LED"
+        if (queryParams.TryGetValue("filter", out var filterValue))
+        {
+            var filterParts = filterValue.ToString().Split('/');
+
+            if (filterParts.Length >= 1)
+            {
+                _itemTypeFilter = filterParts[0];
+
+                if (filterParts.Length >= 2)
+                {
+                    var subType = filterParts[1];
+
+                    // Determine which sub-type filter to set based on ItemType
+                    if (_itemTypeFilter == "Booster")
+                        _boosterTypeFilter = subType;
+                    else if (_itemTypeFilter == "Armor")
+                        _armorTypeFilter = subType;
+                    else if (_itemTypeFilter == "Implant")
+                        _implantTypeFilter = subType;
+                    else if (_itemTypeFilter == "Weapon")
+                        _weaponTypeFilter = subType;
+                    else if (_itemTypeFilter == "Explosive")
+                        _explosiveTypeFilter = subType;
+                    else if (_itemTypeFilter == "Clothing")
+                        _clothingTypeFilter = subType;
+                }
+
+                if (filterParts.Length >= 3 && _itemTypeFilter == "Armor")
+                {
+                    _factionFilter = filterParts[2];
+                }
+            }
+        }
+
+        // Check for individual parameters
+        if (queryParams.TryGetValue("name", out var nameValue))
+            _nameFilter = nameValue.ToString();
+
+        if (queryParams.TryGetValue("female", out var femaleValue) && bool.TryParse(femaleValue, out bool isFemale))
+            SetGender(isFemale, false);
+    }
+
+    private void UpdateUrl()
+    {
+        var baseUrl = NavigationManager.BaseUri + "finalitems";
+
+        // Build filter parameter
+        var filterParts = new List<string>();
+
+        if (!string.IsNullOrEmpty(_itemTypeFilter))
+        {
+            filterParts.Add(_itemTypeFilter);
+
+            // Add sub-type if selected
+            var subType = "";
+            if (_itemTypeFilter == "Booster" && !string.IsNullOrEmpty(_boosterTypeFilter))
+                subType = _boosterTypeFilter;
+            else if (_itemTypeFilter == "Armor" && !string.IsNullOrEmpty(_armorTypeFilter))
+                subType = _armorTypeFilter;
+            else if (_itemTypeFilter == "Implant" && !string.IsNullOrEmpty(_implantTypeFilter))
+                subType = _implantTypeFilter;
+            else if (_itemTypeFilter == "Weapon" && !string.IsNullOrEmpty(_weaponTypeFilter))
+                subType = _weaponTypeFilter;
+            else if (_itemTypeFilter == "Explosive" && !string.IsNullOrEmpty(_explosiveTypeFilter))
+                subType = _explosiveTypeFilter;
+            else if (_itemTypeFilter == "Clothing" && !string.IsNullOrEmpty(_clothingTypeFilter))
+                subType = _clothingTypeFilter;
+
+            if (!string.IsNullOrEmpty(subType))
+            {
+                filterParts.Add(subType);
+
+                // Add faction if armor and faction selected
+                if (_itemTypeFilter == "Armor" && !string.IsNullOrEmpty(_factionFilter))
+                    filterParts.Add(_factionFilter);
+            }
+        }
+
+        // Build query parameters
+        var queryParams = new Dictionary<string, string>();
+
+        if (filterParts.Count > 0)
+            queryParams["filter"] = string.Join("/", filterParts);
+
+        if (!string.IsNullOrEmpty(_nameFilter))
+            queryParams["name"] = _nameFilter;
+
+        if (_filterSettings.IsFemale)
+            queryParams["female"] = "true";
+
+        var newUrl = QueryHelpers.AddQueryString(baseUrl, queryParams);
+        NavigationManager.NavigateTo(newUrl, replace: true);
+    }
+
+    private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        ParseUrlParameters();
+        ApplyFilters();
+        StateHasChanged();
+    }
+
+    private void SetGender(bool isFemale, bool triggerStateChange = true)
     {
         _filterSettings.IsFemale = isFemale;
-
         foreach (var item in _allItems.Where(i => !i.GenderNeutral))
         {
             if (isFemale)
@@ -165,73 +395,126 @@ else
             }
         }
 
-        StateHasChanged();
-    }
-    private void OnNameChanged()
-    {
-        ApplyFilters();
-    }
-
-    private void OnTypeChanged()
-    {
-        if (_filterSettings.SelectedType != "Armor")
+        if (triggerStateChange)
         {
-            _filterSettings.SelectedFaction = "";
+            UpdateUrl();
+            StateHasChanged();
         }
-
-        ApplyFilters();
     }
 
-    private void OnFactionChanged()
+    private void OnItemTypeChanged()
     {
+        // Clear all sub-type filters when main type changes
+        _boosterTypeFilter = "";
+        _armorTypeFilter = "";
+        _factionFilter = "";
+        _implantTypeFilter = "";
+        _weaponTypeFilter = "";
+        _explosiveTypeFilter = "";
+        _clothingTypeFilter = "";
+        UpdateFilterAndUrl();
+    }
+
+    private void UpdateFilterAndUrl()
+    {
+        UpdateUrl();
         ApplyFilters();
     }
 
     private void ApplyFilters()
     {
-        _filteredItems = _allItems;
+        IEnumerable<FinalItem> query = _allItems;
 
-        if (!string.IsNullOrEmpty(_filterSettings.SearchName))
+        // Name filter
+        if (!string.IsNullOrWhiteSpace(_nameFilter))
         {
-            _filteredItems = _filteredItems
-                .Where(i => i.Name.Contains(_filterSettings.SearchName, StringComparison.OrdinalIgnoreCase))
-                .ToList();
+            query = query.Where(i => i.Name.Contains(_nameFilter, StringComparison.OrdinalIgnoreCase));
         }
 
-        if (!string.IsNullOrEmpty(_filterSettings.SelectedType))
+        // ItemType filter
+        if (!string.IsNullOrWhiteSpace(_itemTypeFilter))
         {
-            _filteredItems = _filteredItems
-                .Where(i => i.Type.ToString() == _filterSettings.SelectedType)
-                .ToList();
+            if (Enum.TryParse<ItemType>(_itemTypeFilter, out var itemType))
+            {
+                query = query.Where(i => i.Type == itemType);
+
+                // Sub-type filters based on selected ItemType
+                if (itemType == ItemType.Booster && !string.IsNullOrWhiteSpace(_boosterTypeFilter) && Enum.TryParse<BoosterType>(_boosterTypeFilter, out var boosterType))
+                {
+                    if (boosterType == BoosterType.Drug)
+                        query = query.OfType<Drug>();
+                    else if (boosterType == BoosterType.Food)
+                        query = query.OfType<Food>();
+                }
+
+                if (itemType == ItemType.Armor)
+                {
+                    var armorQuery = query.OfType<Armor>();
+
+                    if (!string.IsNullOrWhiteSpace(_armorTypeFilter) && Enum.TryParse<ArmorType>(_armorTypeFilter, out var armorType))
+                    {
+                        armorQuery = armorQuery.Where(a => a.ArmorType == armorType);
+                    }
+
+                    if (!string.IsNullOrWhiteSpace(_factionFilter) && Enum.TryParse<Faction>(_factionFilter, out var faction))
+                    {
+                        armorQuery = armorQuery.Where(a => a.Faction == faction);
+                    }
+
+                    query = armorQuery;
+                }
+
+                if (itemType == ItemType.Implant && !string.IsNullOrWhiteSpace(_implantTypeFilter) && Enum.TryParse<ImplantType>(_implantTypeFilter, out var implantType))
+                {
+                    query = query.OfType<Implant>().Where(i => i.implantType == implantType);
+                }
+
+                if (itemType == ItemType.Weapon && !string.IsNullOrWhiteSpace(_weaponTypeFilter) && Enum.TryParse<WeaponType>(_weaponTypeFilter, out var weaponType))
+                {
+                    query = query.OfType<Weapon>().Where(w => w.weaponType == weaponType);
+                }
+
+                if (itemType == ItemType.Explosive && !string.IsNullOrWhiteSpace(_explosiveTypeFilter) && Enum.TryParse<ExplosiveType>(_explosiveTypeFilter, out var explosiveType))
+                {
+                    query = query.OfType<Explosive>().Where(e => e.explosiveType == explosiveType);
+                }
+
+                if (itemType == ItemType.Clothing && !string.IsNullOrWhiteSpace(_clothingTypeFilter) && Enum.TryParse<ClothingType>(_clothingTypeFilter, out var clothingType))
+                {
+                    query = query.OfType<Clothing>().Where(c => c.clothingType == clothingType);
+                }
+            }
         }
 
-        if (_filterSettings.SelectedType == "Armor" && !string.IsNullOrEmpty(_filterSettings.SelectedFaction))
-        {
-            var selectedFaction = (Faction)int.Parse(_filterSettings.SelectedFaction);
-            _filteredItems = _filteredItems
-                .Where(i => i.Faction == selectedFaction)
-                .ToList();
-        }
+        _filteredItems = query.Cast<FinalItem>().ToList();
     }
 
     private void ClearFilters()
     {
-        _filterSettings.SearchName = "";
-        _filterSettings.SelectedType = "";
-        _filterSettings.SelectedFaction = "";
-        ApplyFilters();
+        _nameFilter = "";
+        _itemTypeFilter = "";
+        _boosterTypeFilter = "";
+        _armorTypeFilter = "";
+        _factionFilter = "";
+        _implantTypeFilter = "";
+        _weaponTypeFilter = "";
+        _explosiveTypeFilter = "";
+        _clothingTypeFilter = "";
+        UpdateFilterAndUrl();
     }
 
-    private void BackToList()
+    private void ShowDetails(FinalItem item)
     {
-        NavigationManager.NavigateTo("finalitems");
+        _selectedItem = item;
     }
 
-    public class FilterSettings
+    private void CloseDetails()
     {
-        public string SearchName { get; set; } = "";
-        public string SelectedType { get; set; } = "";
-        public string SelectedFaction { get; set; } = "";
-        public bool IsFemale { get; set; } = false;
+        _selectedItem = null;
+    }
+
+    public void Dispose()
+    {
+        NavigationManager.LocationChanged -= HandleLocationChanged;
     }
 }

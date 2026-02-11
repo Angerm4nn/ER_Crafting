@@ -1,0 +1,37 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h5>Basic Info</h5>
+        <p><strong>Type:</strong> @Explosive.Type</p>
+        <p><strong>Description:</strong> @Explosive.Description</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Basic Stats</h5>
+        <p><strong>Attack Delay:</strong> @Explosive.attackDelay.ToString("F1")s</p>
+        <p><strong>Damage Radius:</strong> @Explosive.damageRadius m</p>
+    </div>
+
+    <div class="col-md-6">
+        <h5>Damage Stats</h5>
+        @if (Explosive.energyDamage != 0)
+        {
+            <p><strong>Energy Damage:</strong> @Explosive.energyDamage</p>
+            <p><strong>Bio Damage:</strong> @Explosive.bioDamage</p>
+        }
+        else
+        {
+            <p><strong>Ballistic Damage:</strong> @Explosive.ballisticDamage</p>
+            <p><strong>Aura Damage:</strong> @Explosive.auraDamage</p>
+            <p><strong>Xeno Damage:</strong> @Explosive.xenoDamage</p>
+        }
+        <p><strong>Destruction:</strong> @Explosive.destruction</p>
+    </div>
+
+    <div class="col-md-6">
+         <h5>Attributes</h5>
+         <p><strong>Agility:</strong> @Explosive.agility</p>
+    </div>
+</div>
+@code {
+    [Parameter]
+    public Explosive Explosive { get; set; } = null!;
+}

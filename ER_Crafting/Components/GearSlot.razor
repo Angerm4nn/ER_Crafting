@@ -1,0 +1,128 @@
+﻿@using ER_Crafting.Models
+
+<div class="gear-slot-container">
+    <div class="gear-slot @(Item != null ? "equipped" : "empty")" @onclick="HandleClick" style="cursor: pointer;">
+        @if (Item != null && !string.IsNullOrEmpty(Item.Icon))
+        {
+            <img src="@Item.Icon" alt="@Item.Name" class="gear-slot-icon" />
+            <button class="btn btn-sm btn-danger gear-slot-remove"
+                    @onclick="HandleRemove"
+                    @onclick:stopPropagation="true">
+                ×
+            </button>
+        }
+        else
+        {
+            <div class="gear-slot-placeholder">
+                <span class="text-muted">+</span>
+            </div>
+        }
+    </div>
+    <div class="gear-slot-label text-center mt-2">
+        <small class="text-muted">@SlotName</small>
+        @if (Item != null)
+        {
+            <br />
+            <small class="fw-bold">@Item.Name</small>
+        }
+    </div>
+</div>
+
+<style>
+    .gear-slot-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gear-slot {
+        width: 67px;
+        height: 67px;
+        border: 3px solid #dee2e6;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f9fa;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+        .gear-slot:hover {
+            border-color: #0d6efd;
+            box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .gear-slot.equipped {
+            border-color: #198754;
+            background-color: #ffffff;
+        }
+
+            .gear-slot.equipped:hover {
+                border-color: #157347;
+            }
+
+        .gear-slot.empty {
+            border-style: dashed;
+        }
+
+    .gear-slot-icon {
+        width: 54px;
+        height: 54px;
+        object-fit: contain;
+    }
+
+    .gear-slot-placeholder {
+        font-size: 32px;
+        color: #adb5bd;
+    }
+
+    .gear-slot-remove {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        width: 20px;
+        height: 20px;
+        padding: 0;
+        border-radius: 50%;
+        font-size: 14px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gear-slot-label {
+        max-width: 67px;
+        word-wrap: break-word;
+        font-size: 0.75rem;
+    }
+</style>
+
+@code {
+    [Parameter]
+    public string SlotName { get; set; } = "";
+
+    [Parameter]
+    public FinalItem? Item { get; set; }
+
+    [Parameter]
+    public string FilterType { get; set; } = "";
+
+    [Parameter]
+    public EventCallback OnClick { get; set; }
+
+    [Parameter]
+    public EventCallback OnRemove { get; set; }
+
+    private async Task HandleClick()
+    {
+        await OnClick.InvokeAsync();
+    }
+
+    private async Task HandleRemove()
+    {
+        await OnRemove.InvokeAsync();
+    }
+}

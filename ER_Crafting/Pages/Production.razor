@@ -209,7 +209,7 @@ else
             if (selectedRecipe != null)
             {
                 var timesToCraft = (int)Math.Ceiling((decimal)quantity / selectedRecipe.OutputQuantity);
-                breakdown.ProductionCost += item.ProductionCost * timesToCraft;
+                breakdown.ProductionCost += item.ProductionPrice * timesToCraft;
             }
         }
 

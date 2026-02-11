@@ -1,0 +1,33 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h5>Basic Info</h5>
+        <p><strong>Weapon Type:</strong> @Weapon.weaponType</p>
+        <p><strong>Description:</strong> @Weapon.Description</p>
+        <p><strong>Clip Capacity:</strong> @Weapon.clipCapacity</p>
+        <p><strong>Attack Delay:</strong> @Weapon.attackDelay</p>
+        <p><strong>Range:</strong> @Weapon.range</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Damage Types</h5>
+        <p><strong>Energy Damage:</strong> @Weapon.energyDamage</p>
+        <p><strong>Ballistic Damage:</strong> @Weapon.ballisticDamage</p>
+        <p><strong>Stamina Damage:</strong> @Weapon.staminaDamage</p>
+        <p><strong>Aura Damage:</strong> @Weapon.auraDamage</p>
+        <p><strong>Bio Damage:</strong> @Weapon.bioDamage</p>
+        <p><strong>Xeno Damage:</strong> @Weapon.xenoDamage</p>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-6">
+        <h5>Additional Stats</h5>
+        <p><strong>Destruction:</strong> @Weapon.destruction</p>
+        <p><strong>Weapon Recoil:</strong> @Weapon.weaponRecoil</p>
+        <p><strong>Agility:</strong> @Weapon.agility</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Weapon Weapon { get; set; } = null!;
+}

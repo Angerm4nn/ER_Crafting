@@ -1,0 +1,35 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h5>Basic Info</h5>
+        <p><strong>Type:</strong> @Implant.implantType</p>
+        <p><strong>Description:</strong> @Implant.Description</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Effect Stats</h5>
+        <p><strong>Bio Energy Drain:</strong> @Implant.bioEnergyDrain.ToString("F1")</p>
+
+        @if (Implant.agility != 0)
+        {
+            <p><strong>Agility:</strong> @Implant.agility.ToString("F1")</p>
+        }
+        @if (Implant.staminaRegeneration != 0)
+        {
+            <p><strong>Stamina Regeneration:</strong> @Implant.staminaRegeneration.ToString("F1")</p>
+        }
+        @if (Implant.healthRegeneration != 0)
+        {
+            <p><strong>Bio Regeneration:</strong> @Implant.healthRegeneration.ToString("F1")</p>
+        }
+        @if (Implant.armor != 0)
+        {
+            <p><strong>Armor:</strong> @Implant.armor.ToString("F1")</p>
+            <p><strong>Shielding:</strong> @Implant.shielding.ToString("F1")</p>
+
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Implant Implant { get; set; } = null!;
+}

@@ -1,0 +1,1390 @@
+﻿[
+  {
+    "name": "Zanathid 5 Inflex",
+    "icon": "icons/weapons/zanathid_5_inflex.png",
+    "weaponType": "Ballistic",
+    "productionPrice": 0,
+    "clipCapacity": 60,
+    "attackDelay": 0.450,
+    "range": 20,
+    "energyDamage": 0.0,
+    "ballisticDamage": 11.2,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 13.2,
+    "destruction": 6.3,
+    "weaponRecoil": 23.3,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "Special Steel Alloy + Silver",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 4
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 19,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Titanium Alloy",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ryx Streamline",
+    "icon": "icons/weapons/ryx_streamline.png",
+    "weaponType": "Energy",
+    "productionPrice": 0,
+    "clipCapacity": 200,
+    "attackDelay": 0.15,
+    "range": 17,
+    "energyDamage": 3.8,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 1.6,
+    "xenoDamage": 4.5,
+    "destruction": 0.0,
+    "weaponRecoil": 16.7,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "With Plastic Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "name": "With Carbon Fiber",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RGI-9",
+    "icon": "icons/weapons/rgi_9.png",
+    "weaponType": "Ballistic",
+    "productionPrice": 0,
+    "clipCapacity": 150,
+    "attackDelay": 0.2,
+    "range": 40,
+    "energyDamage": 0.0,
+    "ballisticDamage": 5.8,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 6.2,
+    "destruction": 3.5,
+    "weaponRecoil": 26.7,
+    "agility": -10.0,
+    "recipes": [
+      {
+        "name": "Special Steel Alloy Based",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Titanium Alloy Based",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Orbit XB Infineon",
+    "icon": "icons/weapons/orbit_xb_infineon.png",
+    "weaponType": "Energy",
+    "productionPrice": 0,
+    "clipCapacity": 45,
+    "attackDelay": 0.7,
+    "range": 25,
+    "energyDamage": 17.8,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 20.0,
+    "destruction": 9.8,
+    "weaponRecoil": 33.3,
+    "agility": -10.0,
+    "recipes": [
+      {
+        "name": "Titanium Syntactic Foam Based",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 5
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 12,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Special Steel Alloy Based",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 4
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Titanium Alloy Based",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 3
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Armalite Survival",
+    "icon": "icons/weapons/armalite_survival.png",
+    "weaponType": "Ballistic",
+    "productionPrice": 0,
+    "clipCapacity": 0,
+    "attackDelay": 2.0,
+    "range": 2,
+    "energyDamage": 0.0,
+    "ballisticDamage": 30.0,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 20.0,
+    "destruction": 0.0,
+    "weaponRecoil": 0.0,
+    "agility": 0.0,
+    "recipes": [
+      {
+        "name": "Titanium Alloy",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "Special Steel Alloy",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Techtronic 6x6",
+    "icon": "icons/weapons/techtronic_6x6.png",
+    "weaponType": "Ballistic",
+    "productionPrice": 0,
+    "clipCapacity": 300,
+    "attackDelay": 0.1,
+    "range": 12,
+    "energyDamage": 0.0,
+    "ballisticDamage": 3.0,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 3.5,
+    "destruction": 1.6,
+    "weaponRecoil": 16.7,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "Titanium Alloy + Nickel",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 3
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 15,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Special Steel Alloy + Beryllium",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "Titanium Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HR420",
+    "icon": "icons/weapons/hr420.png",
+    "weaponType": "Energy",
+    "productionPrice": 0,
+    "clipCapacity": 160,
+    "attackDelay": 0.2,
+    "range": 18,
+    "energyDamage": 5.0,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 2.3,
+    "xenoDamage": 5.8,
+    "destruction": 2.5,
+    "weaponRecoil": 16.7,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "Carbon Fiber",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "Plastic Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Linner PP7",
+    "icon": "icons/weapons/linner_pp7.png",
+    "weaponType": "Ballistic",
+    "productionPrice": 0,
+    "clipCapacity": 50,
+    "attackDelay": 0.6,
+    "range": 75,
+    "energyDamage": 0.0,
+    "ballisticDamage": 15.6,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 18.3,
+    "destruction": 6.0,
+    "weaponRecoil": 33.3,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "Special Steel Alloy + Manganese",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 1,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Titanium Alloy + Beryllium",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 3,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Titanium Syntactic Foam + Manganese",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DOA 187",
+    "icon": "icons/weapons/doa_187.png",
+    "weaponType": "Energy",
+    "productionPrice": 0,
+    "clipCapacity": 40,
+    "attackDelay": 0.8,
+    "range": 40,
+    "energyDamage": 20.1,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 22.0,
+    "destruction": 22.0,
+    "weaponRecoil": 33.3,
+    "agility": -10.0,
+    "recipes": [
+      {
+        "name": "Titanium Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "name": "Special Steel Alloy + Platinum",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 4
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 18,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "Titanium Alloy + Vanadium",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 3
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gakk MG6",
+    "icon": "icons/weapons/gakk_mg6.png",
+    "weaponType": "Ballistic",
+    "productionPrice": 0,
+    "clipCapacity": 200,
+    "attackDelay": 0.15,
+    "range": 12,
+    "energyDamage": 0.0,
+    "ballisticDamage": 4.3,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 5.1,
+    "destruction": 2.7,
+    "weaponRecoil": 16.7,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "Special Steel Alloy",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "name": "Titanium Alloy",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "name": "Titanium Syntactic Foam + Silver",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 19,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hallem TAR7 Tactical Assault Rifle",
+    "icon": "icons/weapons/hallem_tar7.png",
+    "weaponType": "Ballistic",
+    "productionPrice": 0,
+    "clipCapacity": 20,
+    "attackDelay": 1.5,
+    "range": 100,
+    "energyDamage": 0.0,
+    "ballisticDamage": 40.0,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 47.0,
+    "destruction": 30.0,
+    "weaponRecoil": 43.3,
+    "agility": -15.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chrono Enervon Pistol EP24",
+    "icon": "icons/weapons/chrono_enervon_pistol_ep24.png",
+    "weaponType": "Bio",
+    "productionPrice": 0,
+    "clipCapacity": 120,
+    "attackDelay": 0.45,
+    "range": 20,
+    "energyDamage": 0.0,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 9.0,
+    "auraDamage": 0.0,
+    "bioDamage": 9.7,
+    "xenoDamage": 0.0,
+    "destruction": 13.5,
+    "weaponRecoil": 16.7,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "With Plastic Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "name": "With Carbon Fiber",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Aurelian Technologies Dominator",
+    "icon": "icons/weapons/aurelian_technologies_dominator.png",
+    "weaponType": "Bio",
+    "productionPrice": 0,
+    "clipCapacity": 75,
+    "attackDelay": 0.8,
+    "range": 75,
+    "energyDamage": 0.0,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 17.0,
+    "auraDamage": 0.0,
+    "bioDamage": 15.0,
+    "xenoDamage": 0.0,
+    "destruction": 27.0,
+    "weaponRecoil": 33.3,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "Plastic Syntactic Foam + Titanium Alloy",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "Carbon Fiber + Titanium Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CryoTech Medigun CM1",
+    "icon": "icons/weapons/cryotech_medigun_cm1.png",
+    "weaponType": "Healing",
+    "productionPrice": 0,
+    "clipCapacity": 40,
+    "attackDelay": 2,
+    "range": 15,
+    "energyDamage": -15.0,
+    "ballisticDamage": 0.0,
+    "staminaDamage": -15.0,
+    "auraDamage": -9.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 0.0,
+    "destruction": 0.0,
+    "weaponRecoil": 13.3,
+    "agility": -10.0,
+    "recipes": [
+      {
+        "name": "Special Steel Alloy",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "Titanium Alloy",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "Titanium Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CryoTech Medigun CM2",
+    "icon": "icons/weapons/cryotech_medigun_cm2.png",
+    "weaponType": "Healing",
+    "productionPrice": 0,
+    "clipCapacity": 200,
+    "attackDelay": 0.2,
+    "range": 17,
+    "energyDamage": -1.8,
+    "ballisticDamage": 0.0,
+    "staminaDamage": -1.8,
+    "auraDamage": -1.5,
+    "bioDamage": 0.0,
+    "xenoDamage": 0.0,
+    "destruction": 0.0,
+    "weaponRecoil": 13.3,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "Plastic Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "name": "Carbon Fiber",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 2
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Target Painter",
+    "icon": "icons/weapons/target_painter.png",
+    "weaponType": "Other",
+    "productionPrice": 0,
+    "clipCapacity": 0,
+    "attackDelay": 0.8,
+    "range": 100,
+    "energyDamage": 0.0,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 0.0,
+    "auraDamage": 0.0,
+    "bioDamage": 0.0,
+    "xenoDamage": 0.0,
+    "destruction": 0.0,
+    "weaponRecoil": 0.0,
+    "agility": 0.0,
+    "recipes": [
+      {
+        "name": "Titanium Alloy + Plastic Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "Titanium Syntactic Foam + Carbon Fiber",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Enfield Incapacitator Rifle ER-X",
+    "icon": "icons/weapons/enfield_incapacitator_rifle_erx.png",
+    "weaponType": "Stun",
+    "productionPrice": 0,
+    "clipCapacity": 40,
+    "attackDelay": 0.7,
+    "range": 75,
+    "energyDamage": 0.0,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 13.1,
+    "auraDamage": 19.8,
+    "bioDamage": 0.0,
+    "xenoDamage": 0.0,
+    "destruction": 0.0,
+    "weaponRecoil": 33.3,
+    "agility": -10.0,
+    "recipes": [
+      {
+        "name": "Titanium Alloy + Diamonds",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 10,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Special Steel Alloy + Carbon Fiber",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 13,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Protonix Barracuda",
+    "icon": "icons/weapons/protonix_barracuda.png",
+    "weaponType": "Stun",
+    "productionPrice": 0,
+    "clipCapacity": 60,
+    "attackDelay": 0.5,
+    "range": 20,
+    "energyDamage": 0.0,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 4.2,
+    "auraDamage": 13.4,
+    "bioDamage": 0.0,
+    "xenoDamage": 0.0,
+    "destruction": 0.0,
+    "weaponRecoil": 20.0,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "Titanium Alloy + Manganese",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 3
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 14,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Special Steel Alloy + Gold",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 4
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 11,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Enfield Life Protector",
+    "icon": "icons/weapons/enfield_life_protector.png",
+    "weaponType": "Stun",
+    "productionPrice": 0,
+    "clipCapacity": 30,
+    "attackDelay": 1.0,
+    "range": 2,
+    "energyDamage": 0.0,
+    "ballisticDamage": 0.0,
+    "staminaDamage": 8.5,
+    "auraDamage": 39.9,
+    "bioDamage": 0.0,
+    "xenoDamage": 0.0,
+    "destruction": 0.0,
+    "weaponRecoil": 13.3,
+    "agility": -5.0,
+    "recipes": [
+      {
+        "name": "With Plastics",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "With Plastic Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 22,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h5>Basic Info</h5>
+        <p><strong>Type:</strong> @Medication.Type</p>
+        <p><strong>Description:</strong> @Medication.Description</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Basic Stats</h5>
+        <p><strong>Effect Duration:</strong> @Medication.effectDuration.ToString("F1")s</p>
+        <p><strong>Medikit Cooldown:</strong> @Medication.medikitCooldown.ToString("F1")s</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Effect Stats</h5>
+        @if (Medication.healthRegeneration != 0)
+        {
+            <p><strong>Health Regeneration:</strong> @Medication.healthRegeneration.ToString("F1")</p>
+        }
+        @if (Medication.staminaRegeneration != 0)
+        {
+            <p><strong>Stamina Regeneration:</strong> @Medication.staminaRegeneration.ToString("F1")</p>
+        }
+        @if (Medication.bioRegeneration != 0)
+        {
+            <p><strong>Bio Regeneration:</strong> @Medication.bioRegeneration.ToString("F1")</p>
+        }
+        @if (Medication.protectionReduction != 0)
+        {
+            <p><strong>Protection Reduction:</strong> @Medication.protectionReduction.ToString("F1")%</p>
+        }
+        @if (Medication.agility != 0)
+        {
+            <p><strong>Agility:</strong> @Medication.agility.ToString("F1")</p>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Medication Medication { get; set; } = null!;
+}

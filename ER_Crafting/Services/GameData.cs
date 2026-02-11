@@ -18,7 +18,19 @@ namespace ER_Crafting.Services
         private List<Colony> _colonies;
         private List<RawMaterial> _rawMaterials;
         private List<ProductionComponent> _productionComponents;
-        private List<FinalItem> _finalItems;
+
+        private List<Ammunition> _ammunitions;
+        private List<Armor> _armors;
+        private List<Explosive> _explosives;
+        private List<Food> _foods;
+        private List<Booster> _boosters;
+        private List<Implant> _implants;
+        private List<Medication> _medications;
+        private List<Miscellaneous> _miscellaneous;
+        private List<Weapon> _weapons;
+        private List<Clothing> _clothings;
+
+        private List<FinalItem> _allItems;
 
         private bool _isLoaded = false;
 
@@ -29,28 +41,64 @@ namespace ER_Crafting.Services
         #region loading & building
         public async Task LoadAllDataAsync(HttpClient httpClient)
         {
-            if (_isLoaded) return;
+            if (_isLoaded) return; 
 
             var options = new JsonSerializerOptions
             {
                 PropertyNameCaseInsensitive = true,
-                Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase, allowIntegerValues: false) }
+                Converters = { new JsonStringEnumConverter(JsonNamingPolicy.CamelCase, allowIntegerValues: true) }
             };
+                _colonies = await httpClient.GetFromJsonAsync<List<Colony>>("data/colonies.json", options);
+                _rawMaterials = await httpClient.GetFromJsonAsync<List<RawMaterial>>("data/raw_materials.json", options);
+                _productionComponents = await httpClient.GetFromJsonAsync<List<ProductionComponent>>("data/production_components.json", options);
+                _ammunitions = await httpClient.GetFromJsonAsync<List<Ammunition>>("data/ammunitions.json", options);
+                _armors = await httpClient.GetFromJsonAsync<List<Armor>>("data/armors.json", options);
+                _explosives = await httpClient.GetFromJsonAsync<List<Explosive>>("data/explosives.json", options);
+                _foods = await httpClient.GetFromJsonAsync<List<Food>>("data/foods.json", options);
+                //_boosters = await httpClient.GetFromJsonAsync<List<Booster>>("data/boosters.json", options);
+                _implants = await httpClient.GetFromJsonAsync<List<Implant>>("data/implants.json", options);
+                _medications = await httpClient.GetFromJsonAsync<List<Medication>>("data/medications.json", options);
+                _miscellaneous = await httpClient.GetFromJsonAsync<List<Miscellaneous>>("data/miscellaneous.json", options);
+                _weapons = await httpClient.GetFromJsonAsync<List<Weapon>>("data/weapons.json", options);
+                //_clothings = await httpClient.GetFromJsonAsync<List<Clothing>>("data/clothings.json", options);
 
-
-            _colonies = await httpClient.GetFromJsonAsync<List<Colony>>("data/colonies.json", options);
-            _rawMaterials = await httpClient.GetFromJsonAsync<List<RawMaterial>>("data/raw_materials.json", options);
-            _productionComponents = await httpClient.GetFromJsonAsync<List<ProductionComponent>>("data/production_components.json", options);
-            _finalItems = await httpClient.GetFromJsonAsync<List<FinalItem>>("data/final_items.json", options);
-
+            CreateGlobalListAndID();
             BuildRelations();
             _isLoaded = true;
         }
         #endregion
-        #region RawMaterials
+        #region Handling data
+        private void CreateGlobalListAndID()
+        {
+            var allItems = new IEnumerable<FinalItem>[]
+            {
+        _ammunitions,
+        _armors,
+        _explosives,
+        _foods,
+        //_boosters,
+        _implants,
+        _medications,
+        _miscellaneous,
+        _weapons,
+        _clothings
+            }
+            .Where(c => c != null)
+            .SelectMany(c => c);
+
+            int id = 1;
+            _allItems = new List<FinalItem>();
+
+            foreach (var item in allItems)
+            {
+                item.Id = id++;
+                _allItems.Add(item);
+            }
+        }
+
         private void BuildRelations()
         {
-            foreach (var item in _finalItems)
+            foreach (var item in _allItems)
             {
                 foreach (var recipe in item.Recipes)
                 {
@@ -123,7 +171,7 @@ namespace ER_Crafting.Services
         public List<Colony> GetAllColonies() => _colonies;
         public List<RawMaterial> GetAllRawMaterials() => _rawMaterials;
         public List<ProductionComponent> GetAllProductionComponents() => _productionComponents;
-        public List<FinalItem> GetAllFinalItems() => _finalItems;
+        public List<FinalItem> GetAllFinalItems() => _allItems;
 
         public RawMaterial GetRawMaterial(int id) => _rawMaterials?.FirstOrDefault(rm => rm.Id == id);
         public ProductionComponent GetProductionComponent(int id) => _productionComponents?.FirstOrDefault(rm => rm.Id == id);

@@ -1,0 +1,41 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h5>Basic Info</h5>
+        <p><strong>Faction:</strong> @Armor.Faction</p>
+        <p><strong>Armor Type:</strong> @Armor.ArmorType</p>
+        <p><strong>Description:</strong> @Armor.Description</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Protection Stats</h5>
+        <p><strong>Armor:</strong> @Armor.armor</p>
+        <p><strong>Shielding:</strong> @Armor.shielding</p>
+        <p><strong>Resistance:</strong> @Armor.resistance</p>
+        <p><strong>Reflection:</strong> @Armor.reflection</p>
+        <p><strong>Endurance:</strong> @Armor.endurance</p>
+        <p><strong>Defense Rating:</strong> @Armor.defenseRating</p>
+        <p><strong>Block Rating:</strong> @Armor.blockRating</p>
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-md-6">
+        <h5>Attributes</h5>
+        <p><strong>Agility:</strong> @Armor.agility</p>
+        <p><strong>Weapon Recoil:</strong> @Armor.weaponRecoil</p>
+        <p><strong>Critical Offense Rating:</strong> @Armor.criticalOffenseRating</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Regeneration & Drain</h5>
+        <p><strong>Health Regeneration:</strong> @Armor.healthRegeneration</p>
+        <p><strong>Bio Regeneration:</strong> @Armor.bioRegeneration</p>
+        <p><strong>Aura Regeneration:</strong> @Armor.auraRegeneration</p>
+        <p><strong>Stamina Regeneration:</strong> @Armor.staminaRegeneration</p>
+        <p><strong>Health Drain:</strong> @Armor.healthDrain</p>
+        <p><strong>Bio Energy Drain:</strong> @Armor.bioEnergyDrain</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Armor Armor { get; set; } = null!;
+}

@@ -1,0 +1,14 @@
+﻿<div class="mb-4">
+    <h5>Description</h5>
+    <p>@Drug.Description</p>
+</div>
+
+<div class="mb-4">
+    <h5>General Info</h5>
+    <p><strong>Type:</strong> @Drug.boosterType</p>
+</div>
+
+@code {
+    [Parameter]
+    public Drug Drug { get; set; } = null!;
+}

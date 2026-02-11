@@ -1,0 +1,12 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h5>Basic Info</h5>
+        <p><strong>Type:</strong> @Miscellaneous.Type</p>
+        <p><strong>Description:</strong> @Miscellaneous.Description</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Miscellaneous Miscellaneous { get; set; } = null!;
+}

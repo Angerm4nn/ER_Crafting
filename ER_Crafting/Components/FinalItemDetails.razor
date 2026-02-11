@@ -1,5 +1,6 @@
 ﻿@inject NavigationManager NavigationManager
 @inject ProductionPlanner ProductionPlanner
+@inject GearPlanner GearPlanner
 
 <div class="card">
     <div class="card-header">
@@ -11,66 +12,141 @@
                 }
                 <h3 class="mb-0">@Item.Name</h3>
             </div>
-            <button class="btn btn-success" @onclick="ShowAddModal">
-                <i class="bi bi-plus-circle me-1"></i> Add to Production
-            </button>
+            <div class="d-flex gap-2">
+                <button class="btn btn-primary" @onclick="AddToGear" disabled="@(!IsEquippable())">
+                    <i class="bi bi-shield-check me-1"></i> Add to Gear
+                </button>
+                <button class="btn btn-success" @onclick="ShowAddModal">
+                    <i class="bi bi-plus-circle me-1"></i> Add to Production
+                </button>
+            </div>
         </div>
     </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs px-3 pt-2">
+        <li class="nav-item">
+            <a class="nav-link @(_activeTab == "production" ? "active" : "")" 
+               style="cursor: pointer;" 
+               @onclick='() => _activeTab = "production"'>
+                Production Details
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link @(_activeTab == "stats" ? "active" : "")" 
+               style="cursor: pointer;" 
+               @onclick='() => _activeTab = "stats"'>
+                Stats Details
+            </a>
+        </li>
+    </ul>
+
     <div class="card-body">
-        <div class="mb-4">
-            <h5>Type</h5>
-            <p class="fs-4">@Item.Type</p>
-        </div>
-
-        <div class="mb-4">
-            <h5>Assembly Cost</h5>
-            <p class="fs-4">@Item.ProductionCost</p>
-        </div>
-
-        <div class="mb-4">
-            <h5>Recipes (@Item.Recipes.Count)</h5>
-            @foreach (var recipe in Item.Recipes)
-            {
-                <div class="card mb-2 @(_selectedRecipe == recipe ? "border-primary" : "")"
-                     style="cursor: pointer;"
-                     @onclick="() => SelectRecipe(recipe)">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-2">
-                            <h6 class="mb-0">@recipe.Name</h6>
-                            @if (_selectedRecipe == recipe)
-                            {
-                                <span class="badge bg-primary">Selected</span>
-                            }
-                        </div>
-                        <p class="mb-2"><strong>Makes:</strong> @recipe.OutputQuantity</p>
-                        <h6>Ingredients:</h6>
-                        @RenderIngredientsRow(recipe.Ingredients)
-                    </div>
-                </div>
-            }
-        </div>
-
-        @if (_selectedRecipe != null)
+        @if (_activeTab == "production")
         {
             <div class="mb-4">
-                <h5>Total Raw Materials Required (with current selections)</h5>
-                @if (_totalRawMaterials.Count == 0)
+                <h5>Type</h5>
+                <p class="fs-4">@Item.Type</p>
+            </div>
+
+            <div class="mb-4">
+                <h5>Assembly Cost</h5>
+                <p class="fs-4">@Item.ProductionPrice</p>
+            </div>
+
+            <div class="mb-4">
+                <h5>Recipes (@Item.Recipes.Count)</h5>
+                @foreach (var recipe in Item.Recipes)
                 {
-                    <p class="text-muted">No raw materials required.</p>
-                }
-                else
-                {
-                    <div class="row">
-                        @foreach (var kvp in _totalRawMaterials)
-                        {
-                            <div class="col-md-3 mb-2">
-                                <span class="badge bg-primary">@kvp.Value x</span>
-                                <RawMaterialCard Material="@kvp.Key" OnClick="@(() => NavigationManager.NavigateTo($"rawmaterials/{kvp.Key.Id}"))" />
+                    <div class="card mb-2 @(_selectedRecipe == recipe ? "border-primary" : "")"
+                         style="cursor: pointer;"
+                         @onclick="() => SelectRecipe(recipe)">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h6 class="mb-0">@recipe.Name</h6>
+                                @if (_selectedRecipe == recipe)
+                                {
+                                    <span class="badge bg-primary">Selected</span>
+                                }
                             </div>
-                        }
+                            <p class="mb-2"><strong>Makes:</strong> @recipe.OutputQuantity</p>
+                            <h6>Ingredients:</h6>
+                            @RenderIngredientsRow(recipe.Ingredients)
+                        </div>
                     </div>
                 }
             </div>
+
+            @if (_selectedRecipe != null)
+            {
+                <div class="mb-4">
+                    <h5>Total Raw Materials Required (with current selections)</h5>
+                    @if (_totalRawMaterials.Count == 0)
+                    {
+                        <p class="text-muted">No raw materials required.</p>
+                    }
+                    else
+                    {
+                        <div class="row">
+                            @foreach (var kvp in _totalRawMaterials)
+                            {
+                                <div class="col-md-3 mb-2">
+                                    <span class="badge bg-primary">@kvp.Value x</span>
+                                    <RawMaterialCard Material="@kvp.Key" OnClick="@(() => NavigationManager.NavigateTo($"rawmaterials/{kvp.Key.Id}"))" />
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            }
+        }
+        else if (_activeTab == "stats")
+        {
+            <!-- Stats Details Tab -->
+            @if (Item is Armor armor)
+            {
+                <ArmorStatsDetails Armor="@armor" />
+            }
+            else if (Item is Ammunition ammunition)
+            {
+                <AmmunitionStatsDetails Ammunition="@ammunition" />
+            }
+            else if (Item is Weapon weapon)
+            {
+                <WeaponStatsDetails Weapon="@weapon" />
+            }
+            else if (Item is Explosive explosive)
+            {
+                <ExplosiveStatsDetails Explosive="@explosive" />
+            }
+            else if (Item is Food food)
+            {
+                <FoodStatsDetails Food="@food" />
+            }
+            else if (Item is Booster booster)
+            {
+                <BoosterStatsDetails Booster="@booster" />
+            }
+            else if (Item is Implant implant)
+            {
+                <ImplantStatsDetails Implant="@implant" />
+            }
+            else if (Item is Medication medication)
+            {
+                <MedicationStatsDetails Medication="@medication" />
+            }
+            else if (Item is Miscellaneous miscellaneous)
+            {
+                <MiscellaneousStatsDetails Miscellaneous="@miscellaneous" />
+            }
+            else if (Item is Clothing clothing)
+            {
+                <ClothingStatsDetails Clothing="@clothing" />
+            }
+            else
+            {
+                <p class="text-muted">No stats details available for this item type.</p>
+            }
         }
     </div>
 </div>
@@ -88,6 +164,7 @@
     private Dictionary<RawMaterial, int> _totalRawMaterials = new();
     private QuantityModal _quantityModal = null!;
     private Dictionary<ProductionComponent, Recipe> _localRecipeSelections = new();
+    private string _activeTab = "production";
 
     protected override void OnInitialized()
     {
@@ -135,6 +212,25 @@
             return _localRecipeSelections[component];
 
         return component.Recipes.Count > 0 ? component.Recipes[0] : null;
+    }
+
+    private bool IsEquippable()
+    {
+        return Item is Armor
+            || Item is Booster
+            || Item is Food
+            || Item is Medication
+            || Item is Implant
+            || Item is Weapon
+            || Item is Explosive;
+    }
+
+    private void AddToGear()
+    {
+        if (IsEquippable())
+        {
+            GearPlanner.Equip(Item);
+        }
     }
 
     private void ShowAddModal()

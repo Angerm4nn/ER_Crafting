@@ -1,0 +1,47 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h5>Basic Info</h5>
+        <p><strong>Type:</strong> Food</p>
+        <p><strong>Description:</strong> @Food.Description</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Basic Stats</h5>
+        <p><strong>Effect Duration:</strong> @Food.effectDuration.ToString("F1")s</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Effect Stats</h5>
+        @if (Food.auraRegeneration != 0)
+        {
+            <p><strong>Aura Regeneration:</strong> @Food.auraRegeneration.ToString("F1")</p>
+        }
+        @if (Food.staminaRegeneration != 0)
+        {
+            <p><strong>Stamina Regeneration:</strong> @Food.staminaRegeneration.ToString("F1")</p>
+        }
+        @if (Food.bioRegeneration != 0)
+        {
+            <p><strong>Bio Regeneration:</strong> @Food.bioRegeneration.ToString("F1")</p>
+        }
+        @if (Food.addictionTreatment != 0)
+        {
+            <p><strong>Addiction Treatment:</strong> @Food.addictionTreatment.ToString("F1")</p>
+        }
+        @if (Food.criticalOffenseRating != 0)
+        {
+            <p><strong>CriticalOffenseRating:</strong> @Food.criticalOffenseRating.ToString("F1")%</p>
+        }        
+        @if (Food.weaponRecoil != 0)
+        {
+            <p><strong>Weapon Recoil:</strong> @Food.weaponRecoil.ToString("F1")%</p>
+        }
+        @if (Food.agility != 0)
+        {
+            <p><strong>Agility:</strong> @Food.agility.ToString("F1")</p>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Food Food { get; set; } = null!;
+}

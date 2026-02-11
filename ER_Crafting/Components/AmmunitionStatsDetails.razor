@@ -1,0 +1,12 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h5>Basic Info</h5>
+        <p><strong>Type:</strong> @Ammunition.Type</p>
+        <p><strong>Description:</strong> @Ammunition.Description</p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public Ammunition Ammunition { get; set; } = null!;
+}

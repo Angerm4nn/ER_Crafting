@@ -1,0 +1,295 @@
+﻿[
+  {
+    "name": "Biocell",
+    "icon": "icons/medications/biocell.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "effectDuration": 20,
+    "medikitCooldown": 0.1,
+    "healthRegeneration": 0.0,
+    "staminaRegeneration": 0.0,
+    "bioRegeneration": 5.0,
+    "agility": -6.0,
+    "protectionReduction": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 8,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Small Medikit",
+    "icon": "icons/medications/small_medikit.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "effectDuration": 50,
+    "medikitCooldown": 0.3,
+    "healthRegeneration": 7.0,
+    "staminaRegeneration": 0.0,
+    "bioRegeneration": 0.0,
+    "agility": 0.0,
+    "protectionReduction": 50.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Standard Medikit",
+    "icon": "icons/medications/standard_medikit.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "effectDuration": 30.0,
+    "medikitCooldown": 0.3,
+    "healthRegeneration": 5.0,
+    "staminaRegeneration": 0.0,
+    "bioRegeneration": 0.0,
+    "agility": 0.0,
+    "protectionReduction": 30.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Battle Medikit",
+    "icon": "icons/medications/battle_medikit.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "effectDuration": 15.0,
+    "medikitCooldown": 0.3,
+    "healthRegeneration": 4.0,
+    "staminaRegeneration": 0.0,
+    "bioRegeneration": 0.0,
+    "agility": 0.0,
+    "protectionReduction": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 8,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Emergency Medikit",
+    "icon": "icons/medications/emergency_medikit.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "effectDuration": 10.0,
+    "medikitCooldown": 0.3,
+    "healthRegeneration": 5.0,
+    "staminaRegeneration": 0.0,
+    "bioRegeneration": 0.0,
+    "agility": 0.0,
+    "protectionReduction": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 8,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nanomachine Autoinjector",
+    "icon": "icons/medications/nanomachine_autoinjector.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "effectDuration": 1.0,
+    "medikitCooldown": 2.5,
+    "healthRegeneration": 10.0,
+    "staminaRegeneration": 0.0,
+    "bioRegeneration": 0.0,
+    "agility": 0.0,
+    "protectionReduction": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 24,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 20,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 8,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Adrenaline Autoinjector",
+    "icon": "icons/medications/adrenaline_autoinjector.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "effectDuration": 1.0,
+    "medikitCooldown": 1.5,
+    "healthRegeneration": 0.0,
+    "staminaRegeneration": 20.0,
+    "bioRegeneration": 0.0,
+    "agility": 0.0,
+    "protectionReduction": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 20,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 8,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Electrolyte Autoinjector",
+    "icon": "icons/medications/electrolyte_autoinjector.png",
+    "type": "Medication",
+    "productionPrice": 0,
+    "effectDuration": 1.0,
+    "medikitCooldown": 1.5,
+    "healthRegeneration": 0.0,
+    "staminaRegeneration": 0.0,
+    "bioRegeneration": 20.0,
+    "agility": 0.0,
+    "protectionReduction": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 3,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 24,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 8,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+]

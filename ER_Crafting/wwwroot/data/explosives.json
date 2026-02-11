@@ -1,0 +1,176 @@
+﻿[
+  {
+    "name": "FGz-78",
+    "icon": "icons/explosives/fgz_78.png",
+    "type": "Explosive",
+    "productionPrice": 0,
+    "attackDelay": 5.0,
+    "damageRadius": 10.0,
+    "energyDamage": 0.0,
+    "bioDamage": 0.0,
+    "destruction": 30.0,
+    "agility": -1.0,
+    "ballisticDamage": 40.0,
+    "auraDamage": 15.0,
+    "xenoDamage": 40.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 3,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Militek EMP",
+    "icon": "icons/explosives/militek_emp.png",
+    "type": "Explosive",
+    "productionPrice": 0,
+    "attackDelay": 5.0,
+    "damageRadius": 20.0,
+    "energyDamage": 6.0,
+    "bioDamage": 50.0,
+    "destruction": 50.0,
+    "agility": -1.0,
+    "ballisticDamage": 0.0,
+    "auraDamage": 0.0,
+    "xenoDamage": 0.0,
+    "recipes": [
+      {
+        "name": "Plastic Syntactic Foam",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 3
+          }
+        ]
+      },
+      {
+        "name": "Plastics",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Salvotec HP220",
+    "icon": "icons/explosives/salvotec_hp220.png",
+    "type": "Explosive",
+    "productionPrice": 0,
+    "attackDelay": 5.0,
+    "damageRadius": 10.0,
+    "energyDamage": 0.0,
+    "bioDamage": 0.0,
+    "destruction": 40.0,
+    "agility": 0.0,
+    "ballisticDamage": 55.0,
+    "auraDamage": 20.0,
+    "xenoDamage": 55.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 4,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EMP-Rv3",
+    "icon": "icons/explosives/emp_rv3.png",
+    "type": "Explosive",
+    "productionPrice": 0,
+    "attackDelay": 5.0,
+    "damageRadius": 20.0,
+    "energyDamage": 6.0,
+    "bioDamage": 60.0,
+    "destruction": 60.0,
+    "agility": -1.0,
+    "ballisticDamage": 0.0,
+    "auraDamage": 0.0,
+    "xenoDamage": 0.0,
+    "recipes": [
+      {
+        "name": "Plastics",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 2
+          }
+        ]
+      },
+      {
+        "name": "Plastic Syntactic Foam",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  }
+]

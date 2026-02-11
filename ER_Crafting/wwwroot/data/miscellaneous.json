@@ -1,0 +1,40 @@
+﻿[
+{
+  "name": "Hacking Interface",
+  "icon": "icons/miscellaneous/hacking_interface.png",
+  "type": "Miscellaneous",
+  "productionPrice": 0,
+  "recipes": [
+    {
+      "name": "Standard",
+      "outputQuantity": 3,
+      "ingredients": [
+        {
+          "type": "ProductionComponent",
+          "itemId": 14,
+          "quantity": 1
+        }
+      ]
+    }
+  ]
+},
+  {
+    "name": "Dice",
+    "icon": "icons/miscellaneous/dice.png",
+    "type": "Miscellaneous",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+]
