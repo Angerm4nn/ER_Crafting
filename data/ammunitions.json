@@ -1,0 +1,425 @@
+﻿[
+  {
+    "name": "Zanathid 5 Rounds",
+    "icon": "icons/ammunitions/zanathid_5_rounds.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 3,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ryx 7 Energy Cell",
+    "icon": "icons/ammunitions/ryx_7_energy_cell.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "RGI-9 Rounds",
+    "icon": "icons/ammunitions/rgi_9_rounds.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 3,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Orbit XB Energy Cell",
+    "icon": "icons/ammunitions/orbit_xb_energy_cell.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Techtronic Rounds",
+    "icon": "icons/ammunitions/techtronic_rounds.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 3,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "HR420 Energy Cell",
+    "icon": "icons/ammunitions/hr420_energy_cell.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Linner PP7 Rounds",
+    "icon": "icons/ammunitions/linner_pp7_rounds.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 3,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DOA187 Energy Cell",
+    "icon": "icons/ammunitions/doa187_energy_cell.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gakk MG6 Rounds",
+    "icon": "icons/ammunitions/gakk_mg6_rounds.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 3,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Hallem TAR7 Rounds",
+    "icon": "icons/ammunitions/hallem_tar7_rounds.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chrono Enervon Energy Cell",
+    "icon": "icons/ammunitions/chrono_enervon_energy_cell.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Aurelian Technologies Bio Rounds",
+    "icon": "icons/ammunitions/aurelian_technologies_bio_rounds.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 3,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CryoTech Healing Cell",
+    "icon": "icons/ammunitions/cryotech_healing_cell.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "CryoTech CM2 Healing Cell",
+    "icon": "icons/ammunitions/cryotech_cm2_healing_cell.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ER-X Rubber Rounds",
+    "icon": "icons/ammunitions/erx_rubber_rounds.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Barracuda Rounds",
+    "icon": "icons/ammunitions/barracuda_rounds.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Enfield Energy Cell",
+    "icon": "icons/ammunitions/enfield_energy_cell.png",
+    "type": "Ammunition",
+    "productionCost": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 17,
+            "quantity": 4
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 16,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+﻿[
+  {
+    "name": "Leg Clothes",
+    "icon": "icons/clothing/leg_clothes.png",
+    "type": "LegClothes",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "T-shirts",
+    "icon": "icons/clothing/t_shirt.png",
+    "type": "TorsoClothes",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Jackets",
+    "icon": "icons/clothing/jacket.png",
+    "type": "TorsoClothes",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 6
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Coats",
+    "icon": "icons/clothing/coat.png",
+    "type": "TorsoClothes",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 19,
+            "quantity": 7
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 3,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shoes",
+    "icon": "icons/clothing/shoes.png",
+    "type": "Shoes",
+    "productionPrice": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 4,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 7,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+]

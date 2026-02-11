@@ -1,0 +1,246 @@
+﻿[
+  {
+    "name": "Aquatican Brew",
+    "icon": "icons/foods/aquatican_brew.png",
+    "boosterType": "food",
+    "productionPrice": 0,
+    "effectDuration": 5.0,
+    "auraRegeneration": 1.0,
+    "addictionTreatment": 0.0,
+    "staminaRegeneration": 0.0,
+    "criticalOffenseRating": 0.0,
+    "bioRegeneration": 0.0,
+    "weaponRecoil": 0.0,
+    "agility": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 3
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 12,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nano Bite Burger",
+    "icon": "icons/foods/nano_bite_burger.png",
+    "boosterType": "food",
+    "productionPrice": 0,
+    "effectDuration": 5.0,
+    "auraRegeneration": 0.0,
+    "addictionTreatment": 0.0,
+    "staminaRegeneration": 0.0,
+    "criticalOffenseRating": 0.0,
+    "bioRegeneration": 1.0,
+    "weaponRecoil": 0.0,
+    "agility": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 16,
+            "quantity": 3
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Pulse Mineral Water",
+    "icon": "icons/foods/pulse_mineral_water.png",
+    "boosterType": "food",
+    "productionPrice": 0,
+    "effectDuration": 5.0,
+    "auraRegeneration": 0.0,
+    "addictionTreatment": 0.34,
+    "staminaRegeneration": 0.0,
+    "criticalOffenseRating": 0.0,
+    "bioRegeneration": 0.0,
+    "weaponRecoil": 0.0,
+    "agility": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mystical Cola",
+    "icon": "icons/foods/mystical_cola.png",
+    "boosterType": "food",
+    "productionPrice": 0,
+    "effectDuration": 5.0,
+    "auraRegeneration": 0.0,
+    "addictionTreatment": 0.0,
+    "staminaRegeneration": 1.0,
+    "criticalOffenseRating": 0.0,
+    "bioRegeneration": 0.0,
+    "weaponRecoil": 0.0,
+    "agility": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 5
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ginnan Sushi",
+    "icon": "icons/foods/ginnan_sushi.png",
+    "boosterType": "food",
+    "productionPrice": 0,
+    "effectDuration": 5,
+    "auraRegeneration": 0.0,
+    "addictionTreatment": 0.0,
+    "staminaRegeneration": 0.0,
+    "criticalOffenseRating": 0.0,
+    "bioRegeneration": 0.0,
+    "weaponRecoil": -5.0,
+    "agility": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 16,
+            "quantity": 4
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Flying Orange",
+    "icon": "icons/foods/flying_orange.png",
+    "boosterType": "food",
+    "productionPrice": 0,
+    "effectDuration": 5.0,
+    "auraRegeneration": 0.0,
+    "addictionTreatment": 0.0,
+    "staminaRegeneration": 0.0,
+    "criticalOffenseRating": 0.0,
+    "bioRegeneration": 0.0,
+    "weaponRecoil": 0.0,
+    "agility": 3.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 4
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 16,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "DoubleCheese Mystique",
+    "icon": "icons/foods/doublecheese_mystique.png",
+    "boosterType": "food",
+    "productionPrice": 0,
+    "effectDuration": 5,
+    "auraRegeneration": 0.0,
+    "addictionTreatment": 0.0,
+    "staminaRegeneration": 0.0,
+    "criticalOffenseRating": 2.0,
+    "bioRegeneration": 0.0,
+    "weaponRecoil": 0.0,
+    "agility": 0.0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 5,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 16,
+            "quantity": 3
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 23,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  }
+]

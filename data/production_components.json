@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Aluminium",
-    "icon": "icons/aluminium.png",
+    "icon": "icons/production_components/aluminium.png",
     "refiningCost": 0,
     "recipes": [
       {
@@ -22,11 +22,11 @@
   {
     "id": 2,
     "name": "Titanium Alloy",
-    "icon": "icons/titanium_alloy.png",
+    "icon": "icons/production_components/titanium_alloy.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 2,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -52,11 +52,11 @@
   {
     "id": 3,
     "name": "Metal Alloy",
-    "icon": "icons/metal_alloy.png",
+    "icon": "icons/production_components/metal_alloy.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 3,
+        "id": 1,
         "name": "Iron + Chrome",
         "outputQuantity": 2,
         "ingredients": [
@@ -73,7 +73,7 @@
         ]
       },
       {
-        "id": 4,
+        "id": 2,
         "name": "Iron + Nickel",
         "outputQuantity": 2,
         "ingredients": [
@@ -94,11 +94,11 @@
   {
     "id": 4,
     "name": "Special Steel Alloy",
-    "icon": "icons/special_steel_alloy.png",
+    "icon": "icons/production_components/special_steel_alloy.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 5,
+        "id": 1,
         "name": "With Vanadium",
         "outputQuantity": 1,
         "ingredients": [
@@ -120,7 +120,7 @@
         ]
       },
       {
-        "id": 6,
+        "id": 2,
         "name": "With Cobalt",
         "outputQuantity": 1,
         "ingredients": [
@@ -146,11 +146,11 @@
   {
     "id": 5,
     "name": "Chemicals",
-    "icon": "icons/chemicals.png",
+    "icon": "icons/production_components/chemicals.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 7,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -166,11 +166,11 @@
   {
     "id": 6,
     "name": "Carbon",
-    "icon": "icons/carbon.png",
+    "icon": "icons/production_components/carbon.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 9,
+        "id": 1,
         "name": "From Coal",
         "outputQuantity": 1,
         "ingredients": [
@@ -182,7 +182,7 @@
         ]
       },
       {
-        "id": 10,
+        "id": 2,
         "name": "From Anthracite",
         "outputQuantity": 1,
         "ingredients": [
@@ -198,11 +198,11 @@
   {
     "id": 7,
     "name": "Rubber",
-    "icon": "icons/rubber.png",
+    "icon": "icons/production_components/rubber.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 11,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -223,11 +223,11 @@
   {
     "id": 8,
     "name": "Bioplasma",
-    "icon": "icons/bioplasma.png",
+    "icon": "icons/production_components/bioplasma.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 12,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -243,11 +243,11 @@
   {
     "id": 9,
     "name": "Plastics",
-    "icon": "icons/plastics.png",
+    "icon": "icons/production_components/plastics.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 13,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -268,11 +268,11 @@
   {
     "id": 10,
     "name": "Electronic Components",
-    "icon": "icons/electronic_components.png",
+    "icon": "icons/production_components/electronic_components.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 14,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -298,11 +298,11 @@
   {
     "id": 11,
     "name": "CPU",
-    "icon": "icons/cpu.png",
+    "icon": "icons/production_components/cpu.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 15,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -323,11 +323,11 @@
   {
     "id": 12,
     "name": "Glass",
-    "icon": "icons/glass.png",
+    "icon": "icons/production_components/glass.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 16,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 3,
         "ingredients": [
@@ -353,11 +353,11 @@
   {
     "id": 13,
     "name": "Carbon Fiber",
-    "icon": "icons/carbon_fiber.png",
+    "icon": "icons/production_components/carbon_fiber.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 17,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -373,11 +373,11 @@
   {
     "id": 14,
     "name": "Professional Electronics",
-    "icon": "icons/professional_electronics.png",
+    "icon": "icons/production_components/professional_electronics.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 18,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -403,11 +403,11 @@
   {
     "id": 15,
     "name": "High Performance Conductor",
-    "icon": "icons/high_performance_conductor.png",
+    "icon": "icons/production_components/high_performance_conductor.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 19,
+        "id": 1,
         "name": "From Gold",
         "outputQuantity": 1,
         "ingredients": [
@@ -419,7 +419,7 @@
         ]
       },
       {
-        "id": 20,
+        "id": 2,
         "name": "From Platinum",
         "outputQuantity": 1,
         "ingredients": [
@@ -431,7 +431,7 @@
         ]
       },
       {
-        "id": 21,
+        "id": 3,
         "name": "From Iridium",
         "outputQuantity": 1,
         "ingredients": [
@@ -443,7 +443,7 @@
         ]
       },
       {
-        "id": 22,
+        "id": 4,
         "name": "From Silver",
         "outputQuantity": 1,
         "ingredients": [
@@ -455,7 +455,7 @@
         ]
       },
       {
-        "id": 23,
+        "id": 5,
         "name": "From Copper + Beryllium",
         "outputQuantity": 1,
         "ingredients": [
@@ -476,11 +476,11 @@
   {
     "id": 16,
     "name": "Conductor",
-    "icon": "icons/conductor.png",
+    "icon": "icons/production_components/conductor.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 24,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 1,
         "ingredients": [
@@ -496,11 +496,11 @@
   {
     "id": 17,
     "name": "Plastic Syntactic Foam",
-    "icon": "icons/plastic_syntactic_foam.png",
+    "icon": "icons/production_components/plastic_syntactic_foam.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 25,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 3,
         "ingredients": [
@@ -516,11 +516,11 @@
   {
     "id": 18,
     "name": "Titanium Syntactic Foam",
-    "icon": "icons/titanium_syntactic_foam.png",
+    "icon": "icons/production_components/titanium_syntactic_foam.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 26,
+        "id": 1,
         "name": "Standard",
         "outputQuantity": 3,
         "ingredients": [
@@ -536,11 +536,11 @@
   {
     "id": 19,
     "name": "Textiles",
-    "icon": "icons/textiles.png",
+    "icon": "icons/production_components/textiles.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 27,
+        "id": 1,
         "name": "Pure Chemicals",
         "outputQuantity": 5,
         "ingredients": [
@@ -552,7 +552,7 @@
         ]
       },
       {
-        "id": 28,
+        "id": 2,
         "name": "Mixed Materials",
         "outputQuantity": 5,
         "ingredients": [
@@ -578,11 +578,11 @@
   {
     "id": 20,
     "name": "Sticky Xenomorphic Fluid",
-    "icon": "icons/sticky_xenomorphic_fluid.png",
+    "icon": "icons/production_components/sticky_xenomorphic_fluid.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 29,
+        "id": 1,
         "name": "From  Carcinus",
         "outputQuantity": 5,
         "ingredients": [
@@ -594,7 +594,7 @@
         ]
       },
       {
-        "id": 30,
+        "id": 2,
         "name": "From Behemoth cranium",
         "outputQuantity": 5,
         "ingredients": [
@@ -606,7 +606,7 @@
         ]
       },
       {
-        "id": 31,
+        "id": 3,
         "name": "From Behemoth tail",
         "outputQuantity": 5,
         "ingredients": [
@@ -618,7 +618,7 @@
         ]
       },
       {
-        "id": 32,
+        "id": 4,
         "name": "From Piercing Oculi",
         "outputQuantity": 5,
         "ingredients": [
@@ -630,7 +630,7 @@
         ]
       },
       {
-        "id": 33,
+        "id": 5,
         "name": "From Pulsating Cerebrum",
         "outputQuantity": 5,
         "ingredients": [
@@ -642,7 +642,7 @@
         ]
       },
       {
-        "id": 34,
+        "id": 6,
         "name": "From Mantis Cranium",
         "outputQuantity": 5,
         "ingredients": [
@@ -654,7 +654,7 @@
         ]
       },
       {
-        "id": 35,
+        "id": 7,
         "name": "From Xenomorph Endocrine Glands",
         "outputQuantity": 5,
         "ingredients": [
@@ -670,11 +670,11 @@
   {
     "id": 21,
     "name": "Solid Carbonite Shell",
-    "icon": "icons/solid_carbonite_shell.png",
+    "icon": "icons/production_components/solid_carbonite_shell.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 36,
+        "id": 1,
         "name": "From Carcinus Dorsal Carapace",
         "outputQuantity": 1,
         "ingredients": [
@@ -686,7 +686,7 @@
         ]
       },
       {
-        "id": 37,
+        "id": 2,
         "name": "From Sturdy Carapace",
         "outputQuantity": 1,
         "ingredients": [
@@ -698,7 +698,7 @@
         ]
       },
       {
-        "id": 38,
+        "id": 3,
         "name": "From Mantis Metathorax",
         "outputQuantity": 1,
         "ingredients": [
@@ -714,11 +714,11 @@
   {
     "id": 22,
     "name": "Xenomorph Proteins",
-    "icon": "icons/xenomorph_proteins.png",
+    "icon": "icons/production_components/xenomorph_proteins.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 39,
+        "id": 1,
         "name": "From Carcinus Forelimbs",
         "outputQuantity": 5,
         "ingredients": [
@@ -730,7 +730,7 @@
         ]
       },
       {
-        "id": 40,
+        "id": 2,
         "name": "From Behemoth Forelimbs",
         "outputQuantity": 5,
         "ingredients": [
@@ -742,7 +742,7 @@
         ]
       },
       {
-        "id": 41,
+        "id": 3,
         "name": "From Behemoth Tail",
         "outputQuantity": 5,
         "ingredients": [
@@ -754,7 +754,7 @@
         ]
       },
       {
-        "id": 42,
+        "id": 4,
         "name": "From Mantis Metathorax",
         "outputQuantity": 5,
         "ingredients": [
@@ -766,7 +766,7 @@
         ]
       },
       {
-        "id": 43,
+        "id": 5,
         "name": "From Carcinus Cranium",
         "outputQuantity": 5,
         "ingredients": [
@@ -778,7 +778,7 @@
         ]
       },
       {
-        "id": 44,
+        "id": 6,
         "name": "From Behemot Cranium",
         "outputQuantity": 5,
         "ingredients": [
@@ -790,7 +790,7 @@
         ]
       },
       {
-        "id": 45,
+        "id": 7,
         "name": "From Mantis Cranium",
         "outputQuantity": 5,
         "ingredients": [
@@ -802,7 +802,7 @@
         ]
       },
       {
-        "id": 46,
+        "id": 8,
         "name": "From Pulsating Cerebrum",
         "outputQuantity": 5,
         "ingredients": [
@@ -818,11 +818,11 @@
   {
     "id": 23,
     "name": "Ultra Resillient Mineral",
-    "icon": "icons/ultra_resillient_mineral.png",
+    "icon": "icons/production_components/ultra_resillient_mineral.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 47,
+        "id": 1,
         "name": "From Carcinus Forelimbs",
         "outputQuantity": 1,
         "ingredients": [
@@ -834,7 +834,7 @@
         ]
       },
       {
-        "id": 48,
+        "id": 2,
         "name": "From Behemoth Forelimbs",
         "outputQuantity": 1,
         "ingredients": [
@@ -846,7 +846,7 @@
         ]
       },
       {
-        "id": 49,
+        "id": 3,
         "name": "From Serrated Claws",
         "outputQuantity": 1,
         "ingredients": [
@@ -858,7 +858,7 @@
         ]
       },
       {
-        "id": 50,
+        "id": 4,
         "name": "From Mantis Mesothorax",
         "outputQuantity": 1,
         "ingredients": [
@@ -874,11 +874,11 @@
   {
     "id": 24,
     "name": "Deuterium Water",
-    "icon": "icons/deuterium_water.png",
+    "icon": "icons/production_components/deuterium_water.png",
     "refiningCost": 0,
     "recipes": [
       {
-        "id": 51,
+        "id": 1,
         "name": "From Xenomorph Hemolyph",
         "outputQuantity": 5,
         "ingredients": [
@@ -890,7 +890,7 @@
         ]
       },
       {
-        "id": 52,
+        "id": 2,
         "name": "From Bloody Xenomorph Slime",
         "outputQuantity": 5,
         "ingredients": [
@@ -902,7 +902,7 @@
         ]
       },
       {
-        "id": 53,
+        "id": 3,
         "name": "From Xenomorph Endocrine Glands",
         "outputQuantity": 1,
         "ingredients": [

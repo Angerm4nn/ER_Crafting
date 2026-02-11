@@ -1,0 +1,198 @@
+﻿[
+  {
+    "name": "Night Vision Implant",
+    "icon": "icons/implants/night_vision_implant.png",
+    "implantType": 0,
+    "productionPrice": 69,
+    "bioEnergyDrain": 0.1,
+    "agility": 0.0,
+    "staminaRegeneration": 0.0,
+    "healthRegeneration": 0.0,
+    "armor": 0,
+    "shielding": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Stamina Amplification",
+    "icon": "icons/implants/stamina_amplification.png",
+    "implantType": 2,
+    "productionPrice": 0,
+    "bioEnergyDrain": 2.0,
+    "agility": 10.0,
+    "staminaRegeneration": 2.5,
+    "healthRegeneration": 0.0,
+    "armor": 0,
+    "shielding": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 5
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 11,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shoulder Lamp",
+    "icon": "icons/implants/shoulder_lamp.png",
+    "implantType": 1,
+    "productionPrice": 0,
+    "bioEnergyDrain": 0.1,
+    "agility": 0.0,
+    "staminaRegeneration": 0.0,
+    "healthRegeneration": 0.0,
+    "armor": 0,
+    "shielding": 0,
+    "recipes": [
+      {
+        "name": "Titanium Alloy",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 9,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 2,
+            "quantity": 1
+          }
+        ]
+      },
+      {
+        "name": "Syntactic Foam",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 10,
+            "quantity": 1
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 17,
+            "quantity": 2
+          },
+          {
+            "type": "ProductionComponent",
+            "itemId": 18,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Resistance Amp",
+    "icon": "icons/implants/resistance_amp.png",
+    "implantType": 4,
+    "productionPrice": 0,
+    "bioEnergyDrain": 1.0,
+    "agility": 0.0,
+    "staminaRegeneration": 0.0,
+    "healthRegeneration": 2.0,
+    "armor": 0,
+    "shielding": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 5
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 18,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shield Implant",
+    "icon": "icons/implants/shield_implant.png",
+    "implantType": 3,
+    "productionPrice": 0,
+    "bioEnergyDrain": 1.0,
+    "agility": 0.0,
+    "staminaRegeneration": 0.0,
+    "healthRegeneration": 0.0,
+    "armor": 150,
+    "shielding": 150,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 5
+          },
+          {
+            "type": "RawMaterial",
+            "itemId": 12,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Scanner Implant",
+    "icon": "icons/implants/scanner_implant.png",
+    "implantType": 0,
+    "productionPrice": 0,
+    "bioEnergyDrain": 0.1,
+    "agility": 0.0,
+    "staminaRegeneration": 0.0,
+    "healthRegeneration": 0.0,
+    "armor": 0,
+    "shielding": 0,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 1,
+        "ingredients": [
+          {
+            "type": "ProductionComponent",
+            "itemId": 14,
+            "quantity": 3
+          }
+        ]
+      }
+    ]
+  }
+]
