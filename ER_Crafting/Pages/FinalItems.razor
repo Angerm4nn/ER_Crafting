@@ -320,9 +320,11 @@
 
     private void UpdateUrl()
     {
+        // Build query parameters
+        var queryParams = new Dictionary<string, string>();
+
         // Build filter parameter
         var filterParts = new List<string>();
-
         if (!string.IsNullOrEmpty(_itemTypeFilter))
         {
             filterParts.Add(_itemTypeFilter);
@@ -352,9 +354,6 @@
             }
         }
 
-        // Build query parameters
-        var queryParams = new Dictionary<string, string>();
-
         if (filterParts.Count > 0)
             queryParams["filter"] = string.Join("/", filterParts);
 
@@ -364,8 +363,10 @@
         if (_filterSettings.IsFemale)
             queryParams["female"] = "true";
 
-        // Use relative navigation without leading slash - works reliably with GitHub Pages
-        var newUrl = QueryHelpers.AddQueryString("finalitems", queryParams);
+        // Simplest approach: get current path without query, add new query
+        var currentUri = new Uri(NavigationManager.Uri);
+        var pathOnly = currentUri.AbsolutePath;
+        var newUrl = QueryHelpers.AddQueryString(pathOnly, queryParams);
         NavigationManager.NavigateTo(newUrl, replace: true);
     }
 
