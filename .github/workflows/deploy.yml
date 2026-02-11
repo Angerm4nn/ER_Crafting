@@ -24,18 +24,15 @@ jobs:
       
       - name: Set base href for GitHub Pages
         run: |
-          sed -i 's|<base href="/" />|<base href="/ER_Crafting/" />|' release/wwwroot/ER_Crafting/index.html
-
-      - name: Change base-tag in index.html from / to /ER_Crafting/
-        run: sed -i 's/<base href="\/" \/>/<base href="\/ER_Crafting\/" \/>/g' release/wwwroot/index.html
+          sed -i 's|<base href="/" />|<base href="/ER_Crafting/" />|' release/wwwroot/index.html
       
       - name: SPA routing fix
         run: |
-          touch release/wwwroot/ER_Crafting/.nojekyll
-          cp release/wwwroot/ER_Crafting/index.html release/wwwroot/ER_Crafting/404.html
+          touch release/wwwroot/.nojekyll
+          cp release/wwwroot/index.html release/wwwroot/404.html
       
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: release/wwwroot/ER_Crafting
+          folder: release/wwwroot
