@@ -363,10 +363,14 @@
         if (_filterSettings.IsFemale)
             queryParams["female"] = "true";
 
-        // Simplest approach: get current path without query, add new query
+        // Most robust solution - let NavigationManager handle the base path resolution
         var currentUri = new Uri(NavigationManager.Uri);
-        var pathOnly = currentUri.AbsolutePath;
-        var newUrl = QueryHelpers.AddQueryString(pathOnly, queryParams);
+        var newQuery = QueryHelpers.AddQueryString("", queryParams).TrimStart('?');
+
+        // Reconstruct URL with same path but new query string
+        var pathWithoutQuery = currentUri.GetLeftPart(UriPartial.Path);
+        var newUrl = string.IsNullOrEmpty(newQuery) ? pathWithoutQuery : $"{pathWithoutQuery}?{newQuery}";
+
         NavigationManager.NavigateTo(newUrl, replace: true);
     }
 
