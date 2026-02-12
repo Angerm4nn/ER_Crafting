@@ -6,37 +6,34 @@ namespace ER_Crafting.Services
     public class GearPlanner
     {
         //BaseStats
-        private const float BASE_HEALTH_REGEN = 0.7f;
-        private const float BASE_STAMINA_REGEN = 2.0f;
-        private const float BASE_AURA_REGEN = 2.5f;
+        private const double BASE_HEALTH_REGEN = 0.7;
+        private const double BASE_STAMINA_REGEN = 2.0;
+        private const double BASE_AURA_REGEN = 2.5;
         //MainStats
-        public float Agility { get; private set; } = 100.0f;
-        public double Addiction { get; private set; } = 0.0f;
+        public double Agility { get; private set; } = 100.0;
+        public double Addiction { get; private set; } = 0.0;
         //Regeneration
-        public float HealthRegeneration { get; private set; } = 0.7f;
-        public float StaminaRegeneration { get; private set; } = 2.0f;
-        public float BioRegeneration { get; private set; } = 0.0f;
-        public float AuraRegeneration { get; private set; } = 2.5f;
-        public double AddictionTreatment { get; private set; } = 0.0f;
+        public double HealthRegeneration { get; private set; } = 0.7;
+        public double StaminaRegeneration { get; private set; } = 2.0;
+        public double BioRegeneration { get; private set; } = 0.0;
+        public double AuraRegeneration { get; private set; } = 2.5;
+        public double AddictionTreatment { get; private set; } = 0.0;
         //Damages
-        public float HealthDrain { get; private set; } = 0.0f;
-        public float StaminaDrain { get; private set; } = 0.0f;
-        public float BioEnergyDrain { get; private set; } = 0.0f;
-        public float AuraLoss { get; private set; } = 0.0f;
-        public float CriticalOffenseRating { get; private set; } = 0.0f;
-        public float WeaponRecoil { get; private set; } = 0.0f;
+        public double HealthDrain { get; private set; } = 0.0;
+        public double StaminaDrain { get; private set; } = 0.0;
+        public double BioEnergyDrain { get; private set; } = 0.0;
+        public double AuraLoss { get; private set; } = 0.0;
+        public double CriticalOffenseRating { get; private set; } = 0.0;
+        public double WeaponRecoil { get; private set; } = 0.0;
         //Protection
-        public float ArmorValue { get; private set; } = 0.0f;
-        public float Shielding { get; private set; } = 0.0f;
-        public float Endurance { get; private set; } = 0.0f;
-        public float Resistance { get; private set; } = 0.0f;
-        public float Reflection { get; private set; } = 0.0f;
-        public float DefenseRating { get; private set; } = 0.0f;
-        public float BlockRating { get; private set; } = 0.0f;
-        public float ProtectionReduction { get; private set; } = 0.0f;
-
-        // Base stat values 
-
+        public double ArmorValue { get; private set; } = 0.0;
+        public double Shielding { get; private set; } = 0.0;
+        public double Endurance { get; private set; } = 0.0;
+        public double Resistance { get; private set; } = 0.0;
+        public double Reflection { get; private set; } = 0.0;
+        public double DefenseRating { get; private set; } = 0.0;
+        public double BlockRating { get; private set; } = 0.0;
+        public double ProtectionReduction { get; private set; } = 0.0;
 
         //Armor Slots
         public FinalItem? Helmet { get; private set; }
@@ -83,39 +80,43 @@ namespace ER_Crafting.Services
             switch (item.Type)
             {
                 case ItemType.Weapon:
-                    if (FirstWeapon == null)
-                        FirstWeapon = item;
-                    else
-                        FirstWeapon = item;
+                    FirstWeapon = item;
                     break;
 
                 case ItemType.Implant:
                     Implant implant = item as Implant;
+
+                    // Unequip ALL other implants first - only ONE implant allowed
+                    EyesImplant = null;
+                    ChestImplant = null;
+                    BackImplant = null;
+                    ShoulderImplant = null;
+                    LegImplant = null;
+
+                    // Now equip the new implant
                     if (implant.implantType == ImplantType.EyesImplant)
                     {
                         EyesImplant = implant;
                     }
-                    if (implant.implantType == ImplantType.ChestImplant)
+                    else if (implant.implantType == ImplantType.ChestImplant)
                     {
                         ChestImplant = implant;
-                        Unequip(TorsoArmor);
+                        Unequip(TorsoArmor); // Still remove conflicting armor
                     }
-                    if (implant.implantType == ImplantType.BackImplant)
+                    else if (implant.implantType == ImplantType.BackImplant)
                     {
                         BackImplant = implant;
-                        Unequip(TorsoArmor);
-
+                        Unequip(TorsoArmor); // Still remove conflicting armor
                     }
-                    if (implant.implantType == ImplantType.ShoulderImplant)
+                    else if (implant.implantType == ImplantType.ShoulderImplant)
                     {
                         ShoulderImplant = implant;
-                        Unequip(ShoulderPads);
-
+                        Unequip(ShoulderPads); // Still remove conflicting armor
                     }
-                    if (implant.implantType == ImplantType.LegImplant)
+                    else if (implant.implantType == ImplantType.LegImplant)
                     {
                         LegImplant = implant;
-                        Unequip(LegPads);
+                        Unequip(LegPads); // Still remove conflicting armor
                     }
                     break;
 
@@ -138,20 +139,35 @@ namespace ER_Crafting.Services
                     break;
 
                 case ItemType.Armor:
-                    if (Helmet == null)
-                        Helmet = item;
-                    else if (ShoulderPads == null)
-                        ShoulderPads = item;
-                    else if (ArmPads == null)
-                        ArmPads = item;
-                    else if (TorsoArmor == null)
-                        TorsoArmor = item;
-                    else if (LegPads == null)
-                        LegPads = item;
-                    else if (Gloves == null)
-                        Gloves = item;
-                    else
-                        Helmet = item;
+                    Armor armor = item as Armor;
+                    if (armor.ArmorType == ArmorType.Helmet)
+                    {
+                        Helmet = armor;
+                    }
+                    else if (armor.ArmorType == ArmorType.ShoulderPads)
+                    {
+                        ShoulderPads = armor;
+                        Unequip(ShoulderImplant); // Mutual exclusivity
+                    }
+                    else if (armor.ArmorType == ArmorType.ArmPads)
+                    {
+                        ArmPads = armor;
+                    }
+                    else if (armor.ArmorType == ArmorType.TorsoArmor)
+                    {
+                        TorsoArmor = armor;
+                        Unequip(BackImplant); // Mutual exclusivity
+                        Unequip(ChestImplant); // Mutual exclusivity
+                    }
+                    else if (armor.ArmorType == ArmorType.LegPads)
+                    {
+                        LegPads = armor;
+                        Unequip(LegImplant); // Mutual exclusivity
+                    }
+                    else if (armor.ArmorType == ArmorType.Gloves)
+                    {
+                        Gloves = armor;
+                    }
                     break;
 
                 default:
@@ -164,6 +180,8 @@ namespace ER_Crafting.Services
 
         public void Unequip(FinalItem? item)
         {
+            if (item == null) return;
+
             if (Helmet == item) Helmet = null;
             else if (ShoulderPads == item) ShoulderPads = null;
             else if (ArmPads == item) ArmPads = null;
@@ -218,33 +236,33 @@ namespace ER_Crafting.Services
             LegImplant = ChestImplant = ShoulderImplant = BackImplant = EyesImplant = null;
             FirstWeapon = null;
             FirstBooster = SecondBooster = FirstMedication = SecondMedication = null;
-            CalculateStats(); 
+            CalculateStats();
             OnGearChanged?.Invoke();
         }
 
         private void CalculateStats()
         {
-            Agility = 100.0f;
-            Addiction = 0.0f;
+            Agility = 100.0;
+            Addiction = 0.0;
             HealthRegeneration = BASE_HEALTH_REGEN;
             StaminaRegeneration = BASE_STAMINA_REGEN;
-            BioRegeneration = 0.0f;
+            BioRegeneration = 0.0;
             AuraRegeneration = BASE_AURA_REGEN;
-            AddictionTreatment = 0.0f;
-            HealthDrain = 0.0f;
-            StaminaDrain = 0.0f;
-            BioEnergyDrain = 0.0f;
-            AuraLoss = 0.0f;
-            CriticalOffenseRating = 0.0f;
-            WeaponRecoil = 0.0f;
-            ArmorValue = 0.0f;
-            Shielding = 0.0f;
-            Endurance = 0.0f;
-            Resistance = 0.0f;
-            Reflection = 0.0f;
-            DefenseRating = 0.0f;
-            BlockRating = 0.0f;
-            ProtectionReduction = 0.0f;
+            AddictionTreatment = 0.0;
+            HealthDrain = 0.0;
+            StaminaDrain = 0.0;
+            BioEnergyDrain = 0.0;
+            AuraLoss = 0.0;
+            CriticalOffenseRating = 0.0;
+            WeaponRecoil = 0.0;
+            ArmorValue = 0.0;
+            Shielding = 0.0;
+            Endurance = 0.0;
+            Resistance = 0.0;
+            Reflection = 0.0;
+            DefenseRating = 0.0;
+            BlockRating = 0.0;
+            ProtectionReduction = 0.0;
 
             var allItems = GetAllEquippedItems();
 
@@ -328,6 +346,9 @@ namespace ER_Crafting.Services
             AuraRegeneration += armor.auraRegeneration;
             StaminaRegeneration += armor.staminaRegeneration;
             CriticalOffenseRating += armor.criticalOffenseRating;
+            Addiction += armor.addiction;
+            AddictionTreatment += armor.addictionTreatment;
+            ProtectionReduction += armor.protectionReduction;
         }
 
         private void ApplyWeaponStats(Weapon weapon)
@@ -370,6 +391,8 @@ namespace ER_Crafting.Services
         private void ApplyMedicationStats(Medication medication)
         {
             HealthRegeneration += medication.healthRegeneration;
+            StaminaRegeneration += medication.staminaRegeneration;
+            BioRegeneration += medication.bioRegeneration;
             ProtectionReduction += medication.protectionReduction;
             Agility += medication.agility;
         }
@@ -380,7 +403,7 @@ namespace ER_Crafting.Services
             Agility += implant.agility;
             StaminaRegeneration += implant.staminaRegeneration;
             HealthRegeneration += implant.healthRegeneration;
-            ArmorValue += implant.agility;
+            ArmorValue += implant.armor;
             Shielding += implant.shielding;
         }
     }

@@ -2,7 +2,7 @@
   {
     "name": "FGz-78",
     "icon": "icons/explosives/fgz_78.png",
-    "type": "Explosive",
+    "explosiveType": "Ballistic",
     "productionPrice": 0,
     "attackDelay": 5.0,
     "damageRadius": 10.0,
@@ -40,7 +40,7 @@
   {
     "name": "Militek EMP",
     "icon": "icons/explosives/militek_emp.png",
-    "type": "Explosive",
+    "explosiveType": "Bio",
     "productionPrice": 0,
     "attackDelay": 5.0,
     "damageRadius": 20.0,
@@ -89,7 +89,7 @@
   {
     "name": "Salvotec HP220",
     "icon": "icons/explosives/salvotec_hp220.png",
-    "type": "Explosive",
+    "explosiveType": "Ballistic",
     "productionPrice": 0,
     "attackDelay": 5.0,
     "damageRadius": 10.0,
@@ -127,7 +127,7 @@
   {
     "name": "EMP-Rv3",
     "icon": "icons/explosives/emp_rv3.png",
-    "type": "Explosive",
+    "explosiveType": "Bio",
     "productionPrice": 0,
     "attackDelay": 5.0,
     "damageRadius": 20.0,

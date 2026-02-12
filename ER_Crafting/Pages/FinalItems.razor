@@ -4,6 +4,7 @@
 @inject NavigationHelper Navigation
 @using static ER_Crafting.Models.Enums
 @using Microsoft.AspNetCore.WebUtilities
+@using System.Reflection
 @implements IDisposable
 
 <div class="container-fluid">
@@ -15,41 +16,55 @@
         </button>
     </div>
 
-    <!-- MALE/FEMALE TOGGLE - AT THE TOP -->
+    <!-- TOGGLES - Gender and Stats -->
     <div class="card mb-3">
         <div class="card-body py-2">
-            <div class="d-flex align-items-center justify-content-center">
-                <label class="form-label me-3 mb-0 fw-bold">Gender:</label>
-                <div class="btn-group" role="group">
-                    <input type="radio" class="btn-check" name="genderToggle" id="male" checked="@(!_filterSettings.IsFemale)" @onchange="() => SetGender(false)">
-                    <label class="btn btn-outline-primary" for="male">MALE</label>
+            <div class="d-flex align-items-center justify-content-center gap-4">
+                <!-- Gender Toggle -->
+                <div class="d-flex align-items-center">
+                    <label class="form-label me-3 mb-0 fw-bold">Gender:</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="genderToggle" id="male" checked="@(!_filterSettings.IsFemale)" @onchange="() => SetGender(false)">
+                        <label class="btn btn-outline-primary" for="male">MALE</label>
 
-                    <input type="radio" class="btn-check" name="genderToggle" id="female" checked="@_filterSettings.IsFemale" @onchange="() => SetGender(true)">
-                    <label class="btn btn-outline-primary" for="female">FEMALE</label>
+                        <input type="radio" class="btn-check" name="genderToggle" id="female" checked="@_filterSettings.IsFemale" @onchange="() => SetGender(true)">
+                        <label class="btn btn-outline-primary" for="female">FEMALE</label>
+                    </div>
+                </div>
+
+                <!-- Stats Toggle -->
+                <div class="d-flex align-items-center">
+                    <label class="form-label me-3 mb-0 fw-bold">Stats:</label>
+                    <div class="btn-group" role="group">
+                        <input type="radio" class="btn-check" name="statsToggle" id="statsOff" checked="@(!_showStats)" @onchange="() => SetShowStats(false)">
+                        <label class="btn btn-outline-primary" for="statsOff">OFF</label>
+
+                        <input type="radio" class="btn-check" name="statsToggle" id="statsOn" checked="@_showStats" @onchange="() => SetShowStats(true)">
+                        <label class="btn btn-outline-primary" for="statsOn">ON</label>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- FILTERS -->
+    <!-- FILTERS - Compact single row -->
     <div class="card mb-4">
-        <div class="card-body">
-            <div class="row g-3">
-
+        <div class="card-body py-2">
+            <div class="row g-2 align-items-end">
                 <!-- Name filter -->
-                <div class="col-md-4">
-                    <label class="form-label">Search by name</label>
-                    <input class="form-control"
+                <div class="col-md-3">
+                    <label class="form-label small mb-1">Search by name</label>
+                    <input class="form-control form-control-sm"
                            placeholder="Type a name..."
                            @bind="_nameFilter"
                            @bind:event="oninput"
                            @bind:after="UpdateFilterAndUrl" />
                 </div>
 
-                <!-- 1. ItemType filter -->
-                <div class="col-md-4">
-                    <label class="form-label">Item Type</label>
-                    <select class="form-select"
+                <!-- ItemType filter -->
+                <div class="col-md-2">
+                    <label class="form-label small mb-1">Item Type</label>
+                    <select class="form-select form-select-sm"
                             @bind="_itemTypeFilter"
                             @bind:after="OnItemTypeChanged">
                         <option value="">All</option>
@@ -60,12 +75,12 @@
                     </select>
                 </div>
 
-                <!-- 2. Sub-type filters (when ItemType is selected) -->
+                <!-- Sub-type filters -->
                 @if (_itemTypeFilter == nameof(ItemType.Booster))
                 {
-                    <div class="col-md-4">
-                        <label class="form-label">Booster Type</label>
-                        <select class="form-select"
+                    <div class="col-md-2">
+                        <label class="form-label small mb-1">Booster Type</label>
+                        <select class="form-select form-select-sm"
                                 @bind="_boosterTypeFilter"
                                 @bind:after="UpdateFilterAndUrl">
                             <option value="">All</option>
@@ -79,9 +94,9 @@
 
                 @if (_itemTypeFilter == nameof(ItemType.Armor))
                 {
-                    <div class="col-md-4">
-                        <label class="form-label">Armor Type</label>
-                        <select class="form-select"
+                    <div class="col-md-2">
+                        <label class="form-label small mb-1">Armor Type</label>
+                        <select class="form-select form-select-sm"
                                 @bind="_armorTypeFilter"
                                 @bind:after="UpdateFilterAndUrl">
                             <option value="">All</option>
@@ -92,10 +107,9 @@
                         </select>
                     </div>
 
-                    <!-- Faction filter (appears as soon as Armor ItemType is selected) -->
-                    <div class="col-md-4">
-                        <label class="form-label">Faction</label>
-                        <select class="form-select"
+                    <div class="col-md-2">
+                        <label class="form-label small mb-1">Faction</label>
+                        <select class="form-select form-select-sm"
                                 @bind="_factionFilter"
                                 @bind:after="UpdateFilterAndUrl">
                             <option value="">All</option>
@@ -109,9 +123,9 @@
 
                 @if (_itemTypeFilter == nameof(ItemType.Implant))
                 {
-                    <div class="col-md-4">
-                        <label class="form-label">Implant Type</label>
-                        <select class="form-select"
+                    <div class="col-md-2">
+                        <label class="form-label small mb-1">Implant Type</label>
+                        <select class="form-select form-select-sm"
                                 @bind="_implantTypeFilter"
                                 @bind:after="UpdateFilterAndUrl">
                             <option value="">All</option>
@@ -125,9 +139,9 @@
 
                 @if (_itemTypeFilter == nameof(ItemType.Weapon))
                 {
-                    <div class="col-md-4">
-                        <label class="form-label">Weapon Type</label>
-                        <select class="form-select"
+                    <div class="col-md-2">
+                        <label class="form-label small mb-1">Weapon Type</label>
+                        <select class="form-select form-select-sm"
                                 @bind="_weaponTypeFilter"
                                 @bind:after="UpdateFilterAndUrl">
                             <option value="">All</option>
@@ -141,9 +155,9 @@
 
                 @if (_itemTypeFilter == nameof(ItemType.Explosive))
                 {
-                    <div class="col-md-4">
-                        <label class="form-label">Explosive Type</label>
-                        <select class="form-select"
+                    <div class="col-md-2">
+                        <label class="form-label small mb-1">Explosive Type</label>
+                        <select class="form-select form-select-sm"
                                 @bind="_explosiveTypeFilter"
                                 @bind:after="UpdateFilterAndUrl">
                             <option value="">All</option>
@@ -157,9 +171,9 @@
 
                 @if (_itemTypeFilter == nameof(ItemType.Clothing))
                 {
-                    <div class="col-md-4">
-                        <label class="form-label">Clothing Type</label>
-                        <select class="form-select"
+                    <div class="col-md-2">
+                        <label class="form-label small mb-1">Clothing Type</label>
+                        <select class="form-select form-select-sm"
                                 @bind="_clothingTypeFilter"
                                 @bind:after="UpdateFilterAndUrl">
                             <option value="">All</option>
@@ -170,7 +184,6 @@
                         </select>
                     </div>
                 }
-
             </div>
         </div>
     </div>
@@ -180,23 +193,93 @@
         <small class="text-muted">Showing @_filteredItems.Count of @_allItems.Count items</small>
     </div>
 
-    <!-- LIST -->
-    @if (_filteredItems.Count == 0)
+    <!-- CARD VIEW (Stats OFF) -->
+    @if (!_showStats)
     {
-        <div class="alert alert-info">
-            No items found.
-        </div>
+        @if (_filteredItems.Count == 0)
+        {
+            <div class="alert alert-info">
+                No items found.
+            </div>
+        }
+        else
+        {
+            <div class="row">
+                @foreach (var item in _filteredItems)
+                {
+                    <div class="col-md-3 mb-3">
+                        <FinalItemCard Item="@item" OnClick="@(() => ShowDetails(item))" />
+                    </div>
+                }
+            </div>
+        }
     }
-    else
+
+    <!-- TABLE VIEW (Stats ON) -->
+    @if (_showStats)
     {
-        <div class="row">
-            @foreach (var item in _filteredItems)
-            {
-                <div class="col-md-3 mb-3">
-                    <FinalItemCard Item="@item" OnClick="@(() => ShowDetails(item))" />
-                </div>
-            }
-        </div>
+        @if (string.IsNullOrEmpty(_itemTypeFilter))
+        {
+            <div class="alert alert-info">
+                Please select an Item Type to view stats.
+            </div>
+        }
+        else if (_filteredItems.Count == 0)
+        {
+            <div class="alert alert-info">
+                No items found.
+            </div>
+        }
+        else
+        {
+            <div class="table-responsive">
+                <table class="table table-sm table-hover table-striped">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width: 60px;"></th>
+                            <th style="cursor: pointer;" @onclick="() => SortBy(nameof(FinalItem.Name))">
+                                Name
+                                @if (_sortColumn == nameof(FinalItem.Name))
+                                {
+                                    <span>@(_sortAscending ? "▲" : "▼")</span>
+                                }
+                            </th>
+                            @foreach (var stat in GetVisibleStats())
+                            {
+                                <th style="cursor: pointer;" @onclick="() => SortBy(stat.PropertyName)">
+                                    @stat.DisplayName
+                                    @if (_sortColumn == stat.PropertyName)
+                                    {
+                                        <span>@(_sortAscending ? "▲" : "▼")</span>
+                                    }
+                                </th>
+                            }
+                            <th style="width: 100px;">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in GetSortedItems())
+                        {
+                            <tr>
+                                <td>
+                                    <img src="@item.Icon" alt="@item.Name" style="width: 48px; height: 48px;" />
+                                </td>
+                                <td>@item.Name</td>
+                                @foreach (var stat in GetVisibleStats())
+                                {
+                                    <td>@GetStatValue(item, stat)</td>
+                                }
+                                <td>
+                                    <button class="btn btn-sm btn-primary" @onclick="() => ShowDetails(item)">
+                                        Details
+                                    </button>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
     }
 
 </div>
@@ -224,10 +307,21 @@
         public bool IsFemale { get; set; } = false;
     }
 
+    public class StatColumn
+    {
+        public string PropertyName { get; set; } = "";
+        public string DisplayName { get; set; } = "";
+        public bool IsEnum { get; set; }
+    }
+
     private FilterSettings _filterSettings = new();
     private List<FinalItem> _allItems = new();
     private List<FinalItem> _filteredItems = new();
     private FinalItem? _selectedItem;
+
+    private bool _showStats = false;
+    private string _sortColumn = "";
+    private bool _sortAscending = true;
 
     private string _nameFilter = "";
     private string _itemTypeFilter = "";
@@ -248,6 +342,68 @@
     private List<ExplosiveType> _allExplosiveTypes = new();
     private List<ClothingType> _allClothingTypes = new();
 
+    // Stat definitions with nice display names
+    private Dictionary<string, string> _statDisplayNames = new()
+    {
+        // Type properties
+        { "weaponType", "Type" },
+        { "ArmorType", "Type" },
+        { "Faction", "Faction" },
+        { "implantType", "Type" },
+        { "explosiveType", "Type" },
+        { "clothingType", "Type" },
+        { "boosterType", "Type" },
+
+        // Weapon stats
+        { "clipCapacity", "Clip" },
+        { "attackDelay", "Delay" },
+        { "range", "Range" },
+
+        // Damage stats
+        { "energyDamage", "Energy Dmg" },
+        { "ballisticDamage", "Ballistic Dmg" },
+        { "bioDamage", "Bio Dmg" },
+        { "auraDamage", "Aura Dmg" },
+        { "xenoDamage", "Xeno Dmg" },
+        { "staminaDamage", "Stamina Dmg" },
+        { "destruction", "Destruction" },
+
+        // Defense stats
+        { "armor", "Armor" },
+        { "shielding", "Shield" },
+        { "resistance", "Resist" },
+        { "defense", "Defense" },
+        { "defenseRating", "Def Rating" },
+        { "blockRating", "Block Rating" },
+        { "block", "Block" },
+        { "reflection", "Reflection" },
+
+        // Regeneration stats
+        { "healthRegeneration", "HP Regen" },
+        { "bioRegeneration", "Bio Regen" },
+        { "staminaRegeneration", "Stam Regen" },
+        { "auraRegeneration", "Aura Regen" },
+
+        // Drain stats
+        { "bioEnergyDrain", "Bio Drain" },
+        { "healthDrain", "HP Drain" },
+        { "staminaDrain", "Stam Drain" },
+
+        // Offensive stats
+        { "criticalOffenseRating", "Crit Rating" },
+        { "weaponRecoil", "Recoil" },
+
+        // Other stats
+        { "agility", "Agility" },
+        { "endurance", "Endurance" },
+        { "effectDuration", "Duration" },
+        { "addiction", "Addiction" },
+        { "addictionTreatment", "Addiction Treat" },
+        { "medikitCooldown", "Cooldown" },
+        { "protectionReduction", "Prot Reduction" },
+        { "damageRadius", "Radius" }
+    };
+
     protected override void OnInitialized()
     {
         NavigationManager.LocationChanged += HandleLocationChanged;
@@ -264,11 +420,121 @@
         _allExplosiveTypes = Enum.GetValues<ExplosiveType>().ToList();
         _allClothingTypes = Enum.GetValues<ClothingType>().ToList();
 
-        // Parse URL parameters
         ParseUrlParameters();
-
-        // Apply filters without updating URL (since we just parsed from URL)
         ApplyFilters();
+    }
+
+    private List<StatColumn> GetVisibleStats()
+    {
+        if (_filteredItems.Count == 0) return new List<StatColumn>();
+
+        var statMap = new Dictionary<string, StatColumn>();
+
+        // Group items by type to avoid repeated GetType() calls
+        var itemsByType = _filteredItems.GroupBy(i => i.GetType()).ToList();
+
+        // For each unique type, get its properties once
+        foreach (var typeGroup in itemsByType)
+        {
+            var itemType = typeGroup.Key;
+            var properties = itemType.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+            var itemsOfThisType = typeGroup.ToList();
+
+            foreach (var prop in properties)
+            {
+                // Skip base properties we don't want to show
+                if (prop.Name == "Id" || prop.Name == "Name" || prop.Name == "Icon" ||
+                    prop.Name == "Type" || prop.Name == "Recipes" || prop.Name == "GenderNeutral" ||
+                    prop.Name == "ProductionPrice" || prop.Name == "Description")
+                    continue;
+
+                // Skip if we've already added this property
+                if (statMap.ContainsKey(prop.Name))
+                    continue;
+
+                // Check if ANY item of this type has a non-zero value for this property
+                bool hasNonZeroValue = false;
+
+                if (prop.PropertyType.IsEnum)
+                {
+                    // Enums always show
+                    hasNonZeroValue = true;
+                }
+                else if (prop.PropertyType == typeof(float))
+                {
+                    hasNonZeroValue = itemsOfThisType.Any(item =>
+                    {
+                        var val = (float)(prop.GetValue(item) ?? 0f);
+                        return val != 0f;
+                    });
+                }
+                else if (prop.PropertyType == typeof(double))
+                {
+                    hasNonZeroValue = itemsOfThisType.Any(item =>
+                    {
+                        var val = (double)(prop.GetValue(item) ?? 0.0);
+                        return val != 0.0;
+                    });
+                }
+                else if (prop.PropertyType == typeof(int))
+                {
+                    hasNonZeroValue = itemsOfThisType.Any(item =>
+                    {
+                        var val = (int)(prop.GetValue(item) ?? 0);
+                        return val != 0;
+                    });
+                }
+
+                if (hasNonZeroValue)
+                {
+                    var displayName = _statDisplayNames.ContainsKey(prop.Name)
+                        ? _statDisplayNames[prop.Name]
+                        : prop.Name;
+
+                    statMap[prop.Name] = new StatColumn
+                    {
+                        PropertyName = prop.Name,
+                        DisplayName = displayName,
+                        IsEnum = prop.PropertyType.IsEnum
+                    };
+                }
+            }
+        }
+
+        return statMap.Values.ToList();
+    }
+
+    private string GetStatValue(FinalItem item, StatColumn stat)
+    {
+        var itemType = item.GetType();
+        var prop = itemType.GetProperty(stat.PropertyName);
+
+        if (prop == null) return "-"; // Property doesn't exist on this item type
+
+        var value = prop.GetValue(item);
+        if (value == null) return "-";
+
+        if (stat.IsEnum || prop.PropertyType.IsEnum)
+        {
+            return value.ToString() ?? "-";
+        }
+        else if (prop.PropertyType == typeof(float))
+        {
+            var floatVal = (float)value;
+            return floatVal == 0f ? "-" : floatVal.ToString("F1");
+        }
+        else if (prop.PropertyType == typeof(double))
+        {
+            var doubleVal = (double)value;
+            return doubleVal == 0.0 ? "-" : doubleVal.ToString("F2");
+        }
+        else if (prop.PropertyType == typeof(int))
+        {
+            var intVal = (int)value;
+            return intVal == 0 ? "-" : intVal.ToString();
+        }
+
+        return value.ToString() ?? "-";
     }
 
     private void ParseUrlParameters()
@@ -276,7 +542,6 @@
         var uri = new Uri(NavigationManager.Uri);
         var queryParams = QueryHelpers.ParseQuery(uri.Query);
 
-        // Check for filter parameter like "Armor/ShoulderPads" or "Armor/ShoulderPads/LED"
         if (queryParams.TryGetValue("filter", out var filterValue))
         {
             var filterParts = filterValue.ToString().Split('/');
@@ -289,7 +554,6 @@
                 {
                     var subType = filterParts[1];
 
-                    // Determine which sub-type filter to set based on ItemType
                     if (_itemTypeFilter == "Booster")
                         _boosterTypeFilter = subType;
                     else if (_itemTypeFilter == "Armor")
@@ -311,7 +575,6 @@
             }
         }
 
-        // Check for individual parameters
         if (queryParams.TryGetValue("name", out var nameValue))
             _nameFilter = nameValue.ToString();
 
@@ -319,20 +582,15 @@
             SetGender(isFemale, false);
     }
 
-    // ALSO fix your UpdateUrl method in FinalItems.razor:
-
     private void UpdateUrl()
     {
-        // Build query parameters
         var queryParams = new Dictionary<string, string>();
 
-        // Build filter parameter
         var filterParts = new List<string>();
         if (!string.IsNullOrEmpty(_itemTypeFilter))
         {
             filterParts.Add(_itemTypeFilter);
 
-            // Add sub-type if selected
             var subType = "";
             if (_itemTypeFilter == "Booster" && !string.IsNullOrEmpty(_boosterTypeFilter))
                 subType = _boosterTypeFilter;
@@ -351,7 +609,6 @@
             {
                 filterParts.Add(subType);
 
-                // Add faction if armor and faction selected
                 if (_itemTypeFilter == "Armor" && !string.IsNullOrEmpty(_factionFilter))
                     filterParts.Add(_factionFilter);
             }
@@ -364,14 +621,12 @@
         if (_filterSettings.IsFemale)
             queryParams["female"] = "true";
 
-        // GitHub Pages fix
         var isGitHubPages = NavigationManager.Uri.Contains("github.io");
         var basePath = isGitHubPages ? "/ER_Crafting/finalitems" : "/finalitems";
         var finalUrl = QueryHelpers.AddQueryString(basePath, queryParams);
 
         NavigationManager.NavigateTo(finalUrl, replace: true);
     }
-
 
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
     {
@@ -405,9 +660,14 @@
         }
     }
 
+    private void SetShowStats(bool showStats)
+    {
+        _showStats = showStats;
+        StateHasChanged();
+    }
+
     private void OnItemTypeChanged()
     {
-        // Clear all sub-type filters when main type changes
         _boosterTypeFilter = "";
         _armorTypeFilter = "";
         _factionFilter = "";
@@ -428,20 +688,17 @@
     {
         IEnumerable<FinalItem> query = _allItems;
 
-        // Name filter
         if (!string.IsNullOrWhiteSpace(_nameFilter))
         {
             query = query.Where(i => i.Name.Contains(_nameFilter, StringComparison.OrdinalIgnoreCase));
         }
 
-        // ItemType filter
         if (!string.IsNullOrWhiteSpace(_itemTypeFilter))
         {
             if (Enum.TryParse<ItemType>(_itemTypeFilter, out var itemType))
             {
                 query = query.Where(i => i.Type == itemType);
 
-                // Sub-type filters based on selected ItemType
                 if (itemType == ItemType.Booster && !string.IsNullOrWhiteSpace(_boosterTypeFilter) && Enum.TryParse<BoosterType>(_boosterTypeFilter, out var boosterType))
                 {
                     if (boosterType == BoosterType.Drug)
@@ -490,6 +747,77 @@
         }
 
         _filteredItems = query.Cast<FinalItem>().ToList();
+    }
+
+    private void SortBy(string column)
+    {
+        if (_sortColumn == column)
+        {
+            _sortAscending = !_sortAscending;
+        }
+        else
+        {
+            _sortColumn = column;
+            _sortAscending = true;
+        }
+    }
+
+    private IEnumerable<FinalItem> GetSortedItems()
+    {
+        if (string.IsNullOrEmpty(_sortColumn))
+            return _filteredItems;
+
+        var items = _filteredItems.AsEnumerable();
+
+        if (_sortColumn == nameof(FinalItem.Name))
+        {
+            return _sortAscending
+                ? items.OrderBy(i => i.Name)
+                : items.OrderByDescending(i => i.Name);
+        }
+
+        // Dynamic property sorting using reflection with safe property access
+        if (_sortAscending)
+        {
+            return items.OrderBy(item => GetSortValue(item, _sortColumn));
+        }
+        else
+        {
+            return items.OrderByDescending(item => GetSortValue(item, _sortColumn));
+        }
+    }
+
+    private IComparable GetSortValue(FinalItem item, string propertyName)
+    {
+        var prop = item.GetType().GetProperty(propertyName);
+        if (prop == null) return 0; // Property doesn't exist on this item type
+
+        var value = prop.GetValue(item);
+        if (value == null) return 0;
+
+        // Handle different types
+        if (prop.PropertyType.IsEnum)
+        {
+            return value.ToString() ?? "";
+        }
+        else if (prop.PropertyType == typeof(float))
+        {
+            return (float)value;
+        }
+        else if (prop.PropertyType == typeof(double))
+        {
+            return (double)value;
+        }
+        else if (prop.PropertyType == typeof(int))
+        {
+            return (int)value;
+        }
+        else if (value is IComparable comparable)
+        {
+            return comparable;
+        }
+
+        return value.ToString() ?? "";
     }
 
     private void ClearFilters()

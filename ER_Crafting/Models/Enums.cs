@@ -55,6 +55,7 @@
             Glasses,
             Shoes,
             LegClothing,
+            TorsoClothing
         }
         public enum ExplosiveType
         {

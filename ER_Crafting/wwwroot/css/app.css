@@ -36,6 +36,10 @@ a, .btn-link {
     color: red;
 }
 
+.col-md-5cols {
+    width: 20%; 
+}
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;

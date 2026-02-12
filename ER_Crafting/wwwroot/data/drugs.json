@@ -672,5 +672,40 @@
         ]
       }
     ]
+  },
+  {
+    "name": "Oxazoline",
+    "icon": "icons/drugs/oxazoline.png",
+    "boosterType": "drug",
+    "effectDuration": 5,
+    "addiction": 0.13,
+    "healthRegeneration": 0,
+    "defense": 0.0,
+    "staminaRegeneration": 0,
+    "bioRegeneration": 0,
+    "shielding": 0,
+    "armor": 0,
+    "resistance": 70,
+    "criticalOffenseRating": 0,
+    "block": 0,
+    "weaponRecoil": 0,
+    "endurance": 0,
+    "staminaDrain": 0,
+    "agility": 0,
+    "auraRegeneration": 0,
+    "reflection": -50,
+    "recipes": [
+      {
+        "name": "Standard",
+        "outputQuantity": 2,
+        "ingredients": [
+          {
+            "type": "RawMaterial",
+            "itemId": 5,
+            "quantity": 1
+          }
+        ]
+      }
+    ]
   }
 ]
