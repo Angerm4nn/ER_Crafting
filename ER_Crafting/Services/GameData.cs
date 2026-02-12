@@ -23,7 +23,7 @@ namespace ER_Crafting.Services
         private List<Armor> _armors;
         private List<Explosive> _explosives;
         private List<Food> _foods;
-        private List<Booster> _boosters;
+        private List<Drug> _drugs;
         private List<Implant> _implants;
         private List<Medication> _medications;
         private List<Miscellaneous> _miscellaneous;
@@ -55,7 +55,7 @@ namespace ER_Crafting.Services
                 _armors = await httpClient.GetFromJsonAsync<List<Armor>>("data/armors.json", options);
                 _explosives = await httpClient.GetFromJsonAsync<List<Explosive>>("data/explosives.json", options);
                 _foods = await httpClient.GetFromJsonAsync<List<Food>>("data/foods.json", options);
-                //_boosters = await httpClient.GetFromJsonAsync<List<Booster>>("data/boosters.json", options);
+                _drugs = await httpClient.GetFromJsonAsync<List<Drug>>("data/drugs.json", options);
                 _implants = await httpClient.GetFromJsonAsync<List<Implant>>("data/implants.json", options);
                 _medications = await httpClient.GetFromJsonAsync<List<Medication>>("data/medications.json", options);
                 _miscellaneous = await httpClient.GetFromJsonAsync<List<Miscellaneous>>("data/miscellaneous.json", options);
@@ -76,7 +76,7 @@ namespace ER_Crafting.Services
         _armors,
         _explosives,
         _foods,
-        //_boosters,
+        _drugs,
         _implants,
         _medications,
         _miscellaneous,

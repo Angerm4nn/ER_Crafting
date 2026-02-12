@@ -123,9 +123,9 @@
             {
                 <FoodStatsDetails Food="@food" />
             }
-            else if (Item is Booster booster)
+            else if (Item is Drug drug)
             {
-                <BoosterStatsDetails Booster="@booster" />
+                <DrugsStatsDetails Drug="@drug" />
             }
             else if (Item is Implant implant)
             {
@@ -217,7 +217,7 @@
     private bool IsEquippable()
     {
         return Item is Armor
-            || Item is Booster
+            || Item is Drug
             || Item is Food
             || Item is Medication
             || Item is Implant

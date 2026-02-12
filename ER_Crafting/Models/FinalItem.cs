@@ -51,6 +51,9 @@ namespace ER_Crafting.Models
         public float weaponRecoil { get; set; }
         public float endurance { get; set; }
         public float staminaDrain { get; set; }
+        public float agility { get; set; }
+        public float reflection { get; set; }
+        public float auraRegeneration { get; set; }
     }
     public class Food : Booster
     {

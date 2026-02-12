@@ -1,0 +1,199 @@
+﻿<div class="row">
+    <div class="col-md-6">
+        <h5>Basic Info</h5>
+        <p><strong>Type:</strong> Drug</p>
+        <p><strong>Description:</strong> @Drug.Description</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Basic Stats</h5>
+        <p><strong>Effect Duration:</strong> @Drug.effectDuration.ToString("F1")s</p>
+        <p><strong>Addiction:</strong> @Drug.addiction.ToString("F1")%</p>
+    </div>
+    <div class="col-md-6">
+        <h5>Effect Stats</h5>
+        @if (Drug.healthRegeneration > 0)
+        {
+            <p style="color: green;">
+                <strong>Health Regeneration:</strong> @Drug.healthRegeneration.ToString("F1")%
+            </p>
+        }
+        @if (Drug.healthRegeneration < 0)
+        {
+            <p style="color: red;">
+                <strong>Health Regeneration:</strong> @Drug.healthRegeneration.ToString("F1")%
+            </p>
+        }
+        @if (Drug.defense > 0)
+        {
+            <p style="color: green;">
+                <strong>Defense:</strong> @Drug.defense.ToString("F1")%
+            </p>
+        }
+        @if (Drug.defense < 0)
+        {
+            <p style="color: red;">
+                <strong>Defense:</strong> @Drug.defense.ToString("F1")%
+            </p>
+        }
+        @if (Drug.staminaRegeneration > 0)
+        {
+            <p style="color: green;">
+                <strong>Stamina Regeneration:</strong> @Drug.staminaRegeneration.ToString("F1")%
+            </p>
+        }
+        @if (Drug.staminaRegeneration < 0)
+        {
+            <p style="color: red;">
+                <strong>Stamina Regeneration:</strong> @Drug.staminaRegeneration.ToString("F1")%
+            </p>
+        }
+        @if (Drug.bioRegeneration > 0)
+        {
+            <p style="color: green;">
+                <strong>Bio Regeneration:</strong> @Drug.bioRegeneration.ToString("F1")%
+            </p>
+        }
+        @if (Drug.bioRegeneration < 0)
+        {
+            <p style="color: red;">
+                <strong>Bio Regeneration:</strong> @Drug.bioRegeneration.ToString("F1")%
+            </p>
+        }
+        @if (Drug.shielding > 0)
+        {
+            <p style="color: green;">
+                <strong>Shielding:</strong> @Drug.shielding.ToString("F1")
+            </p>
+        }
+        @if (Drug.shielding < 0)
+        {
+            <p style="color: red;">
+                <strong>Shielding:</strong> @Drug.shielding.ToString("F1")
+            </p>
+        }
+        @if (Drug.armor > 0)
+        {
+            <p style="color: green;">
+                <strong>Armor:</strong> @Drug.armor.ToString("F1")
+            </p>
+        }
+        @if (Drug.armor < 0)
+        {
+            <p style="color: red;">
+                <strong>Armor:</strong> @Drug.armor.ToString("F1")
+            </p>
+        }
+        @if (Drug.resistance > 0)
+        {
+            <p style="color: green;">
+                <strong>Resistance:</strong> @Drug.resistance.ToString("F1")
+            </p>
+        }
+        @if (Drug.resistance < 0)
+        {
+            <p style="color: red;">
+                <strong>Resistance:</strong> @Drug.resistance.ToString("F1")
+            </p>
+        }
+        @if (Drug.criticalOffenseRating > 0)
+        {
+            <p style="color: green;">
+                <strong>Critical Offense Rating:</strong> @Drug.criticalOffenseRating.ToString("F1")%
+            </p>
+        }
+        @if (Drug.criticalOffenseRating < 0)
+        {
+            <p style="color: red;">
+                <strong>Critical Offense Rating:</strong> @Drug.criticalOffenseRating.ToString("F1")%
+            </p>
+        }
+        @if (Drug.block > 0)
+        {
+            <p style="color: green;">
+                <strong>Block:</strong> @Drug.block.ToString("F1")%
+            </p>
+        }
+        @if (Drug.block < 0)
+        {
+            <p style="color: red;">
+                <strong>Block:</strong> @Drug.block.ToString("F1")%
+            </p>
+        }
+        @if (Drug.weaponRecoil > 0)
+        {
+            <p style="color: green;">
+                <strong>Weapon Recoil:</strong> @Drug.weaponRecoil.ToString("F1")%
+            </p>
+        }
+        @if (Drug.weaponRecoil < 0)
+        {
+            <p style="color: red;">
+                <strong>Weapon Recoil:</strong> @Drug.weaponRecoil.ToString("F1")%
+            </p>
+        }
+        @if (Drug.endurance > 0)
+        {
+            <p style="color: green;">
+                <strong>Endurance:</strong> @Drug.endurance.ToString("F1")
+            </p>
+        }
+        @if (Drug.endurance < 0)
+        {
+            <p style="color: red;">
+                <strong>Endurance:</strong> @Drug.endurance.ToString("F1")
+            </p>
+        }
+        @if (Drug.staminaDrain > 0)
+        {
+            <p style="color: green;">
+                <strong>Stamina Drain:</strong> @Drug.staminaDrain.ToString("F1")%
+            </p>
+        }
+        @if (Drug.staminaDrain < 0)
+        {
+            <p style="color: red;">
+                <strong>Stamina Drain:</strong> @Drug.staminaDrain.ToString("F1")%
+            </p>
+        }
+        @if (Drug.agility > 0)
+        {
+            <p style="color: green;">
+                <strong>Agility:</strong> @Drug.agility.ToString("F1")
+            </p>
+        }
+        @if (Drug.agility < 0)
+        {
+            <p style="color: red;">
+                <strong>Agility:</strong> @Drug.agility.ToString("F1")
+            </p>
+        }
+        @if (Drug.reflection > 0)
+        {
+            <p style="color: green;">
+                <strong>Reflection:</strong> @Drug.reflection.ToString("F1")
+            </p>
+        }
+        @if (Drug.reflection < 0)
+        {
+            <p style="color: red;">
+                <strong>Reflection:</strong> @Drug.reflection.ToString("F1")
+            </p>
+        }
+        @if (Drug.auraRegeneration > 0)
+        {
+            <p style="color: green;">
+                <strong>Aura Regeneration:</strong> @Drug.auraRegeneration.ToString("F1")%
+            </p>
+        }
+        @if (Drug.auraRegeneration < 0)
+        {
+            <p style="color: red;">
+                <strong>Aura Regeneration:</strong> @Drug.auraRegeneration.ToString("F1")%
+            </p>
+        }
+    </div>
+</div>
+@code {
+    [Parameter]
+    public Drug Drug { get; set; } = null!;
+}
