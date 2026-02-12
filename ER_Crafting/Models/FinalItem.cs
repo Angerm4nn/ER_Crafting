@@ -36,7 +36,21 @@ namespace ER_Crafting.Models
             Type = ItemType.Booster;
         }
         public BoosterType boosterType = BoosterType.Drug;
-
+        
+        public float effectDuration { get; set; }
+        public float addiction { get; set; }
+        public float healthRegeneration { get; set; }
+        public float defense { get; set; }          
+        public float staminaRegeneration { get; set; }
+        public float bioRegeneration { get; set; }
+        public float shielding { get; set; }
+        public float armor { get; set; }
+        public float resistance { get; set; }
+        public float criticalOffenseRating { get; set; }
+        public float block { get; set; }
+        public float weaponRecoil { get; set; }
+        public float endurance { get; set; }
+        public float staminaDrain { get; set; }
     }
     public class Food : Booster
     {

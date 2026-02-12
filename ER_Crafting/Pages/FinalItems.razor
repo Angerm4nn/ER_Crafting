@@ -1,6 +1,7 @@
 ﻿@page "/finalitems"
 @inject GameData GameData
 @inject NavigationManager NavigationManager
+@inject NavigationHelper Navigation
 @using static ER_Crafting.Models.Enums
 @using Microsoft.AspNetCore.WebUtilities
 @implements IDisposable
@@ -363,15 +364,8 @@
         if (_filterSettings.IsFemale)
             queryParams["female"] = "true";
 
-        // Most robust solution - let NavigationManager handle the base path resolution
-        var currentUri = new Uri(NavigationManager.Uri);
-        var newQuery = QueryHelpers.AddQueryString("", queryParams).TrimStart('?');
-
-        // Reconstruct URL with same path but new query string
-        var pathWithoutQuery = currentUri.GetLeftPart(UriPartial.Path);
-        var newUrl = string.IsNullOrEmpty(newQuery) ? pathWithoutQuery : $"{pathWithoutQuery}?{newQuery}";
-
-        NavigationManager.NavigateTo(newUrl, replace: true);
+        // Use NavigationHelper for consistent navigation that handles GitHub Pages correctly
+        Navigation.NavigateToPage("finalitems", queryParams);
     }
 
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)

@@ -1,1 +1,29 @@
-﻿[]
+﻿[
+    {
+      "name": "Aquatican Brew",
+      "icon": "icons/foods/aquatican_brew.png",
+      "boosterType": "food",
+      "productionPrice": 0,
+      "effectDuration": 5.0,
+      "auraRegeneration": 1.0,
+      "addictionTreatment": 0.0,
+      "staminaRegeneration": 0.0,
+      "criticalOffenseRating": 0.0,
+      "bioRegeneration": 0.0,
+      "weaponRecoil": 0.0,
+      "agility": 0.0,
+      "recipes": [
+        {
+          "name": "Standard",
+          "outputQuantity": 2,
+          "ingredients": [
+            {
+              "type": "RawMaterial",
+              "itemId": 5,
+              "quantity": 3
+            }
+          ]
+        }
+      ]
+    }
+  ]
