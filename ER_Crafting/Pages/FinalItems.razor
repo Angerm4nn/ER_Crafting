@@ -319,12 +319,14 @@
             SetGender(isFemale, false);
     }
 
+    // ALSO fix your UpdateUrl method in FinalItems.razor:
+
     private void UpdateUrl()
     {
         // Build query parameters
         var queryParams = new Dictionary<string, string>();
 
-        // Build filter parameter (keep your existing logic)
+        // Build filter parameter
         var filterParts = new List<string>();
         if (!string.IsNullOrEmpty(_itemTypeFilter))
         {
@@ -362,13 +364,14 @@
         if (_filterSettings.IsFemale)
             queryParams["female"] = "true";
 
-        // 🚨 DIRECT FIX - NO NavigationHelper
+        // GitHub Pages fix
         var isGitHubPages = NavigationManager.Uri.Contains("github.io");
         var basePath = isGitHubPages ? "/ER_Crafting/finalitems" : "/finalitems";
         var finalUrl = QueryHelpers.AddQueryString(basePath, queryParams);
 
         NavigationManager.NavigateTo(finalUrl, replace: true);
     }
+
 
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
     {
