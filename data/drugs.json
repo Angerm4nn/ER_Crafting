@@ -72,7 +72,7 @@
   },
   {
     "name": "Methedrine",
-    "icon": "icons/drugs/.png",
+    "icon": "icons/drugs/methedrine.png",
     "boosterType": "drug",
     "effectDuration": 5,
     "addiction": 0.13,
