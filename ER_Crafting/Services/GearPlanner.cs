@@ -5,15 +5,19 @@ namespace ER_Crafting.Services
 {
     public class GearPlanner
     {
+        //BaseStats
+        private const float BASE_HEALTH_REGEN = 0.7f;
+        private const float BASE_STAMINA_REGEN = 2.0f;
+        private const float BASE_AURA_REGEN = 2.5f;
         //MainStats
         public float Agility { get; private set; } = 100.0f;
-        public float Addiction { get; private set; } = 0.0f;
+        public double Addiction { get; private set; } = 0.0f;
         //Regeneration
         public float HealthRegeneration { get; private set; } = 0.7f;
         public float StaminaRegeneration { get; private set; } = 2.0f;
         public float BioRegeneration { get; private set; } = 0.0f;
         public float AuraRegeneration { get; private set; } = 2.5f;
-        public float AddictionTreatment { get; private set; } = 0.0f;
+        public double AddictionTreatment { get; private set; } = 0.0f;
         //Damages
         public float HealthDrain { get; private set; } = 0.0f;
         public float StaminaDrain { get; private set; } = 0.0f;
@@ -31,6 +35,9 @@ namespace ER_Crafting.Services
         public float BlockRating { get; private set; } = 0.0f;
         public float ProtectionReduction { get; private set; } = 0.0f;
 
+        // Base stat values 
+
+
         //Armor Slots
         public FinalItem? Helmet { get; private set; }
         public FinalItem? ShoulderPads { get; private set; }
@@ -45,12 +52,10 @@ namespace ER_Crafting.Services
         public FinalItem? ShoulderImplant { get; private set; }
         public FinalItem? BackImplant { get; private set; }
         public FinalItem? EyesImplant { get; private set; }
+        public FinalItem? ActiveImplant { get; private set; }
 
         //Weapons
         public FinalItem? FirstWeapon { get; private set; }
-        public FinalItem? SecondWeapon { get; private set; }
-        public FinalItem? ThirdWeapon { get; private set; }
-        public FinalItem? ActiveWeapon { get; private set; }
 
         //Consumables
         public FinalItem? FirstBooster { get; private set; }
@@ -69,7 +74,7 @@ namespace ER_Crafting.Services
                 ItemType.Booster => true,
                 ItemType.Medication => true,
                 ItemType.Armor => true,
-                _ => false 
+                _ => false
             };
         }
 
@@ -80,35 +85,37 @@ namespace ER_Crafting.Services
                 case ItemType.Weapon:
                     if (FirstWeapon == null)
                         FirstWeapon = item;
-                    else if (SecondWeapon == null)
-                        SecondWeapon = item;
-                    else if (ThirdWeapon == null)
-                        ThirdWeapon = item;
                     else
                         FirstWeapon = item;
                     break;
 
                 case ItemType.Implant:
                     Implant implant = item as Implant;
-                    if(implant.implantType == ImplantType.EyesImplant)
+                    if (implant.implantType == ImplantType.EyesImplant)
                     {
                         EyesImplant = implant;
                     }
                     if (implant.implantType == ImplantType.ChestImplant)
                     {
                         ChestImplant = implant;
+                        Unequip(TorsoArmor);
                     }
                     if (implant.implantType == ImplantType.BackImplant)
                     {
                         BackImplant = implant;
+                        Unequip(TorsoArmor);
+
                     }
                     if (implant.implantType == ImplantType.ShoulderImplant)
                     {
                         ShoulderImplant = implant;
+                        Unequip(ShoulderPads);
+
                     }
                     if (implant.implantType == ImplantType.LegImplant)
                     {
                         LegImplant = implant;
+                        Unequip(LegPads);
                     }
                     break;
 
@@ -127,7 +134,7 @@ namespace ER_Crafting.Services
                     else if (SecondMedication == null)
                         SecondMedication = item;
                     else
-                        FirstMedication = item; 
+                        FirstMedication = item;
                     break;
 
                 case ItemType.Armor:
@@ -151,10 +158,11 @@ namespace ER_Crafting.Services
                     return;
             }
 
+            CalculateStats();
             OnGearChanged?.Invoke();
         }
 
-        public void Unequip(FinalItem item)
+        public void Unequip(FinalItem? item)
         {
             if (Helmet == item) Helmet = null;
             else if (ShoulderPads == item) ShoulderPads = null;
@@ -168,15 +176,14 @@ namespace ER_Crafting.Services
             else if (ChestImplant == item) ChestImplant = null;
             else if (LegImplant == item) LegImplant = null;
             else if (FirstWeapon == item) FirstWeapon = null;
-            else if (SecondWeapon == item) SecondWeapon = null;
-            else if (ThirdWeapon == item) ThirdWeapon = null;
             else if (FirstBooster == item) FirstBooster = null;
             else if (SecondBooster == item) SecondBooster = null;
             else if (FirstMedication == item) FirstMedication = null;
             else if (SecondMedication == item) SecondMedication = null;
             else
-                return; // Item not found, don't trigger OnGearChanged
+                return;
 
+            CalculateStats();
             OnGearChanged?.Invoke();
         }
 
@@ -196,13 +203,12 @@ namespace ER_Crafting.Services
                 case "BackImplant": BackImplant = null; break;
                 case "EyesImplant": EyesImplant = null; break;
                 case "FirstWeapon": FirstWeapon = null; break;
-                case "SecondWeapon": SecondWeapon = null; break;
-                case "ThirdWeapon": ThirdWeapon = null; break;
                 case "FirstBooster": FirstBooster = null; break;
                 case "SecondBooster": SecondBooster = null; break;
                 case "FirstMedication": FirstMedication = null; break;
                 case "SecondMedication": SecondMedication = null; break;
             }
+            CalculateStats();
             OnGearChanged?.Invoke();
         }
 
@@ -210,9 +216,172 @@ namespace ER_Crafting.Services
         {
             Helmet = ShoulderPads = ArmPads = TorsoArmor = LegPads = Gloves = null;
             LegImplant = ChestImplant = ShoulderImplant = BackImplant = EyesImplant = null;
-            FirstWeapon = SecondWeapon = ThirdWeapon = ActiveWeapon = null;
+            FirstWeapon = null;
             FirstBooster = SecondBooster = FirstMedication = SecondMedication = null;
+            CalculateStats(); 
             OnGearChanged?.Invoke();
+        }
+
+        private void CalculateStats()
+        {
+            Agility = 100.0f;
+            Addiction = 0.0f;
+            HealthRegeneration = BASE_HEALTH_REGEN;
+            StaminaRegeneration = BASE_STAMINA_REGEN;
+            BioRegeneration = 0.0f;
+            AuraRegeneration = BASE_AURA_REGEN;
+            AddictionTreatment = 0.0f;
+            HealthDrain = 0.0f;
+            StaminaDrain = 0.0f;
+            BioEnergyDrain = 0.0f;
+            AuraLoss = 0.0f;
+            CriticalOffenseRating = 0.0f;
+            WeaponRecoil = 0.0f;
+            ArmorValue = 0.0f;
+            Shielding = 0.0f;
+            Endurance = 0.0f;
+            Resistance = 0.0f;
+            Reflection = 0.0f;
+            DefenseRating = 0.0f;
+            BlockRating = 0.0f;
+            ProtectionReduction = 0.0f;
+
+            var allItems = GetAllEquippedItems();
+
+            foreach (var item in allItems)
+            {
+                ApplyItemStats(item);
+            }
+        }
+
+        private List<FinalItem> GetAllEquippedItems()
+        {
+            var items = new List<FinalItem>();
+
+            // Armor
+            if (Helmet != null) items.Add(Helmet);
+            if (ShoulderPads != null) items.Add(ShoulderPads);
+            if (ArmPads != null) items.Add(ArmPads);
+            if (TorsoArmor != null) items.Add(TorsoArmor);
+            if (LegPads != null) items.Add(LegPads);
+            if (Gloves != null) items.Add(Gloves);
+
+            // Implants
+            if (LegImplant != null) items.Add(LegImplant);
+            if (ChestImplant != null) items.Add(ChestImplant);
+            if (ShoulderImplant != null) items.Add(ShoulderImplant);
+            if (BackImplant != null) items.Add(BackImplant);
+            if (EyesImplant != null) items.Add(EyesImplant);
+
+            // Weapon
+            if (FirstWeapon != null) items.Add(FirstWeapon);
+
+            // Consumables
+            if (FirstBooster != null) items.Add(FirstBooster);
+            if (SecondBooster != null) items.Add(SecondBooster);
+            if (FirstMedication != null) items.Add(FirstMedication);
+            if (SecondMedication != null) items.Add(SecondMedication);
+
+            return items;
+        }
+
+        private void ApplyItemStats(FinalItem item)
+        {
+            switch (item)
+            {
+                case Armor armor:
+                    ApplyArmorStats(armor);
+                    break;
+                case Weapon weapon:
+                    ApplyWeaponStats(weapon);
+                    break;
+                case Drug drug:
+                    ApplyDrugStats(drug);
+                    break;
+                case Food food:
+                    ApplyFoodStats(food);
+                    break;
+                case Medication medication:
+                    ApplyMedicationStats(medication);
+                    break;
+                case Implant implant:
+                    ApplyImplantStats(implant);
+                    break;
+            }
+        }
+
+        private void ApplyArmorStats(Armor armor)
+        {
+            Agility += armor.agility;
+            ArmorValue += armor.armor;
+            Shielding += armor.shielding;
+            Endurance += armor.endurance;
+            Resistance += armor.resistance;
+            Reflection += armor.reflection;
+            DefenseRating += armor.defenseRating;
+            BlockRating += armor.blockRating;
+            WeaponRecoil += armor.weaponRecoil;
+            HealthDrain += armor.healthDrain;
+            BioEnergyDrain += armor.bioEnergyDrain;
+            HealthRegeneration += armor.healthRegeneration;
+            BioRegeneration += armor.bioRegeneration;
+            AuraRegeneration += armor.auraRegeneration;
+            StaminaRegeneration += armor.staminaRegeneration;
+            CriticalOffenseRating += armor.criticalOffenseRating;
+        }
+
+        private void ApplyWeaponStats(Weapon weapon)
+        {
+            WeaponRecoil += weapon.weaponRecoil;
+            Agility += weapon.agility;
+        }
+
+        private void ApplyDrugStats(Drug drug)
+        {
+            Addiction += drug.addiction;
+            HealthRegeneration += drug.healthRegeneration;
+            StaminaRegeneration += drug.staminaRegeneration;
+            BioRegeneration += drug.bioRegeneration;
+            AuraRegeneration += drug.auraRegeneration;
+            Shielding += drug.shielding;
+            ArmorValue += drug.armor;
+            Resistance += drug.resistance;
+            CriticalOffenseRating += drug.criticalOffenseRating;
+            BlockRating += drug.block;
+            WeaponRecoil += drug.weaponRecoil;
+            Endurance += drug.endurance;
+            StaminaDrain += drug.staminaDrain;
+            Agility += drug.agility;
+            Reflection += drug.reflection;
+            DefenseRating += drug.defense;
+        }
+
+        private void ApplyFoodStats(Food food)
+        {
+            AuraRegeneration += food.auraRegeneration;
+            AddictionTreatment += food.addictionTreatment;
+            StaminaRegeneration += food.staminaRegeneration;
+            CriticalOffenseRating += food.criticalOffenseRating;
+            BioRegeneration += food.bioRegeneration;
+            WeaponRecoil += food.weaponRecoil;
+            Agility += food.agility;
+        }
+
+        private void ApplyMedicationStats(Medication medication)
+        {
+            HealthRegeneration += medication.healthRegeneration;
+            ProtectionReduction += medication.protectionReduction;
+            Agility += medication.agility;
+        }
+
+        private void ApplyImplantStats(Implant implant)
+        {
+            BioEnergyDrain += implant.bioEnergyDrain;
+            Agility += implant.agility;
+            StaminaRegeneration += implant.staminaRegeneration;
+            HealthRegeneration += implant.healthRegeneration;
+            ArmorValue += implant.agility;
+            Shielding += implant.shielding;
         }
     }
 }

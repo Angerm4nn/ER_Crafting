@@ -7,31 +7,248 @@
     </div>
     <div class="col-md-6">
         <h5>Protection Stats</h5>
-        <p><strong>Armor:</strong> @Armor.armor</p>
-        <p><strong>Shielding:</strong> @Armor.shielding</p>
-        <p><strong>Resistance:</strong> @Armor.resistance</p>
-        <p><strong>Reflection:</strong> @Armor.reflection</p>
-        <p><strong>Endurance:</strong> @Armor.endurance</p>
-        <p><strong>Defense Rating:</strong> @Armor.defenseRating</p>
-        <p><strong>Block Rating:</strong> @Armor.blockRating</p>
+        @if (Armor.armor > 0)
+        {
+            <p style="color: green;">
+                <strong>Armor:</strong> @Armor.armor.ToString("F1")
+            </p>
+        }
+        @if (Armor.armor < 0)
+        {
+            <p style="color: red;">
+                <strong>Armor:</strong> @Armor.armor.ToString("F1")
+            </p>
+        }
+        @if (Armor.shielding > 0)
+        {
+            <p style="color: green;">
+                <strong>Shielding:</strong> @Armor.shielding.ToString("F1")
+            </p>
+        }
+        @if (Armor.shielding < 0)
+        {
+            <p style="color: red;">
+                <strong>Shielding:</strong> @Armor.shielding.ToString("F1")
+            </p>
+        }
+        @if (Armor.resistance > 0)
+        {
+            <p style="color: green;">
+                <strong>Resistance:</strong> @Armor.resistance.ToString("F1")
+            </p>
+        }
+        @if (Armor.resistance < 0)
+        {
+            <p style="color: red;">
+                <strong>Resistance:</strong> @Armor.resistance.ToString("F1")
+            </p>
+        }
+        @if (Armor.reflection > 0)
+        {
+            <p style="color: green;">
+                <strong>Reflection:</strong> @Armor.reflection.ToString("F1")
+            </p>
+        }
+        @if (Armor.reflection < 0)
+        {
+            <p style="color: red;">
+                <strong>Reflection:</strong> @Armor.reflection.ToString("F1")
+            </p>
+        }
+        @if (Armor.endurance > 0)
+        {
+            <p style="color: green;">
+                <strong>Endurance:</strong> @Armor.endurance.ToString("F1")
+            </p>
+        }
+        @if (Armor.endurance < 0)
+        {
+            <p style="color: red;">
+                <strong>Endurance:</strong> @Armor.endurance.ToString("F1")
+            </p>
+        }
+        @if (Armor.defenseRating > 0)
+        {
+            <p style="color: green;">
+                <strong>Defense Rating:</strong> @Armor.defenseRating.ToString("F1")%
+            </p>
+        }
+        @if (Armor.defenseRating < 0)
+        {
+            <p style="color: red;">
+                <strong>Defense Rating:</strong> @Armor.defenseRating.ToString("F1")%
+            </p>
+        }
+        @if (Armor.blockRating > 0)
+        {
+            <p style="color: green;">
+                <strong>Block Rating:</strong> @Armor.blockRating.ToString("F1")%
+            </p>
+        }
+        @if (Armor.blockRating < 0)
+        {
+            <p style="color: red;">
+                <strong>Block Rating:</strong> @Armor.blockRating.ToString("F1")%
+            </p>
+        }
     </div>
 </div>
 
 <div class="row mt-3">
     <div class="col-md-6">
         <h5>Attributes</h5>
-        <p><strong>Agility:</strong> @Armor.agility</p>
-        <p><strong>Weapon Recoil:</strong> @Armor.weaponRecoil</p>
-        <p><strong>Critical Offense Rating:</strong> @Armor.criticalOffenseRating</p>
+        @if (Armor.agility > 0)
+        {
+            <p style="color: green;">
+                <strong>Agility:</strong> @Armor.agility.ToString("F1")%
+            </p>
+        }
+        @if (Armor.agility < 0)
+        {
+            <p style="color: red;">
+                <strong>Agility:</strong> @Armor.agility.ToString("F1")%
+            </p>
+        }
+        @if (Armor.weaponRecoil > 0)
+        {
+            <p style="color: red;">
+                <strong>Weapon Recoil:</strong> @Armor.weaponRecoil.ToString("F1")%
+            </p>
+        }
+        @if (Armor.weaponRecoil < 0)
+        {
+            <p style="color: green;">
+                <strong>Weapon Recoil:</strong> @Armor.weaponRecoil.ToString("F1")%
+            </p>
+        }
+        @if (Armor.criticalOffenseRating > 0)
+        {
+            <p style="color: red;">
+                <strong>Critical Offense Rating:</strong> @Armor.criticalOffenseRating.ToString("F1")%
+            </p>
+        }
+        @if (Armor.criticalOffenseRating < 0)
+        {
+            <p style="color: green;">
+                <strong>Critical Offense Rating:</strong> @Armor.criticalOffenseRating.ToString("F1")%
+            </p>
+        }
+        @if (Armor.addiction > 0)
+        {
+            <p style="color: red;">
+                <strong>Addiction:</strong> @Armor.addiction.ToString("F2")%
+            </p>
+        }
+        @if (Armor.addiction < 0)
+        {
+            <p style="color: green;">
+                <strong>Addiction:</strong> @Armor.addiction.ToString("F2")%
+            </p>
+        }
+        @if (Armor.addictionTreatment > 0)
+        {
+            <p style="color: green;">
+                <strong>Addiction Treatment:</strong> @Armor.addictionTreatment.ToString("F2")%
+            </p>
+        }
+        @if (Armor.addictionTreatment < 0)
+        {
+            <p style="color: red;">
+                <strong>Addiction Treatment:</strong> @Armor.addictionTreatment.ToString("F2")%
+            </p>
+        }
+        @if (Armor.protectionReduction > 0)
+        {
+            <p style="color: red;">
+                <strong>Protection Reduction:</strong> @Armor.protectionReduction.ToString("F1")%
+            </p>
+        }
+        @if (Armor.protectionReduction < 0)
+        {
+            <p style="color: green;">
+                <strong>Protection Reduction:</strong> @Armor.protectionReduction.ToString("F1")%
+            </p>
+        }
     </div>
     <div class="col-md-6">
         <h5>Regeneration & Drain</h5>
-        <p><strong>Health Regeneration:</strong> @Armor.healthRegeneration</p>
-        <p><strong>Bio Regeneration:</strong> @Armor.bioRegeneration</p>
-        <p><strong>Aura Regeneration:</strong> @Armor.auraRegeneration</p>
-        <p><strong>Stamina Regeneration:</strong> @Armor.staminaRegeneration</p>
-        <p><strong>Health Drain:</strong> @Armor.healthDrain</p>
-        <p><strong>Bio Energy Drain:</strong> @Armor.bioEnergyDrain</p>
+        @if (Armor.healthRegeneration > 0)
+        {
+            <p style="color: green;">
+                <strong>Health Regeneration:</strong> @Armor.healthRegeneration.ToString("F1")
+            </p>
+        }
+        @if (Armor.healthRegeneration < 0)
+        {
+            <p style="color: red;">
+                <strong>Health Regeneration:</strong> @Armor.healthRegeneration.ToString("F1")
+            </p>
+        }
+
+        @if (Armor.bioRegeneration > 0)
+        {
+            <p style="color: green;">
+                <strong>Bio Regeneration:</strong> @Armor.bioRegeneration.ToString("F1")
+            </p>
+        }
+        @if (Armor.bioRegeneration < 0)
+        {
+            <p style="color: red;">
+                <strong>Bio Regeneration:</strong> @Armor.bioRegeneration.ToString("F1")
+            </p>
+        }
+
+        @if (Armor.auraRegeneration > 0)
+        {
+            <p style="color: green;">
+                <strong>Aura Regeneration:</strong> @Armor.auraRegeneration.ToString("F1")
+            </p>
+        }
+        @if (Armor.auraRegeneration < 0)
+        {
+            <p style="color: red;">
+                <strong>Aura Regeneration:</strong> @Armor.auraRegeneration.ToString("F1")
+            </p>
+        }
+
+        @if (Armor.staminaRegeneration > 0)
+        {
+            <p style="color: green;">
+                <strong>Stamina Regeneration:</strong> @Armor.staminaRegeneration.ToString("F1")
+            </p>
+        }
+        @if (Armor.staminaRegeneration < 0)
+        {
+            <p style="color: red;">
+                <strong>Stamina Regeneration:</strong> @Armor.staminaRegeneration.ToString("F1")
+            </p>
+        }
+
+        @if (Armor.healthDrain > 0)
+        {
+            <p style="color: red;">
+                <strong>Health Drain:</strong> @Armor.healthDrain.ToString("F1")
+            </p>
+        }
+        @if (Armor.healthDrain < 0)
+        {
+            <p style="color: green;">
+                <strong>Health Drain:</strong> @Armor.healthDrain.ToString("F1")
+            </p>
+        }
+
+        @if (Armor.bioEnergyDrain > 0)
+        {
+            <p style="color: red;">
+                <strong>Bio Energy Drain:</strong> @Armor.bioEnergyDrain.ToString("F1")
+            </p>
+        }
+        @if (Armor.bioEnergyDrain < 0)
+        {
+            <p style="color: green;">
+                <strong>Bio Energy Drain:</strong> @Armor.bioEnergyDrain.ToString("F1")
+            </p>
+        }
     </div>
 </div>
 

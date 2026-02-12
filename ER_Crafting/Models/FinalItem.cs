@@ -38,7 +38,7 @@ namespace ER_Crafting.Models
         public BoosterType boosterType = BoosterType.Drug;
         
         public float effectDuration { get; set; }
-        public float addiction { get; set; }
+        public double addiction { get; set; }
         public float healthRegeneration { get; set; }
         public float defense { get; set; }          
         public float staminaRegeneration { get; set; }
@@ -97,6 +97,9 @@ namespace ER_Crafting.Models
         public float auraRegeneration { get; set; }
         public float staminaRegeneration { get; set; }
         public float criticalOffenseRating { get; set; }
+        public double addiction { get; set; }
+        public double addictionTreatment { get; set; }
+        public float protectionReduction { get; set; }
 
     }
     public class Explosive : FinalItem

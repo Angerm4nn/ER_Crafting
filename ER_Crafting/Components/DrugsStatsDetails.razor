@@ -7,7 +7,7 @@
     <div class="col-md-6">
         <h5>Basic Stats</h5>
         <p><strong>Effect Duration:</strong> @Drug.effectDuration.ToString("F1")s</p>
-        <p><strong>Addiction:</strong> @Drug.addiction.ToString("F1")%</p>
+        <p><strong>Addiction:</strong> @Drug.addiction.ToString("F2")%</p>
     </div>
     <div class="col-md-6">
         <h5>Effect Stats</h5>
@@ -119,13 +119,13 @@
                 <strong>Block:</strong> @Drug.block.ToString("F1")%
             </p>
         }
-        @if (Drug.weaponRecoil > 0)
+        @if (Drug.weaponRecoil < 0)
         {
             <p style="color: green;">
                 <strong>Weapon Recoil:</strong> @Drug.weaponRecoil.ToString("F1")%
             </p>
         }
-        @if (Drug.weaponRecoil < 0)
+        @if (Drug.weaponRecoil > 0)
         {
             <p style="color: red;">
                 <strong>Weapon Recoil:</strong> @Drug.weaponRecoil.ToString("F1")%
@@ -145,13 +145,13 @@
         }
         @if (Drug.staminaDrain > 0)
         {
-            <p style="color: green;">
+            <p style="color: red;">
                 <strong>Stamina Drain:</strong> @Drug.staminaDrain.ToString("F1")%
             </p>
         }
         @if (Drug.staminaDrain < 0)
         {
-            <p style="color: red;">
+            <p style="color: green;">
                 <strong>Stamina Drain:</strong> @Drug.staminaDrain.ToString("F1")%
             </p>
         }
