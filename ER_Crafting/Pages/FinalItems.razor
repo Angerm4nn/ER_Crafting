@@ -324,7 +324,7 @@
         // Build query parameters
         var queryParams = new Dictionary<string, string>();
 
-        // Build filter parameter
+        // Build filter parameter (keep your existing logic)
         var filterParts = new List<string>();
         if (!string.IsNullOrEmpty(_itemTypeFilter))
         {
@@ -357,15 +357,17 @@
 
         if (filterParts.Count > 0)
             queryParams["filter"] = string.Join("/", filterParts);
-
         if (!string.IsNullOrEmpty(_nameFilter))
             queryParams["name"] = _nameFilter;
-
         if (_filterSettings.IsFemale)
             queryParams["female"] = "true";
 
-        // Use NavigationHelper for consistent navigation that handles GitHub Pages correctly
-        Navigation.NavigateToPage("/finalitems", queryParams);
+        // 🚨 DIRECT FIX - NO NavigationHelper
+        var isGitHubPages = NavigationManager.Uri.Contains("github.io");
+        var basePath = isGitHubPages ? "/ER_Crafting/finalitems" : "/finalitems";
+        var finalUrl = QueryHelpers.AddQueryString(basePath, queryParams);
+
+        NavigationManager.NavigateTo(finalUrl, replace: true);
     }
 
     private void HandleLocationChanged(object? sender, LocationChangedEventArgs e)
