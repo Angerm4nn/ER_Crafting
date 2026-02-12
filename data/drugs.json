@@ -693,7 +693,7 @@
     "staminaDrain": 0,
     "agility": 0,
     "auraRegeneration": 0,
-    "reflection": -50,
+    "reflection": -50 ,
     "recipes": [
       {
         "name": "Standard",
