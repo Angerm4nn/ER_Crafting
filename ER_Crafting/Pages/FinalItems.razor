@@ -790,19 +790,19 @@
     private IComparable GetSortValue(FinalItem item, string propertyName)
     {
         var prop = item.GetType().GetProperty(propertyName);
-        if (prop == null) return 0; // Property doesn't exist on this item type
+        if (prop == null) return 0.0; // Return double instead of int
 
         var value = prop.GetValue(item);
-        if (value == null) return 0;
+        if (value == null) return 0.0; // Return double instead of int
 
-        // Handle different types
+        // Handle different types - convert all numeric to double for consistent comparison
         if (prop.PropertyType.IsEnum)
         {
             return value.ToString() ?? "";
         }
         else if (prop.PropertyType == typeof(float))
         {
-            return (float)value;
+            return (double)(float)value; // Convert to double
         }
         else if (prop.PropertyType == typeof(double))
         {
@@ -810,7 +810,7 @@
         }
         else if (prop.PropertyType == typeof(int))
         {
-            return (int)value;
+            return (double)(int)value; // Convert to double
         }
         else if (value is IComparable comparable)
         {
